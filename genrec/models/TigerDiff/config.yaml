@@ -1,0 +1,45 @@
+# Overwritting configs
+metadata: sentence
+
+# Config the sentence embedding model
+#   Sentence T5
+sent_emb_model: sentence-transformers/sentence-t5-base
+sent_emb_dim: 768
+sent_emb_pca: 128
+sent_emb_batch_size: 512
+
+# Config for the history encoder
+max_item_seq_len: 50
+n_embd: 512
+n_layer: 4
+n_head: 4
+n_inner: 1024
+activation_function: gelu_new
+resid_pdrop: 0.0
+embd_pdrop: 0.1
+attn_pdrop: 0.1
+layer_norm_epsilon: 1e-12
+initializer_range: 0.02
+weight_decay: 0.01
+
+# KNN scoring over generated oracle item embeddings.
+# DreamRec reports inner-product KNN at evaluation time.
+temperature: 0.07
+tiger_knn_metric: cosine
+
+# Diffusion
+diffloss_w: 1024
+diffloss_d: 3
+num_sampling_steps: 20
+diffusion_batch_mul: 1
+diff_temperature: 1.0
+grad_checkpointing: False
+tiger_uncond_prob: 0.1
+# Paper-style classifier-free guidance weight w.
+# w=0 disables extra guidance; sampling passes cfg_scale=(1+w) to DiffLoss.
+tiger_guidance_weight: 2.0
+
+# Rectified Flow configs
+use_rectified_flow: True
+rectified_flow_steps: 1000
+ode_solver: "euler"

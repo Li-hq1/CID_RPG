@@ -1,0 +1,12 @@
+[project]
+name = "ADRec"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.13.0",
+    "datasets>=4.8.5",
+    "matplotlib>=3.10.9",
+    "nvitop>=1.7.0",
+    "sentence-transformers>=5.5.1",
+    "tiktoken>=0.13.0",
+]
