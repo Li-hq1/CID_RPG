@@ -106,9 +106,13 @@ class RPGTokenizer(AbstractTokenizer):
         for i in range(1, dataset.n_items):
             meta_sentences.append(dataset.item2meta[dataset.id_mapping['id2item'][i]])
 
-        if 'sentence-transformers' in self.config['sent_emb_model']:
+        model_name = self.config['sent_emb_model']
+        local_path = self.config.get('sent_emb_model_paths', {}).get(model_name)
+        use_local = bool(local_path and os.path.isdir(local_path))
+        if 'sentence-transformers' in model_name or os.path.isdir(model_name):
             sent_emb_model = SentenceTransformer(
-                self.config['sent_emb_model']
+                local_path if use_local else model_name,
+                local_files_only=use_local or os.path.isdir(model_name),
             ).to(self.config['device'])
 
             sent_embs = sent_emb_model.encode(
@@ -427,7 +431,8 @@ class RPGTokenizer(AbstractTokenizer):
                 batched=True,
                 batch_size=1,
                 remove_columns=datasets[split].column_names,
-                num_proc=self.config['num_proc'],
+                # Keep single-process tokenization in the current process.
+                num_proc=self.config['num_proc'] if self.config['num_proc'] > 1 else None,
                 desc=f'Tokenizing {split} set: '
             )
 

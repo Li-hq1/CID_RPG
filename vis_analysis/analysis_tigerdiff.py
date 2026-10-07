@@ -6,19 +6,35 @@ Analysis 12: Attention Weight Heatmap Visualization
 
 Usage:
     # t-SNE embedding visualization (no checkpoint needed)
-    python analysis_tigerdiff.py --analysis embedding --category Beauty
+    python -m vis_analysis.analysis_tigerdiff --analysis embedding --category Beauty
 
     # Attention heatmap (requires checkpoint)
-    python analysis_tigerdiff.py --analysis attention --category Beauty --checkpoint ckpt/your_model.pth
+    python -m vis_analysis.analysis_tigerdiff --analysis attention --category Beauty --checkpoint ckpt/your_model.pth
 
     # Both analyses
-    python analysis_tigerdiff.py --analysis all --category Beauty --checkpoint ckpt/your_model.pth
+    python -m vis_analysis.analysis_tigerdiff --analysis all --category Beauty --checkpoint ckpt/your_model.pth
 """
 
 import os
 import sys
 import json
 import argparse
+from copy import deepcopy
+from pathlib import Path
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from vis_analysis.paths import PROJECT_ROOT, RESULTS_ROOT, resolve_project_path
+from config import CONFIG
+from data.amazon_reviews import AmazonReviews2014
+from data.tigerdiff_data import TigerDiffTokenizer
+from data.embeddings import read_sentence_embeddings, sentence_embedding_cache_path
+from models.tigerdiff import TigerDiff
+from engine.checkpoint import load_checkpoint, resolve_checkpoint
+from misc.config import boolean, validate_config
+from misc.seed import init_seed
+from misc.logging import init_logger, get_local_time
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -34,8 +50,10 @@ matplotlib.rcParams["axes.unicode_minus"] = False
 # Helpers to load data WITHOUT the full Pipeline
 # ──────────────────────────────────────────────
 
-def load_cached_data(category: str, cache_root: str = "cache/AmazonReviews2014"):
+def load_cached_data(category: str, cache_root: str | Path | None = None):
     """Load pre-processed dataset artifacts from cache."""
+    if cache_root is None:
+        cache_root = PROJECT_ROOT / "cache" / "AmazonReviews2014"
     base = os.path.join(cache_root, category, "processed")
     with open(os.path.join(base, "id_mapping.json")) as f:
         id_mapping = json.load(f)
@@ -49,11 +67,13 @@ def load_cached_data(category: str, cache_root: str = "cache/AmazonReviews2014")
     return id_mapping, all_item_seqs, item2meta
 
 
-def load_sentence_embeddings(category: str, emb_dim: int = 768,
-                             cache_root: str = "cache/AmazonReviews2014"):
-    """Load raw sentence-t5 embeddings from cache."""
-    path = os.path.join(cache_root, category, "processed", "sentence-t5-base.sent_emb")
-    return np.fromfile(path, dtype=np.float32).reshape(-1, emb_dim)
+def load_sentence_embeddings(category: str, emb_dim: int | None = None,
+                             cache_root: str | Path | None = None):
+    """Load the raw embeddings selected in the experiment configuration."""
+    if cache_root is None:
+        cache_root = PROJECT_ROOT / "cache" / "AmazonReviews2014"
+    path = sentence_embedding_cache_path(CONFIG, os.path.join(cache_root, category))
+    return read_sentence_embeddings(path, emb_dim or CONFIG["sent_emb_dim"])
 
 
 def get_train_mask(all_item_seqs: dict, item2id: dict, n_items: int):
@@ -110,7 +130,14 @@ def run_embedding_analysis(category: str, output_dir: str, method: str = "tsne",
 
     raw_embs = load_sentence_embeddings(category)
     train_mask = get_train_mask(all_item_seqs, item2id, n_items)
-    pca_embs, pca_model = apply_pca_and_normalize(raw_embs, train_mask, n_components=128)
+    pca_dim = CONFIG["sent_emb_pca"]
+    if pca_dim:
+        pca_embs, pca_model = apply_pca_and_normalize(raw_embs, train_mask, n_components=pca_dim)
+    else:
+        tokenizer = TigerDiffTokenizer.__new__(TigerDiffTokenizer)
+        tokenizer.config = CONFIG
+        pca_embs = tokenizer._fit_transform_sentence_embeddings(raw_embs, train_mask)
+        pca_model = None
 
     print(f"  Total items: {pca_embs.shape[0]}, PCA dim: {pca_embs.shape[1]}")
 
@@ -164,7 +191,8 @@ def run_embedding_analysis(category: str, output_dir: str, method: str = "tsne",
     method_name = "t-SNE" if method == "tsne" else "UMAP"
     ax.set_title(
         f"Item Embedding Visualization ({method_name})\n"
-        f"Amazon {category} — {len(vis_embs):,} items, Sentence-T5 + PCA(128)",
+        f"Amazon {category} — {len(vis_embs):,} items, "
+        f"{os.path.basename(CONFIG['sent_emb_model'])} + PCA({pca_dim})",
         fontsize=13, fontweight="bold", pad=12
     )
     ax.set_xlabel(f"{method_name} Dimension 1", fontsize=11)
@@ -173,6 +201,7 @@ def run_embedding_analysis(category: str, output_dir: str, method: str = "tsne",
     ax.grid(True, alpha=0.15)
 
     plt.tight_layout()
+    output_dir = str(resolve_project_path(output_dir or (RESULTS_ROOT / "analysis")))
     os.makedirs(output_dir, exist_ok=True)
     out_path = os.path.join(output_dir, f"embedding_{method}_{category}.pdf")
     plt.savefig(out_path, bbox_inches="tight", dpi=300)
@@ -180,6 +209,8 @@ def run_embedding_analysis(category: str, output_dir: str, method: str = "tsne",
     plt.close()
 
     # ── Also plot PCA explained variance ──
+    if pca_model is None:
+        return
     fig2, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4.5))
 
     variance_ratio = pca_model.explained_variance_ratio_
@@ -226,18 +257,31 @@ def run_embedding_analysis(category: str, output_dir: str, method: str = "tsne",
 # Analysis 12: Attention Weight Heatmap
 # ──────────────────────────────────────────────
 
-def build_model_for_analysis(category: str, checkpoint_path: str = None):
+def build_model_for_analysis(category: str, checkpoint_path: str = None, encoder_overrides=None):
     """Build TigerDiff model and optionally load checkpoint for analysis."""
     from accelerate import Accelerator
-    from genrec.utils import get_config, get_dataset, get_tokenizer, get_model, init_seed, init_logger
-
     accelerator = Accelerator()
-    config = get_config(
-        model_name="TigerDiff",
-        dataset_name="AmazonReviews2014",
-        config_file=None,
-        config_dict={"category": category}
-    )
+    config = deepcopy(CONFIG)
+    if checkpoint_path is not None:
+        checkpoint_path = str(resolve_checkpoint(resolve_project_path(checkpoint_path)))
+        checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=True)
+        saved_config = checkpoint.get("config", {})
+        config.update({key: value for key, value in saved_config.items() if key in CONFIG})
+        state = checkpoint.get("model", checkpoint)
+        config["encoder_type"] = saved_config.get(
+            "encoder_type", "transformer" if "position_emb.weight" in state else "hstu",
+        )
+        del checkpoint, state
+    config.update(encoder_overrides or {})
+    config.update(category=category, model="TigerDiff", dataset="AmazonReviews2014",
+                  run_local_time=get_local_time())
+    config["cache_dir"] = str(PROJECT_ROOT / "cache")
+    config["ckpt_dir"] = str(PROJECT_ROOT / "ckpt")
+    config["sent_emb_model_paths"] = {
+        model_id: str(resolve_project_path(model_path))
+        for model_id, model_path in config["sent_emb_model_paths"].items()
+    }
+    validate_config(config)
     config["device"] = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     config["use_ddp"] = False
     config["accelerator"] = accelerator
@@ -245,14 +289,14 @@ def build_model_for_analysis(category: str, checkpoint_path: str = None):
     init_seed(config["rand_seed"], config["reproducibility"])
     init_logger(config)
 
-    dataset = get_dataset("AmazonReviews2014")(config)
+    dataset = AmazonReviews2014(config)
     _ = dataset.split()
-    tokenizer = get_tokenizer("TigerDiff")(config, dataset)
-    model = get_model("TigerDiff")(config, dataset, tokenizer)
+    tokenizer = TigerDiffTokenizer(config, dataset)
+    model = TigerDiff(config, dataset, tokenizer)
 
     if checkpoint_path is not None:
-        state_dict = torch.load(checkpoint_path, map_location=config["device"])
-        model.load_state_dict(state_dict)
+        checkpoint_path = str(resolve_project_path(checkpoint_path))
+        load_checkpoint(model, checkpoint_path, config["device"])
         print(f"  Loaded checkpoint: {checkpoint_path}")
     else:
         print("  ⚠️  No checkpoint provided — using randomly initialized weights")
@@ -263,49 +307,20 @@ def build_model_for_analysis(category: str, checkpoint_path: str = None):
     return model, tokenizer, dataset, config
 
 
+@torch.no_grad()
 def extract_attention_weights(model, batch, device):
     """Forward pass through encoder, capturing attention weights from each layer."""
     model.eval()
     batch = {k: v.to(device) for k, v in batch.items()}
 
-    input_embs = model.item_id2embs[batch["input_ids"]]
-    input_embs = model.input_proj(input_embs)
-    seq_len = input_embs.shape[1]
-    positions = torch.arange(seq_len, device=device).unsqueeze(0)
-    input_embs = input_embs + model.position_emb(positions)
-
-    attention_mask = batch["attention_mask"].bool()
-    hidden_states = input_embs * attention_mask.unsqueeze(-1).float()
-
-    all_attn_weights = []
-    for layer in model.encoder.layers:
-        normed = layer.attn_norm(hidden_states)
-        # Extract attention weights manually
-        B, S, _ = normed.shape
-        sa = layer.self_attn
-        qkv = sa.qkv(normed).view(B, S, 3, sa.num_heads, sa.head_dim).permute(2, 0, 3, 1, 4)
-        q, k, v = qkv.unbind(dim=0)
-        attn_scores = torch.matmul(q, k.transpose(-2, -1)) * sa.scale
-        key_mask = attention_mask[:, None, None, :].bool()
-        attn_scores = attn_scores.masked_fill(~key_mask, float("-inf"))
-        attn_probs = torch.softmax(attn_scores, dim=-1)
-        attn_probs = attn_probs.masked_fill(~key_mask, 0.0)
-        all_attn_weights.append(attn_probs.detach().cpu())
-
-        # Continue forward pass
-        context = torch.matmul(attn_probs, v)
-        context = context.transpose(1, 2).contiguous().view(B, S, sa.hidden_size)
-        context = sa.out_proj(context)
-        context = sa.resid_dropout(context)
-        hidden_states = hidden_states + context
-        hidden_states = hidden_states + layer.ffn(layer.ffn_norm(hidden_states))
-        hidden_states = hidden_states * attention_mask.unsqueeze(-1).float()
-
-    return all_attn_weights  # list of [B, n_heads, S, S]
+    _, weights = model.encoder(
+        model._history_inputs(batch), batch["attention_mask"].bool(), return_attentions=True,
+    )
+    return [weight.detach().cpu() for weight in weights]
 
 
 def plot_attention_heatmap(attn_weights, seq_len, item_names, output_path,
-                           sample_idx=0, category="Beauty"):
+                           sample_idx=0, category="Beauty", encoder_type="transformer"):
     """
     Plot attention heatmaps for all layers and heads.
     attn_weights: list of [B, n_heads, S, S] tensors, one per layer.
@@ -321,13 +336,21 @@ def plot_attention_heatmap(attn_weights, seq_len, item_names, output_path,
     cmap = LinearSegmentedColormap.from_list("custom",
         ["#FFFFFF", "#FFF7EC", "#FEE8C8", "#FDD49E", "#FDBB84",
          "#FC8D59", "#EF6548", "#D7301F", "#B30000", "#7F0000"])
+    signed = encoder_type == "hstu"
+    weight_label = "HSTU masked SiLU weights" if signed else "Transformer softmax probabilities"
+
+    def color_options(attn):
+        if signed:
+            bound = max(float(np.abs(attn).max()), 1e-12)
+            return dict(cmap="RdBu_r", vmin=-bound, vmax=bound)
+        return dict(cmap=cmap, vmin=0, vmax=max(float(attn.max()), 1e-12))
 
     for layer_idx in range(n_layers):
         for head_idx in range(n_heads):
             ax = axes[layer_idx][head_idx]
             attn = attn_weights[layer_idx][sample_idx, head_idx, :seq_len, :seq_len].numpy()
 
-            im = ax.imshow(attn, cmap=cmap, aspect="auto", vmin=0, vmax=attn.max())
+            im = ax.imshow(attn, aspect="auto", **color_options(attn))
             ax.set_title(f"L{layer_idx+1} H{head_idx+1}", fontsize=9, fontweight="bold")
 
             if layer_idx == n_layers - 1:
@@ -344,7 +367,7 @@ def plot_attention_heatmap(attn_weights, seq_len, item_names, output_path,
                 ax.set_yticklabels(short_names, fontsize=5)
 
     fig.suptitle(
-        f"TigerDiff Attention Weights — Amazon {category}\n"
+        f"{weight_label} - Amazon {category}\n"
         f"Sequence length = {seq_len}",
         fontsize=14, fontweight="bold", y=1.01
     )
@@ -361,7 +384,7 @@ def plot_attention_heatmap(attn_weights, seq_len, item_names, output_path,
     for layer_idx in range(n_layers):
         ax = axes2[layer_idx]
         avg_attn = attn_weights[layer_idx][sample_idx, :, :seq_len, :seq_len].mean(dim=0).numpy()
-        im = ax.imshow(avg_attn, cmap=cmap, aspect="auto", vmin=0)
+        im = ax.imshow(avg_attn, aspect="auto", **color_options(avg_attn))
         ax.set_title(f"Layer {layer_idx+1} (head-averaged)", fontsize=11, fontweight="bold")
         ax.set_xlabel("Key Position", fontsize=10)
         if layer_idx == 0:
@@ -369,7 +392,7 @@ def plot_attention_heatmap(attn_weights, seq_len, item_names, output_path,
         plt.colorbar(im, ax=ax, shrink=0.8)
 
     fig2.suptitle(
-        f"Head-Averaged Attention — Amazon {category}",
+        f"Head-averaged {weight_label} - Amazon {category}",
         fontsize=13, fontweight="bold", y=1.02
     )
     plt.tight_layout()
@@ -380,14 +403,16 @@ def plot_attention_heatmap(attn_weights, seq_len, item_names, output_path,
 
 
 def run_attention_analysis(category: str, checkpoint_path: str = None,
-                           output_dir: str = "vis_results/analysis",
-                           n_samples: int = 3):
+                           output_dir: str | None = None,
+                           n_samples: int = 3, encoder_overrides=None):
     """Run attention weight visualization on sample sequences."""
     if checkpoint_path:
         print(f"[Analysis 12] Loading model from {checkpoint_path}...")
     else:
         print(f"[Analysis 12] Building model with random weights (no checkpoint)...")
-    model, tokenizer, dataset, config = build_model_for_analysis(category, checkpoint_path)
+    model, tokenizer, dataset, config = build_model_for_analysis(
+        category, checkpoint_path, encoder_overrides,
+    )
     device = config["device"]
 
     # Get test data
@@ -399,6 +424,7 @@ def run_attention_analysis(category: str, checkpoint_path: str = None,
         collate_fn=tokenizer.collate_fn["test"]
     )
 
+    output_dir = str(resolve_project_path(output_dir or (RESULTS_ROOT / "analysis")))
     os.makedirs(output_dir, exist_ok=True)
     id2item = dataset.id_mapping["id2item"]
     item2meta = dataset.item2meta
@@ -433,7 +459,7 @@ def run_attention_analysis(category: str, checkpoint_path: str = None,
         out_path = os.path.join(output_dir, f"attention_sample{count}_{category}{suffix}.pdf")
         plot_attention_heatmap(
             attn_weights, seq_len, item_names, out_path,
-            sample_idx=0, category=category
+            sample_idx=0, category=category, encoder_type=model.encoder_type,
         )
         count += 1
 
@@ -453,7 +479,7 @@ def main():
                         help="Amazon dataset category")
     parser.add_argument("--checkpoint", type=str, default=None,
                         help="Path to model checkpoint (required for attention analysis)")
-    parser.add_argument("--output_dir", type=str, default="vis_results/analysis",
+    parser.add_argument("--output_dir", type=str, default=str(RESULTS_ROOT / "analysis"),
                         help="Output directory for figures")
     parser.add_argument("--method", type=str, default="tsne",
                         choices=["tsne", "umap"],
@@ -464,6 +490,13 @@ def main():
                         help="Number of KMeans clusters for coloring")
     parser.add_argument("--n_samples", type=int, default=3,
                         help="Number of attention heatmap samples")
+    parser.add_argument("--encoder_type", choices=["hstu", "transformer"])
+    parser.add_argument("--hstu_hidden_dim", type=int)
+    parser.add_argument("--hstu_attention_dim", type=int)
+    parser.add_argument("--hstu_use_group_norm", type=boolean)
+    parser.add_argument("--hstu_output_dropout", type=float)
+    parser.add_argument("--hstu_attention_dropout", type=float)
+    parser.add_argument("--hstu_attention_scaling", choices=["input_length", "max_seq_len"])
     args = parser.parse_args()
 
     if args.analysis in ("embedding", "all"):
@@ -481,6 +514,8 @@ def main():
             checkpoint_path=args.checkpoint,
             output_dir=args.output_dir,
             n_samples=args.n_samples,
+            encoder_overrides={key: value for key, value in vars(args).items()
+                               if value is not None and (key == "encoder_type" or key.startswith("hstu_"))},
         )
 
 

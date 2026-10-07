@@ -4,8 +4,8 @@ from unittest.mock import Mock
 import numpy as np
 import torch
 
-from genrec.models import TigerDiff
-from genrec.models.TigerDiff.model import TigerSequenceEncoder
+from models.tigerdiff import TigerDiff, TigerSequenceEncoder
+from data.tigerdiff_data import TigerDiffTokenizer
 
 
 class DummyDataset:
@@ -64,6 +64,14 @@ def make_batch():
 
 
 class TigerDiffTest(unittest.TestCase):
+    def test_single_process_tokenization_does_not_fork(self):
+        tokenizer = TigerDiffTokenizer.__new__(TigerDiffTokenizer)
+        dataset = Mock(column_names=['item_seq'])
+        for num_proc, expected in [(1, None), (2, 2)]:
+            tokenizer.config = {'num_proc': num_proc}
+            tokenizer._tokenize_split(dataset, 'train')
+            self.assertEqual(dataset.map.call_args.kwargs['num_proc'], expected)
+
     def test_uses_local_encoder_and_learned_position_embeddings(self):
         torch.manual_seed(0)
         model = TigerDiff(make_config(), DummyDataset(), DummyTokenizer())
@@ -100,6 +108,107 @@ class TigerDiffTest(unittest.TestCase):
         self.assertTrue(
             torch.equal(captured["target"], model.item_id2embs[torch.tensor([3])])
         )
+
+    def test_all_positions_uses_causal_attention_and_all_targets(self):
+        config = make_config()
+        config.update(supervision_mode="all_positions", attn_pdrop=0.0, n_layer=2)
+        torch.manual_seed(0)
+        model = TigerDiff(config, DummyDataset(), DummyTokenizer())
+        model.train()
+
+        captured = {}
+
+        def fake_forward(z, target, mask=None):
+            captured["z"] = z.detach().clone()
+            captured["target"] = target.detach().clone()
+            return z.sum() * 0.0 + target.sum() * 0.0
+
+        model.diffloss.forward = fake_forward
+        outputs = model(make_batch())
+
+        self.assertEqual(captured["z"].shape, (2, 8))
+        self.assertTrue(torch.equal(captured["target"], model.item_id2embs[torch.tensor([2, 3])]))
+        with torch.no_grad():
+            encoded, _ = model._encode_history(make_batch())
+            expected_z = model.condition_proj(encoded[:, :2]).reshape(2, 8)
+        torch.testing.assert_close(captured["z"], expected_z)
+
+        future_changed = make_batch()
+        future_changed["input_ids"] = torch.tensor([[1, 3, 0, 0]])
+        with torch.no_grad():
+            first, _ = model._encode_history(make_batch())
+            changed, _ = model._encode_history(future_changed)
+        torch.testing.assert_close(first[:, 0], changed[:, 0])
+        self.assertFalse(torch.allclose(first[:, 1], changed[:, 1]))
+        self.assertTrue(torch.equal(first[:, 2:], torch.zeros_like(first[:, 2:])))
+
+        # A position in the full history must match encoding its prefix alone.
+        prefix = {key: value[:, :1] if value.dim() == 2 else value
+                  for key, value in make_batch().items()}
+        prefix["seq_lens"] = torch.tensor([1])
+        with torch.no_grad():
+            prefix_encoded, _ = model._encode_history(prefix)
+        torch.testing.assert_close(first[:, :1], prefix_encoded)
+
+    def test_all_positions_skips_ignored_and_padded_labels(self):
+        config = make_config()
+        config["supervision_mode"] = "all_positions"
+        model = TigerDiff(config, DummyDataset(), DummyTokenizer())
+        model.diffloss.forward = Mock(return_value=torch.tensor(1.0))
+        batch = make_batch()
+        batch["labels"] = torch.tensor([[-100, 3, 1, -100]])
+        model(batch)
+        call = model.diffloss.forward.call_args.kwargs
+        self.assertEqual(call["z"].shape, (1, 8))
+        torch.testing.assert_close(call["target"], model.item_id2embs[[3]])
+
+        batch["labels"] = torch.full_like(batch["labels"], -100)
+        model.diffloss.forward.reset_mock()
+        outputs = model(batch)
+        self.assertEqual(outputs.loss.item(), 0.0)
+        outputs.loss.backward()
+        model.diffloss.forward.assert_not_called()
+
+    def test_all_positions_accepts_final_only_labels_and_generates(self):
+        config = make_config()
+        config["supervision_mode"] = "all_positions"
+        model = TigerDiff(config, DummyDataset(), DummyTokenizer())
+        model.eval()
+        model.diffloss.forward = Mock(return_value=torch.tensor(1.0))
+        batch = make_batch()
+        batch["labels"] = torch.tensor([[3]])
+        model(batch)
+        call = model.diffloss.forward.call_args.kwargs
+        torch.testing.assert_close(call["target"], model.item_id2embs[[3]])
+        with torch.no_grad():
+            _, condition = model._encode_history(batch)
+        torch.testing.assert_close(call["z"], condition)
+        model.diffloss.sample = Mock(return_value=model.item_id2embs[[3]])
+        self.assertEqual(model.generate(batch, n_return_sequences=1).tolist(), [[[3]]])
+        self.assertEqual(model.diffloss.sample.call_args.args[0].shape, (1, 8))
+
+    def test_all_positions_backpropagates_with_both_diffusion_losses(self):
+        for rectified_flow in (False, True):
+            with self.subTest(rectified_flow=rectified_flow):
+                config = make_config()
+                config.update(supervision_mode="all_positions", use_rectified_flow=rectified_flow,
+                              tiger_uncond_prob=1.0, diffusion_batch_mul=2)
+                model = TigerDiff(config, DummyDataset(), DummyTokenizer())
+                loss = model(make_batch()).loss
+                self.assertTrue(torch.isfinite(loss))
+                loss.backward()
+                self.assertIsNotNone(model.uncond_condition.grad)
+                self.assertTrue(all(torch.isfinite(p.grad).all() for p in model.parameters()
+                                    if p.grad is not None))
+
+    def test_supervision_modes_keep_checkpoint_keys_compatible(self):
+        old = TigerDiff(make_config(), DummyDataset(), DummyTokenizer())
+        config = make_config()
+        config["supervision_mode"] = "all_positions"
+        new = TigerDiff(config, DummyDataset(), DummyTokenizer())
+        new.load_state_dict(old.state_dict(), strict=True)
+        self.assertTrue(old.encoder.layers[0].self_attn.causal)
+        self.assertTrue(new.encoder.layers[0].self_attn.causal)
 
     def test_generate_samples_and_returns_item_ids(self):
         torch.manual_seed(0)

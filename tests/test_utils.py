@@ -1,15 +1,14 @@
 import unittest
 from unittest.mock import patch
 
-from genrec.utils import format_hyper_parameters, get_file_name
+from misc.logging import format_hyper_parameters, get_file_name
 
 
 class UtilsTest(unittest.TestCase):
-    def test_get_file_name_caps_long_command_line_component(self):
+    def test_file_name_uses_timestamp_and_task_name_only(self):
         config = {
             "run_id": "tigerdiff_toy",
-            "run_local_time": "May-07-2026_01-26",
-            "file_name_max_len": 180,
+            "run_timestamp": "20261006-150000",
             "lr": 0.0005,
             "accelerator": object(),
         }
@@ -18,9 +17,7 @@ class UtilsTest(unittest.TestCase):
         with patch("sys.argv", argv):
             name = get_file_name(config, suffix=".pth")
 
-        self.assertLessEqual(len(name), 180)
-        self.assertTrue(name.endswith(".pth"))
-        self.assertIn("May-07-2026_01-26", name)
+        self.assertEqual(name, "20261006-150000_tigerdiff_toy.pth")
 
     def test_format_hyper_parameters_dumps_loggable_config(self):
         config = {

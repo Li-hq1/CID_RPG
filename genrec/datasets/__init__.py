@@ -1,7 +1,3 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# All rights reserved.
+from data.amazon_reviews import AmazonReviews2014
 
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-
-from genrec.datasets.AmazonReviews2014.dataset import AmazonReviews2014
+__all__ = ["AmazonReviews2014"]

@@ -1,12 +1,22 @@
 """
-Visualization script for RPG_KDD2025 experiment results.
+Visualization script for recommendation experiment results, including legacy logs.
 This script parses log files and creates a comprehensive visualization of results across all datasets.
+
+Usage:
+    python -m vis_analysis.visualization --log_paths ckpt
 """
 
 import glob
 import os
 import re
+import sys
 from collections import defaultdict
+from pathlib import Path
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from vis_analysis.paths import RESULTS_ROOT, resolve_project_path
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -781,23 +791,12 @@ def extract_metadata_from_filename(filepath):
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Visualize RPG experiment results")
+    parser = argparse.ArgumentParser(description="Visualize recommendation experiment results")
     parser.add_argument(
         "--log_paths",
         nargs="+",
-        default=[
-            # "logs/AmazonReviews2014/DiffAR/genrec_default-main.py_--model=DiffAR_--category=Toys_and_Games_--lr=0.003_--temperature=0.03-May-05-2026_18-52-833a9d.log",
-            # "logs/AmazonReviews2014/DiffAR/genrec_default-main.py_--model=DiffAR_--category=Sports_and_Outdoors_--lr=0.003_--temperature=0.03-May-05-2026_18-53-91572e.log",
-            # "logs/AmazonReviews2014/DiffAR/genrec_default-main.py_--model=DiffAR_--category=CDs_and_Vinyl_--lr=0.001_--temperature=0.03-May-05-2026_18-53-2eeead.log",
-            # "logs/AmazonReviews2014/DiffAR/genrec_default-main.py_--model=DiffAR_--category=Beauty_--lr=0.01_--temperature=0.03_--n_codebook=32_--num_beams=20_--n_edges=200_--propagation_steps=3-May-05-2026_18-31-d5929c.log",
-            # "logs/AmazonReviews2014/RPG/genrec_default-main.py_--category=Beauty_--lr=0.01_--temperature=0.03_--n_codebook=32_--num_beams=20_--n_edges=200_--propagation_steps=3-Apr-27-2026_20-30-ba460a.log"
-            # # "logs/AmazonReviews2014/RPG/genrec_default-main.py_--category=CDs_and_Vinyl_--lr=0.001_--temperature=0.03_--n_codebook=64_--num_beams=20_--n_edges=500_--propagation_steps=5-May-06-2026_01-21-70824e.log",
-            # "logs/AmazonReviews2014/RPG/genrec_default-main.py_--category=Sports_and_Outdoors_--lr=0.003_--temperature=0.03_--n_codebook=16_--num_beams=100_--n_edges=30_--propagation_steps=5-May-06-2026_01-21-52057a.log",
-            # "logs/AmazonReviews2014/RPG/genrec_default-main.py_--category=Toys_and_Games_--lr=0.003_--temperature=0.03_--n_codebook=16_--num_beams=200_--n_edges=20_--propagation_steps=3-May-06-2026_01-22-2b595c.log",
-            # "logs/AmazonReviews2014/RPGDiff"
-            "logs/AmazonReviews2014/paper"
-        ],
-        help="List of full paths to the log files (or directories)",
+        default=["ckpt"],
+        help="Log files or directories. Relative paths are resolved from the repository root.",
     )
 
     args = parser.parse_args()
@@ -805,10 +804,11 @@ if __name__ == "__main__":
     # Resolve log files (files or directories)
     log_files = []
     for path in args.log_paths:
-        if os.path.isfile(path):
-            log_files.append(path)
-        elif os.path.isdir(path):
-            log_files.extend(glob.glob(os.path.join(path, "*.log")))
+        resolved = resolve_project_path(path)
+        if resolved.is_file():
+            log_files.append(str(resolved))
+        elif resolved.is_dir():
+            log_files.extend(glob.glob(str(resolved / "**" / "*.log"), recursive=True))
 
     if not log_files:
         print("No log files found in the provided paths")
@@ -837,11 +837,11 @@ if __name__ == "__main__":
             if first_ts == "UnknownTime":
                 first_ts = ts
 
-            individual_output_dir = os.path.join(
-                "vis_results",
-                safe_path_part(mdl),
-                safe_path_part(cat),
-                safe_path_part(ts),
+            individual_output_dir = (
+                RESULTS_ROOT
+                / safe_path_part(mdl)
+                / safe_path_part(cat)
+                / safe_path_part(ts)
             )
             plot_single_result(results, individual_output_dir, model=mdl)
 
@@ -850,7 +850,5 @@ if __name__ == "__main__":
         exit(1)
 
     # Step 2: Generate combined comparison PDF/PNG
-    combined_output_dir = os.path.join(
-        "vis_results", safe_path_part(model), f"combined_{safe_path_part(first_ts)}"
-    )
+    combined_output_dir = RESULTS_ROOT / safe_path_part(model) / f"combined_{safe_path_part(first_ts)}"
     plot_all_results(log_files, combined_output_dir, model)

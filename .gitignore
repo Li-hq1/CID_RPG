@@ -1,7 +1,7 @@
 cache/
-logs/
 __pycache__/
 .vscode/
+.venv/
 tensorboard/
 ckpt/
-vis_results/
+vis_analysis/vis_results/

@@ -2,8 +2,8 @@ import unittest
 
 import torch
 
-from genrec.models.diffusion.diffloss import DiffLoss
-from genrec.models.diffusion.rectified_flow import RectifiedFlow
+from models.diffusion.diffloss import DiffLoss
+from models.diffusion.rectified_flow import RectifiedFlow
 
 
 class ConstantVelocity(torch.nn.Module):

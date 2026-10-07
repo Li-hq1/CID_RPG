@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 
 # Analysis template for TigerDiff.
 #
 # Examples:
-#   bash analysis.sh
-#   CATEGORY=Beauty ANALYSIS=embedding bash analysis.sh
-#   CATEGORY=Beauty ANALYSIS=attention CHECKPOINT=ckpt/your_model.pth bash analysis.sh
-#   CATEGORY=Beauty ANALYSIS=all CHECKPOINT=ckpt/your_model.pth METHOD=umap bash analysis.sh
+#   bash scripts/analysis.sh
+#   CATEGORY=Beauty ANALYSIS=embedding bash scripts/analysis.sh
+#   CATEGORY=Beauty ANALYSIS=attention CHECKPOINT=ckpt/your_model.pth bash scripts/analysis.sh
+#   CATEGORY=Beauty ANALYSIS=all CHECKPOINT=ckpt/your_model.pth METHOD=umap bash scripts/analysis.sh
 #
 # Notes:
 # - embedding analysis reads cached sentence embeddings under cache/AmazonReviews2014/<CATEGORY>/processed
@@ -20,7 +20,7 @@ export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 
 CATEGORY="${CATEGORY:-Beauty}"
 ANALYSIS="${ANALYSIS:-embedding}"   # embedding | attention | all
-OUTPUT_DIR="${OUTPUT_DIR:-vis_results/analysis}"
+OUTPUT_DIR="${OUTPUT_DIR:-vis_analysis/vis_results/analysis}"
 METHOD="${METHOD:-tsne}"           # tsne | umap (umap requires umap-learn)
 MAX_ITEMS="${MAX_ITEMS:-5000}"
 N_CLUSTERS="${N_CLUSTERS:-8}"
@@ -30,12 +30,12 @@ CHECKPOINT="${CHECKPOINT:-}"
 usage() {
     cat <<'USAGE'
 Usage:
-    CATEGORY=Beauty ANALYSIS=embedding bash analysis.sh
+    CATEGORY=Beauty ANALYSIS=embedding bash scripts/analysis.sh
 
 Environment variables:
     CATEGORY      Amazon category (Beauty, Sports_and_Outdoors, Toys_and_Games, CDs_and_Vinyl)
     ANALYSIS      embedding | attention | all
-    OUTPUT_DIR   Output directory for figures (default: vis_results/analysis)
+    OUTPUT_DIR   Output directory for figures (default: vis_analysis/vis_results/analysis)
     METHOD       tsne | umap
     MAX_ITEMS    Subsample size for embedding visualization
     N_CLUSTERS   KMeans clusters for coloring in embedding plot
@@ -56,20 +56,20 @@ if [[ "${ANALYSIS}" == "embedding" || "${ANALYSIS}" == "all" ]]; then
     if [[ ! -d "cache/AmazonReviews2014/${CATEGORY}/processed" ]]; then
         echo "[analysis.sh] Missing cache for CATEGORY='${CATEGORY}' (required for embedding plots)." >&2
         echo "            Expected: cache/AmazonReviews2014/${CATEGORY}/processed" >&2
-        echo "            Run training once (see train_tigerdiff_*.sh or: python3 main.py --model=TigerDiff --category=${CATEGORY})" >&2
+        echo "            Run training once: uv run train.py --category=${CATEGORY}" >&2
         echo "            Or set CATEGORY=Beauty (already present in this workspace)." >&2
         exit 2
     fi
 
     for required in \
         "cache/AmazonReviews2014/${CATEGORY}/processed/id_mapping.json" \
-        "cache/AmazonReviews2014/${CATEGORY}/processed/all_item_seqs.json" \
-        "cache/AmazonReviews2014/${CATEGORY}/processed/sentence-t5-base.sent_emb"; do
+        "cache/AmazonReviews2014/${CATEGORY}/processed/all_item_seqs.json"; do
         if [[ ! -f "${required}" ]]; then
             echo "[analysis.sh] Missing required file for embedding analysis: ${required}" >&2
             exit 2
         fi
     done
+    uv run python -c 'import os, sys; from config import CONFIG; from data.embeddings import sentence_embedding_cache_path; p = sentence_embedding_cache_path(CONFIG, os.path.join("cache", "AmazonReviews2014", sys.argv[1])); assert os.path.isfile(p), f"Missing embeddings: {p}. Run python -m data.extract_embeddings --category=" + sys.argv[1]' "${CATEGORY}"
 fi
 
 if [[ "${ANALYSIS}" == "attention" || "${ANALYSIS}" == "all" ]]; then
@@ -85,7 +85,7 @@ fi
 mkdir -p "${OUTPUT_DIR}"
 
 cmd=(
-    python3 analysis_tigerdiff.py
+    uv run python -m vis_analysis.analysis_tigerdiff
     --analysis "${ANALYSIS}"
     --category "${CATEGORY}"
     --output_dir "${OUTPUT_DIR}"
