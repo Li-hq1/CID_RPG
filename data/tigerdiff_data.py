@@ -141,6 +141,18 @@ class TigerDiffTokenizer:
         return sent_embs.astype(np.float32)
 
     def _tokenized_cache_path(self) -> str:
+        method = self.config.get("sent_emb_compression", "pca")
+        if method in {"contrec_vae", "geometry_ae"}:
+            from pathlib import Path
+            cache_key = hashlib.md5(json.dumps({
+                "cache_version": 1,
+                "method": method,
+                "artifact_id": self.config[f"{method}_artifact_id"],
+                "max_item_seq_len": self.config["max_item_seq_len"],
+                "label_policy": "history_window_last_next_item",
+            }, sort_keys=True).encode()).hexdigest()[:10]
+            return str(Path(self.config[f"{method}_cache"]) / "samples" /
+                       f"tokenized_datasets_TigerDiff_{cache_key}")
         cache_config = {
             "cache_version": 1,
             "tokenizer": self.__class__.__name__,
@@ -167,6 +179,19 @@ class TigerDiffTokenizer:
         Returns:
             numpy.ndarray: The sentence embeddings.
         """
+
+        method = self.config.get("sent_emb_compression", "pca")
+        if method in {"contrec_vae", "geometry_ae"}:
+            from pathlib import Path
+            if method == "geometry_ae":
+                from compression.geometry_ae.cache import load_features
+            else:
+                from compression.contrec_vae.cache import load_features
+            sent_embs, identity = load_features(self.config[f"{method}_cache"], dataset, self.config)
+            self.config[f"{method}_artifact_id"] = identity
+            self.config[f"{method}_cache"] = str(Path(self.config[f"{method}_cache"]).expanduser().resolve())
+            self.log(f"[TOKENIZER] Loaded standardized frozen {method} features {sent_embs.shape}, artifact {identity}")
+            return sent_embs
 
         sent_embs = self._load_sent_emb(dataset)
 

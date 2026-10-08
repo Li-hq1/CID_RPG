@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import tempfile
 
 import numpy as np
 import torch
@@ -46,6 +47,26 @@ def read_sentence_embeddings(path, dim, n_items=None):
     embeddings = values.reshape(-1, dim)
     if not np.isfinite(embeddings).all():
         raise ValueError(f"Non-finite values in embedding cache {path}.")
+    return embeddings
+
+
+def load_item_sentence_embeddings(dataset, config):
+    """Shared raw item extraction for standalone compression jobs."""
+    path = sentence_embedding_cache_path(config, dataset.cache_dir)
+    if os.path.exists(path):
+        return read_sentence_embeddings(path, config["sent_emb_dim"], dataset.n_items - 1)
+    sentences = [dataset.item2meta[item] for item in dataset.id_mapping["id2item"][1:]]
+    embeddings = encode_sentences(sentences, config)
+    directory = os.path.dirname(path)
+    os.makedirs(directory, exist_ok=True)
+    with tempfile.NamedTemporaryFile(dir=directory, delete=False) as stream:
+        temporary = stream.name
+    try:
+        embeddings.tofile(temporary)
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
     return embeddings
 
 

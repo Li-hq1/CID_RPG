@@ -98,8 +98,11 @@ class EngineTest(unittest.TestCase):
                 loaded = TinyModel()
                 load_checkpoint(loaded, checkpoint, torch.device("cpu:0"))
                 torch.testing.assert_close(loaded.weight, snapshots[1])
-                final_model, _ = prepare_test_model(model, loader, accelerator, checkpoint)
-                torch.testing.assert_close(accelerator.unwrap_model(final_model).weight, snapshots[1])
+                best = Path(directory) / "best.pth"
+                state = load_checkpoint(TinyModel(), best, "cpu")
+                self.assertEqual((state["epoch"], state["best_epoch"]), (1, 1))
+                final_model, _ = prepare_test_model(model, loader, accelerator, best)
+                torch.testing.assert_close(accelerator.unwrap_model(final_model).weight, snapshots[0])
         finally:
             accelerator.end_training()
 

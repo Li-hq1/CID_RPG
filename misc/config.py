@@ -2,6 +2,7 @@ import argparse
 from copy import deepcopy
 
 from config import CONFIG
+from models.evaluation_sampling import validate_eval_sampling
 
 
 def boolean(value):
@@ -13,6 +14,7 @@ def boolean(value):
 
 
 def validate_config(config):
+    validate_eval_sampling(config)
     positive = ("lr", "train_batch_size", "eval_batch_size", "max_item_seq_len",
                 "n_embd", "n_layer", "n_head", "n_inner", "diffloss_w", "diffloss_d",
                 "num_sampling_steps", "rectified_flow_steps", "diffusion_batch_mul",
@@ -67,17 +69,33 @@ def validate_config(config):
         raise ValueError("Unsupported sent_emb_dtype.")
     if not 0 <= config["sent_emb_pca"] <= config["sent_emb_dim"]:
         raise ValueError("sent_emb_pca must be between 0 and sent_emb_dim.")
+    compression = config.get("sent_emb_compression", "pca")
+    if compression not in {"pca", "contrec_vae", "geometry_ae"}:
+        raise ValueError("sent_emb_compression must be pca, contrec_vae or geometry_ae.")
+    if compression == "geometry_ae" and not config.get("geometry_ae_cache"):
+        raise ValueError("geometry_ae_cache is required; pretrain the AE independently first.")
+    if compression == "contrec_vae":
+        if not config.get("contrec_vae_cache"):
+            raise ValueError("contrec_vae_cache is required; pretrain the VAE independently first.")
+        if config["sent_emb_model"] != "Qwen/Qwen3-Embedding-4B" or config["sent_emb_dim"] != 2560:
+            raise ValueError("ContRec VAE requires Qwen/Qwen3-Embedding-4B with 2560 dimensions.")
 
 
 def parse_config(argv=None):
     parser = argparse.ArgumentParser(description="Train the continuous TigerDiff recommender.", allow_abbrev=False)
+    parser.add_argument("--config", choices=["config.py", "config_transformer.py"], default="config.py",
+                        help="Select current defaults or the preserved pre-HSTU Transformer configuration.")
     parser.add_argument("--checkpoint", default=None)
     parser.add_argument("--smoke-test", "--smoke_test", dest="smoke_test", action="store_true")
     # Accepted only for compatibility with old TigerDiff launch commands.
     parser.add_argument("--model", choices=["TigerDiff"], default="TigerDiff")
     parser.add_argument("--dataset", choices=["AmazonReviews2014"], default="AmazonReviews2014")
     parser.add_argument("--category")
+    parser.add_argument("--cache_dir", help="Root containing dataset and feature caches.")
     parser.add_argument("--run_id")
+    parser.add_argument("--ckpt_dir")
+    parser.add_argument("--rand_seed", type=int)
+    parser.add_argument("--patience", type=int)
     parser.add_argument("--encoder_type", choices=["transformer", "hstu"])
     parser.add_argument("--hstu_hidden_dim", type=int)
     parser.add_argument("--hstu_attention_dim", type=int)
@@ -88,6 +106,9 @@ def parse_config(argv=None):
     parser.add_argument("--sent_emb_model")
     parser.add_argument("--sent_emb_dim", type=int)
     parser.add_argument("--sent_emb_pca", type=int)
+    parser.add_argument("--sent_emb_compression", choices=["pca", "contrec_vae", "geometry_ae"])
+    parser.add_argument("--contrec_vae_cache", help="Pretrained ContRec_VAE experiment directory.")
+    parser.add_argument("--geometry_ae_cache", help="Pretrained Geometry_AE experiment directory.")
     parser.add_argument("--sent_emb_batch_size", type=int)
     parser.add_argument("--sent_emb_max_length", type=int)
     parser.add_argument("--sent_emb_dtype", choices=["auto", "float32", "float16", "bfloat16"])
@@ -98,13 +119,20 @@ def parse_config(argv=None):
     parser.add_argument("--lr", type=float)
     parser.add_argument("--train_batch_size", type=int)
     parser.add_argument("--eval_batch_size", type=int)
+    parser.add_argument("--eval_sampling_mode", choices=["knn", "diffusion_multi"])
+    parser.add_argument("--eval_num_samples", type=int)
+    parser.add_argument("--eval_candidates_per_sample", type=int)
+    parser.add_argument("--eval_candidate_metric", choices=["l2", "cosine", "inner_product"])
+    parser.add_argument("--eval_candidate_ranking", choices=["support", "first_seen", "min_distance"])
+    parser.add_argument("--eval_support_temperature", type=float)
+    parser.add_argument("--eval_log_sampling_stats", type=boolean)
     parser.add_argument("--epochs", type=int)
     parser.add_argument("--warmup_ratio", type=float,
                         help="Fraction of planned training used for linear warmup (default: 0.05).")
     parser.add_argument("--warmup_steps", type=int,
                         help="Fixed warmup steps; overrides warmup_ratio, including 0 to disable warmup.")
     parser.add_argument("--save_interval", type=int,
-                        help="Overwrite the latest checkpoint every N epochs and at training end.")
+                        help="Overwrite latest every N epochs and at training end; best saves on validation improvement.")
     parser.add_argument("--steps", type=int)
     parser.add_argument("--diffloss_w", type=int)
     parser.add_argument("--diffloss_d", type=int)
@@ -124,17 +152,24 @@ def parse_config(argv=None):
     mode.add_argument("--resume", action="store_true",
                         help="Resume optimizer, scheduler and epoch state from the latest checkpoint.")
     mode.add_argument("--eval-only", "--eval_only", dest="eval_only", action="store_true",
-                        help="Skip training and evaluate the latest checkpoint, or --checkpoint if provided.")
+                        help="Skip training and evaluate the best checkpoint, or --checkpoint if provided.")
     args = parser.parse_args(argv)
-    config = deepcopy(CONFIG)
+    if args.config == "config_transformer.py":
+        from config_transformer import CONFIG as transformer_config
+        config = deepcopy(transformer_config)
+        config["encoder_type"] = "transformer"
+    else:
+        config = deepcopy(CONFIG)
     for key, value in vars(args).items():
-        if key in config and value is not None:
+        if (key in config or key.startswith("hstu_") or key in {
+                "sent_emb_compression", "contrec_vae_cache", "geometry_ae_cache"}) and value is not None:
             config[key] = value
     if args.warmup_ratio is not None and args.warmup_steps is None:
         config["warmup_steps"] = None
     config.update(model=args.model, dataset=args.dataset)
     if args.smoke_test:
         config.update(epochs=1, steps=None, warmup_steps=0, train_batch_size=32, eval_batch_size=32)
+        config["smoke_test"] = True
     validate_config(config)
     run_id = str(config["run_id"])
     if not run_id or run_id in {".", ".."} or "/" in run_id or "\\" in run_id:

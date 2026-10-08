@@ -13,6 +13,7 @@ import torch.nn.functional as F
 
 from models.diffusion.diffloss import DiffLoss
 from models.hstu import HSTUSequenceEncoder
+from models.evaluation_sampling import aggregate_diffusion_candidates, validate_eval_sampling
 
 
 class InputProj(nn.Module):
@@ -261,6 +262,7 @@ class TigerDiff(nn.Module):
             raise ValueError("temperature must be positive.")
 
         self.knn_metric = self.config.get("tiger_knn_metric", "inner_product")
+        validate_eval_sampling(self.config)
         if self.knn_metric not in {"inner_product", "cosine", "l2"}:
             raise ValueError(
                 "tiger_knn_metric must be one of: inner_product, cosine, l2."
@@ -409,9 +411,7 @@ class TigerDiff(nn.Module):
         outputs.diff_loss = outputs.loss
         return outputs
 
-    def generate(self, batch, n_return_sequences=1):
-        outputs = self.forward(batch, return_loss=False)
-        condition = outputs.final_states
+    def _sample_condition(self, condition):
         sample_condition = condition
         if self.cfg_scale != 1.0:
             sample_condition = torch.cat(
@@ -428,7 +428,26 @@ class TigerDiff(nn.Module):
             temperature=self.diff_temperature,
             cfg=self.cfg_scale,
         )
-        generated_embs = generated_embs[: condition.shape[0]]
+        return generated_embs[: condition.shape[0]]
+
+    @torch.no_grad()
+    def generate(self, batch, n_return_sequences=1):
+        if n_return_sequences <= 0:
+            raise ValueError("n_return_sequences must be positive.")
+        self.last_generation_stats = None
+        outputs = self.forward(batch, return_loss=False)
+        condition = outputs.final_states
+        if self.config.get("eval_sampling_mode", "knn") == "diffusion_multi":
+            n_samples = self.config.get("eval_num_samples", 8)
+            generated_embs = self._sample_condition(condition.repeat_interleave(n_samples, dim=0))
+            generated_embs = generated_embs.reshape(condition.shape[0], n_samples, -1)
+            preds, stats = aggregate_diffusion_candidates(
+                generated_embs, self.item_id2embs[1:], n_return_sequences, self.config,
+            )
+            if self.config.get("eval_log_sampling_stats", False):
+                self.last_generation_stats = stats
+            return preds
+        generated_embs = self._sample_condition(condition)
         item_logits = self._item_similarity_logits(generated_embs)
-        preds = item_logits.topk(n_return_sequences, dim=-1).indices + 1
+        preds = item_logits.topk(min(n_return_sequences, item_logits.shape[1]), dim=-1).indices + 1
         return preds.unsqueeze(-1)

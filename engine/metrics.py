@@ -22,7 +22,7 @@ class Evaluator:
     def calculate_pos_index(self, preds, labels):
         preds = preds.detach().cpu()
         labels = labels.detach().cpu()
-        assert preds.shape[1] == self.maxk, f"preds.shape[1] = {preds.shape[1]} != {self.maxk}"
+        assert preds.shape[1] <= self.maxk, f"preds.shape[1] = {preds.shape[1]} > {self.maxk}"
 
         pos_index = torch.zeros((preds.shape[0], self.maxk), dtype=torch.bool)
         for i in range(preds.shape[0]):
@@ -30,7 +30,7 @@ class Evaluator:
             if self.eos_token in cur_label:
                 eos_pos = cur_label.index(self.eos_token)
                 cur_label = cur_label[:eos_pos]
-            for j in range(self.maxk):
+            for j in range(preds.shape[1]):
                 cur_pred = preds[i, j].tolist()
                 if cur_pred == cur_label:
                     pos_index[i, j] = True

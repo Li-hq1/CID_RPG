@@ -36,6 +36,7 @@ def checkpoint_paths(config: dict) -> dict[str, Path]:
     return {
         "root": root,
         "latest": root / f"latest_{config['run_id']}.pth",
+        "best": root / f"best_{config['run_id']}.pth",
         # Compatibility alias: text logs now live directly under the experiment root.
         "logs": root,
         "log": root / f"{config.get('run_mode', 'train')}_{get_file_name(config, '.log')}",

@@ -17,6 +17,13 @@ CONFIG = {
     },
     "sent_emb_dim": 2560,
     "sent_emb_pca": 128,
+    # compression method
+    "sent_emb_compression": "geometry_ae",  # pca | contrec_vae | geometry_ae.
+    "geometry_ae_cache": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad", # 相关约束
+    # "geometry_ae_cache": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3",  # 相关约束 + 局部软标签关系蒸馏
+    # "geometry_ae_cache": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf",  # 相关约束 + 关系蒸馏
+    "contrec_vae_cache": None,  # Complete ContRec_VAE experiment directory.
+    
     "sent_emb_batch_size": 8,
     "sent_emb_max_length": 512,
     "sent_emb_dtype": "auto",  # BF16 on supported GPUs; FP32 on CPU.
@@ -47,7 +54,7 @@ CONFIG = {
     "hstu_attention_scaling": "input_length",  # input_length | max_seq_len
 
     # Diffusion / rectified flow and item retrieval
-    "diffloss_w": 512,
+    "diffloss_w": 512, # 512
     "diffloss_d": 3,
     "num_sampling_steps": 20,
     "diffusion_batch_mul": 1,
@@ -62,7 +69,7 @@ CONFIG = {
     "tiger_knn_metric": "cosine",
 
     # ---------------------- optimization ----------------------
-    "lr": 0.0005,
+    "lr": 5e-4, # 5e-4
     "epochs": 100, # 150
     "weight_decay": 0.01,
     "train_batch_size": 256,
@@ -70,11 +77,20 @@ CONFIG = {
     "warmup_steps": None,  # Optional fixed-step override; None uses warmup_ratio.
     "steps": None,
     "max_grad_norm": 1.0,
-    "save_interval": 20,  # Overwrite latest every N epochs; always save on completion.
+    "save_interval": 20,  # Overwrite latest every N epochs; best saves on validation improvement.
 
     # ---------------------- evaluation ----------------------
     "eval_batch_size": 64,
-    "eval_interval": 1,
+    "eval_interval": 5,
+    "eval_sampling_mode": "diffusion_multi",  # knn | diffusion_multi
+    # diffusion multi params
+    "eval_num_samples": 32,
+    "eval_candidates_per_sample": 1,
+    "eval_candidate_metric": "l2",  # l2 | cosine | inner_product
+    "eval_candidate_ranking": "support",  # support | first_seen | min_distance
+    "eval_support_temperature": 1.0,
+    "eval_log_sampling_stats": True,
+    # eval basic params
     "patience": 20,
     "topk": [5, 10],
     "metrics": ["ndcg", "recall"],
