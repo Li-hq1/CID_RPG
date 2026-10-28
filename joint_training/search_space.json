@@ -1,0 +1,30 @@
+{
+  "study_name": "joint_contrastive_search",
+  "n_trials": 50,
+  "timeout": null,
+  "direction": "maximize",
+  "sampler": "tpe",
+  "pruner": "median",
+  "pruner_startup_trials": 5,
+  "pruner_warmup_steps": 30,
+  "enqueue_baseline": true,
+  "parameters": [
+    {"path": "training.epochs", "type": "int", "low": 50, "high": 300, "step": 30, "log": false},
+    {"path": "recommender.train_batch_size", "type": "categorical", "choices": [128, 256, 512, 1024]},
+    {"path": "ae.lr", "type": "float", "low": 0.000001, "high": 0.001, "log": true},
+    {"path": "ae.weight_decay", "type": "float", "low": 0.000001, "high": 0.001, "log": true},
+    {"path": "ae.warmup_ratio", "type": "float", "low": 0.0, "high": 0.2, "log": false},
+    {"path": "ae.cosine_weight", "type": "float", "low": 0.0, "high": 1.0, "log": false},
+    {"path": "ae.variance_weight", "type": "float", "low": 0.0, "high": 1.0, "log": false},
+    {"path": "ae.correlation_weight", "type": "float", "low": 0.1, "high": 2.0, "log": false},
+    {"path": "recommender.lr", "type": "float", "low": 0.000001, "high": 0.001, "log": true},
+    {"path": "recommender.weight_decay", "type": "float", "low": 0.0001, "high": 0.1, "log": true},
+    {"path": "recommender.warmup_ratio", "type": "float", "low": 0.0, "high": 0.2, "log": false},
+    {"path": "recommender.hstu_output_dropout", "type": "float", "low": 0.0, "high": 0.3, "log": false},
+    {"path": "recommender.tiger_uncond_prob", "type": "float", "low": 0.0, "high": 0.3, "log": false},
+    {"path": "recommender.tiger_guidance_weight", "type": "float", "low": 0.0, "high": 4.0, "log": false},
+    {"path": "contrastive.weight", "type": "float", "low": 0.0001, "high": 0.1, "log": true},
+    {"path": "contrastive.temperature", "type": "float", "low": 0.01, "high": 0.5, "log": true},
+    {"path": "contrastive.num_negatives", "type": "categorical", "choices": [16, 32, 64, 128, 256, 512]}
+  ]
+}

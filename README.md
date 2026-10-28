@@ -495,3 +495,12 @@ and other legacy logs remain readable by the log plotter.
 
 TensorBoard tracking remains optional: install `tensorboard` to enable event
 files. Text training logs are written regardless.
+
+## Independent Joint AE Training
+
+The standalone `python -m joint_training` entry point trains GeometryAE and a
+continuous HSTU/Transformer + Rectified Flow recommender with separate optimizers,
+per-item LayerNorm over latents, and an optional contrastive loss. It uses
+its own configuration and checkpoints. See [the joint-training design and usage
+guide](joint_training/README.md); `bash scripts/train_joint.sh` launches it.
+`bash scripts/search_joint_contrastive.sh` searches that configuration with Optuna.

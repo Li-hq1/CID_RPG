@@ -29,7 +29,7 @@ class DiffLoss(nn.Module):
 
         # Adjust output channels based on diffusion type
         if use_rectified_flow:
-            # For rectified flow, we only predict velocity
+            # Rectified flow predicts one velocity vector per target latent.
             out_channels = target_channels
         else:
             # For gaussian diffusion, we predict epsilon and variance
@@ -48,10 +48,10 @@ class DiffLoss(nn.Module):
         # Initialize diffusion based on type
         if use_rectified_flow:
             self.train_diffusion = create_rectified_flow(
-                num_timesteps=rectified_flow_steps
+                num_timesteps=rectified_flow_steps,
             )
             self.gen_diffusion = create_rectified_flow(
-                num_timesteps=rectified_flow_steps
+                num_timesteps=rectified_flow_steps,
             )
         else:
             # Use existing gaussian diffusion
@@ -72,7 +72,7 @@ class DiffLoss(nn.Module):
             dtype=z.dtype,
         )
 
-    def forward(self, target, z, mask=None):
+    def forward(self, target, z, mask=None, return_prediction=False):
         if self.use_rectified_flow:
             # Rectified flow training
             t = torch.randint(
@@ -82,10 +82,16 @@ class DiffLoss(nn.Module):
                 device=target.device,
             )
             model_kwargs = dict(c=z)
-            loss_dict = self.train_diffusion.training_losses(
-                self.net, target, t, model_kwargs
-            )
-            loss = loss_dict["loss"]
+            noise = torch.randn_like(target)
+            x_t = self.train_diffusion.q_sample(target, t, noise)
+            prediction = self.net(x_t, t, **model_kwargs)
+            target_velocity = noise - target
+            loss = torch.nn.functional.mse_loss(prediction, target_velocity, reduction="none")
+            loss = loss.reshape(loss.shape[0], -1).mean(dim=1)
+            t_norm = t.float() / (self.train_diffusion.num_timesteps - 1)
+            while len(t_norm.shape) < len(x_t.shape):
+                t_norm = t_norm.unsqueeze(-1)
+            prediction_xc = x_t - t_norm * prediction
         else:
             # Original gaussian diffusion training
             t = torch.randint(
@@ -102,7 +108,8 @@ class DiffLoss(nn.Module):
 
         if mask is not None:
             loss = (loss * mask).sum() / mask.sum()
-        return loss.mean()
+        result = loss.mean()
+        return (result, prediction_xc) if return_prediction and self.use_rectified_flow else result
 
     def sample(self, z, temperature=1.0, cfg=1.0):
         if self.use_rectified_flow:
@@ -345,7 +352,7 @@ class SimpleMLPAdaLN(nn.Module):
 
         if self.grad_checkpointing and not torch.jit.is_scripting():
             for block in self.res_blocks:
-                x = checkpoint(block, x, y)
+                x = checkpoint(block, x, y, use_reentrant=False)
         else:
             for block in self.res_blocks:
                 x = block(x, y)
