@@ -1,0 +1,11 @@
+{
+  "id": "structure_condition_linear_only_s2024",
+  "stage": "structure",
+  "seed": 2024,
+  "parent": "starting_point_sports_rec_lr_half_s2024",
+  "reference": "starting_point_sports_rec_lr_half_s2024",
+  "hypothesis": "保留 HSTU 后的同宽 Linear、去掉前 LN，检验 norm 消融里 Sports 的下降来自缺失投影还是剩余归一化。",
+  "change_reason": "norm 对照已触发 2% 护栏，不能采用；本项只移除前 LN，仍相对原来的 norm_linear，不叠在已拒绝的 norm 结果上。",
+  "shared": {"recommender.condition_projection": "linear"},
+  "datasets": {}
+}

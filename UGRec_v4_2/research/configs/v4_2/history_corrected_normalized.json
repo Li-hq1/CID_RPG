@@ -1,0 +1,11 @@
+{
+  "flow_ranking": {
+    "source": "history",
+    "sampling": "uniform_corrected",
+    "negatives": 1024,
+    "normalized_geometry": true
+  },
+  "ae": {
+    "variance_weight": 1.0
+  }
+}

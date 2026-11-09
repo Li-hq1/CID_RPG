@@ -1,0 +1,135 @@
+[
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r4_prior_roll4_text01_s2025_e40",
+    "device": "cuda:0",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Beauty/r4_prior_roll4_text01_s2025_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r4_prior_roll4_text01_s2026_e40",
+    "device": "cuda:1",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Beauty/r4_prior_roll4_text01_s2026_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Sports_and_Outdoors/r4_prior_roll4_text01_s2024_e40",
+    "device": "cuda:2",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Sports_and_Outdoors/r4_prior_roll4_text01_s2024_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Sports_and_Outdoors/r1_ce_only_s2024_e40",
+    "device": "cuda:2",
+    "heads": [
+      "ranking"
+    ]
+  },
+  {
+    "directory": "outputs/iterative_20261028/Sports_and_Outdoors/r4_prior_roll4_text01_s2025_e40",
+    "device": "cuda:3",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Sports_and_Outdoors/r4_prior_roll4_text01_s2025_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Sports_and_Outdoors/r1_ce_only_s2025_e40",
+    "device": "cuda:3",
+    "heads": [
+      "ranking"
+    ]
+  },
+  {
+    "directory": "outputs/iterative_20261028/Sports_and_Outdoors/r4_prior_roll4_text01_s2026_e40",
+    "device": "cuda:4",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Sports_and_Outdoors/r4_prior_roll4_text01_s2026_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Sports_and_Outdoors/r1_ce_only_s2026_e40",
+    "device": "cuda:4",
+    "heads": [
+      "ranking"
+    ]
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r4_prior_roll4_text01_s2024_e40",
+    "device": "cuda:0",
+    "heads": [
+      "flow",
+      "ranking"
+    ]
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r4_prior_roll4_w1_s2024_e40",
+    "device": "cuda:0",
+    "heads": [
+      "flow",
+      "ranking"
+    ]
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r5_candidate_no_rf_s2024_e40",
+    "device": "cuda:5",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Beauty/r6_candidate_lr05_s2024_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r6_candidate_lr05_s2024_e40",
+    "device": "cuda:5",
+    "heads": [
+      "flow",
+      "ranking"
+    ]
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r5_candidate_ce_ae_detached_s2024_e40",
+    "device": "cuda:6",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Beauty/r6_candidate_256_s2024_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r6_candidate_256_s2024_e40",
+    "device": "cuda:6",
+    "heads": [
+      "flow",
+      "ranking"
+    ]
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r6_candidate_hstu_s2024_e40",
+    "device": "cuda:7",
+    "heads": [
+      "flow",
+      "ranking"
+    ],
+    "wait_for": "outputs/iterative_20261028/Beauty/r6_candidate_hstu_s2024_e40/results.json"
+  },
+  {
+    "directory": "outputs/iterative_20261028/Beauty/r4_prior_4step_control_s2024_e40",
+    "device": "cuda:7",
+    "heads": [
+      "flow",
+      "ranking"
+    ]
+  }
+]

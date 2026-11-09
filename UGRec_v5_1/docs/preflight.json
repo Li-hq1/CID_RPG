@@ -1,0 +1,58 @@
+{
+  "beauty": {
+    "category": "Beauty",
+    "embedding_path": "/home/haoquan/CID_RPG/UGRec_v5_1/cache/AmazonReviews2014/Beauty/processed/Qwen3-Embedding-4B_d14cc3313ecc.sent_emb",
+    "item_order_sha256": "cdbce06cc43dd5e086f3b491595a686e24066ce1fceacb49852cfdd60cfdeb69",
+    "items": 12101,
+    "raw_sha256": "e353718d4e922f10fb829b10611624a609b7fde5e0eba2e79a4e5895b41a36fd",
+    "selection_indices_sha256": "d2f334a3ccd62bb1dbbb37440b57e8351e4fd4b59aece7b66c2cf843808d121d",
+    "test_accessed": false,
+    "train_sha256": "04412b17ff3993742c30b70a847a0b617a008bc359ee550866e470a9d1b8b108",
+    "training_windows": 25745,
+    "users": 22363,
+    "validation_histories_sha256": "7420458fd85df15e33e659bb39738ca7033ad0647504374a083a37eea5df794d",
+    "validation_targets_sha256": "9d407574b46e1736f12829ec799467fbdc89ccabd34dd3fe1edd87a0d17d26fb"
+  },
+  "cds": {
+    "category": "CDs_and_Vinyl",
+    "embedding_path": "/home/haoquan/CID_RPG/UGRec_v5_1/cache/AmazonReviews2014/CDs_and_Vinyl/processed/Qwen3-Embedding-4B_d14cc3313ecc.sent_emb",
+    "item_order_sha256": "7f20634aafb9a0dc2de6adbe58b9dc5ef3f70440877a87b310bd384113bfa26b",
+    "items": 64443,
+    "raw_sha256": "826a8fde49194f792eba19dbacc6711b97257882be1ce41d9b8a6a4f5c9425f4",
+    "selection_indices_sha256": "fa4425b037797a7b3ed9ac0b81e47f8da41c25512a15a6c9a7360657bcf38f36",
+    "test_accessed": false,
+    "train_sha256": "727a6fa2e602ac03b7f45aa4715696598402f9cd606e785a83a4181d83772b51",
+    "training_windows": 286464,
+    "users": 75258,
+    "validation_histories_sha256": "b5aea22df8dd5f88636d765a5c55b97b0fccac4c1911dab7e8ce21e4f2b9fc2f",
+    "validation_targets_sha256": "7c94079a396792070a533a9a9657fbe3b430736cba5bc4f38ca233df636df363"
+  },
+  "sports": {
+    "category": "Sports_and_Outdoors",
+    "embedding_path": "/home/haoquan/CID_RPG/UGRec_v5_1/cache/AmazonReviews2014/Sports_and_Outdoors/processed/Qwen3-Embedding-4B_d14cc3313ecc.sent_emb",
+    "item_order_sha256": "27f3024d10dcc64db4266624c1a02b17be9e57221eb4a7f9f09607e7abd25350",
+    "items": 18357,
+    "raw_sha256": "75648690faa30c5171d16eff6d073f10a524682ddef6c8fcf0489281c5508cc6",
+    "selection_indices_sha256": "c1b9e03e1d16242a168cf2e9137f2195d071b1f209c32ba8a7dd5244c1060ab3",
+    "test_accessed": false,
+    "train_sha256": "6f76671cb3f208ba12b4fe2f18258ef690398f3b695585e3ed90787f49667e6e",
+    "training_windows": 37197,
+    "users": 35598,
+    "validation_histories_sha256": "6b12fe04f7a72be68982977a48348e8f9fdf6914c31c9c9d7ee374b1a89abf91",
+    "validation_targets_sha256": "130727645eca5e84384f0af719c6dbdde791cf936847fb6e6404c2480fe99729"
+  },
+  "toys": {
+    "category": "Toys_and_Games",
+    "embedding_path": "/home/haoquan/CID_RPG/UGRec_v5_1/cache/AmazonReviews2014/Toys_and_Games/processed/Qwen3-Embedding-4B_d14cc3313ecc.sent_emb",
+    "item_order_sha256": "fe8253f57acbfdfcc4dff089b8ef84bfbe47aa79eaa9a959df20f7b1f2106d12",
+    "items": 11924,
+    "raw_sha256": "a3acdf5163a1e07c2c637a2a45c1ed850fde0d2506e8282a3a8646d8d3d8e8f2",
+    "selection_indices_sha256": "df2263c0943e890e6a45257257049851c288f683e259e6a75862c2cc5092ef05",
+    "test_accessed": false,
+    "train_sha256": "2c318440fffb7cdfe6d10ac16b73ec29d4251702107e099ddac1c8432694940d",
+    "training_windows": 22181,
+    "users": 19412,
+    "validation_histories_sha256": "0adbc65c64eb421c7767be8edc089b16ba978e9c793f2ac3a48c9a4c8e8fa586",
+    "validation_targets_sha256": "fb86e52b2f55a1af3fa2ce3647b65b44f5611453567bdb89fc201e270013d0f4"
+  }
+}

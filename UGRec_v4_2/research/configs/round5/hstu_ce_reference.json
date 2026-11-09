@@ -1,0 +1,8 @@
+{
+  "ranking": {
+    "rf_weight": 0.0
+  },
+  "recommender": {
+    "encoder_type": "hstu"
+  }
+}

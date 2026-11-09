@@ -1,0 +1,83 @@
+[
+  {
+    "name": "s1_noise_roll_contrastive",
+    "config": "research/configs/v4_2/noise_roll_contrastive.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_roll_contrastive",
+    "config": "research/configs/v4_2/history_roll_contrastive.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_endpoint_contrastive",
+    "config": "research/configs/v4_2/noise_endpoint_contrastive.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_endpoint_contrastive",
+    "config": "research/configs/v4_2/history_endpoint_contrastive.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_roll_pairwise",
+    "config": "research/configs/v4_2/noise_roll_pairwise.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_roll_pairwise",
+    "config": "research/configs/v4_2/history_roll_pairwise.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_roll_distance",
+    "config": "research/configs/v4_2/noise_roll_distance.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_random_time",
+    "config": "research/configs/v4_2/noise_random_time.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_sampled_direct",
+    "config": "research/configs/v4_2/sampled_direct.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  }
+]

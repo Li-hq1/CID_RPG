@@ -1,0 +1,56 @@
+[
+  {
+    "name": "s1_coupled_corrected",
+    "config": "research/configs/v4_2/coupled_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_coupled_pairwise",
+    "config": "research/configs/v4_2/coupled_pairwise.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_coupled_distance",
+    "config": "research/configs/v4_2/coupled_distance.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_pairwise_random",
+    "config": "research/configs/v4_2/history_pairwise_random.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_pairwise_weight5",
+    "config": "research/configs/v4_2/history_pairwise_weight5.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_pairwise_variance10",
+    "config": "research/configs/v4_2/history_pairwise_variance10.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  }
+]

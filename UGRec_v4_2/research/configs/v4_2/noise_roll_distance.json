@@ -1,0 +1,8 @@
+{
+  "flow_ranking": {
+    "source": "noise",
+    "path": "rollout",
+    "objective": "flow_distance",
+    "temperature": 0.14
+  }
+}

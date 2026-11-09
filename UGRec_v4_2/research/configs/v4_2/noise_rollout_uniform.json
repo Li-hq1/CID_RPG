@@ -1,0 +1,8 @@
+{
+  "flow_ranking": {
+    "source": "noise",
+    "path": "rollout",
+    "sampling": "uniform",
+    "negatives": 1024
+  }
+}

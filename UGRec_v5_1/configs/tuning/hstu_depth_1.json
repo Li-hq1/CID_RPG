@@ -1,0 +1,13 @@
+{
+  "id": "structure_hstu_depth_1_s2024",
+  "stage": "shared",
+  "seed": 2024,
+  "parent": "starting_point_sports_rec_lr_half_s2024",
+  "reference": "starting_point_sports_rec_lr_half_s2024",
+  "hypothesis": "Flow深度2→1未形成通过四数据集护栏的共用收益，选模峰值后的下降仍存在。保持Flow两块，只将HSTU层数2→1，检验较小的序列条件容量能否改善泛化并保持四数据集推荐表现；这不预设HSTU已被证明是瓶颈。",
+  "change_reason": "阶段3b下一项有限容量对照：只改recommender.n_layer，保留AE、Flow、全部过渡结构与数据集专用参数；不与已拒绝的Flow depth1叠加。完成此第二个容量候选后检查信息收益，不自动展开宽度/AE/层数组合。",
+  "shared": {
+    "recommender.n_layer": 1
+  },
+  "datasets": {}
+}

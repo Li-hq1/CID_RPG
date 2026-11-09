@@ -1,0 +1,7 @@
+{
+  "flow_ranking": {
+    "path": "coupled",
+    "sampling": "uniform_corrected",
+    "negatives": 1024
+  }
+}

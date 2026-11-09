@@ -1,0 +1,10 @@
+{
+  "flow_ranking": {
+    "path": "endpoint",
+    "source": "history",
+    "sampling": "uniform_corrected",
+    "negatives": 1024,
+    "weight": 2.0,
+    "depth_dropout": 0.5
+  }
+}

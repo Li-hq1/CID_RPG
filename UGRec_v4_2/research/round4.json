@@ -1,0 +1,74 @@
+[
+  {
+    "name": "r4_noise_roll4_w1",
+    "config": "research/configs/round4/noise_roll4_w1.json",
+    "category": "Beauty",
+    "device": "cuda:0",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_noise_endpoint1_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_noise_roll4_w5",
+    "config": "research/configs/round4/noise_roll4_w5.json",
+    "category": "Beauty",
+    "device": "cuda:1",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_noise_endpoint5_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_w1",
+    "config": "research/configs/round4/prior_roll4_w1.json",
+    "category": "Beauty",
+    "device": "cuda:2",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_prior_endpoint1_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_w5",
+    "config": "research/configs/round4/prior_roll4_w5.json",
+    "category": "Beauty",
+    "device": "cuda:3",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_prior_endpoint5_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_rf01",
+    "config": "research/configs/round4/prior_roll4_rf01.json",
+    "category": "Beauty",
+    "device": "cuda:4",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_prior_endpoint1_rf01_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_no_rf",
+    "config": "research/configs/round4/prior_roll4_no_rf.json",
+    "category": "Beauty",
+    "device": "cuda:5",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_prior_endpoint1_no_rf_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_text01",
+    "config": "research/configs/round4/prior_roll4_text01.json",
+    "category": "Beauty",
+    "device": "cuda:6",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_prior_endpoint1_text01_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_prior_4step_control",
+    "config": "research/configs/round4/prior_4step_control.json",
+    "category": "Beauty",
+    "device": "cuda:7",
+    "seed": 2024,
+    "epochs": 40,
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_prior_endpoint1_fast_ae_s2024_e40/results.json"
+  }
+]

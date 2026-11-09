@@ -1,0 +1,97 @@
+[
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad",
+    "relation_mode": "none",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3",
+    "relation_mode": "local",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477",
+    "relation_mode": "local",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7",
+    "relation_mode": "local",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113",
+    "relation_mode": "none",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/c0cf0e0f78d6e35ded27",
+    "relation_mode": "batch",
+    "identity_matches": true
+  },
+  {
+    "path": "outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49",
+    "relation_mode": "batch",
+    "identity_matches": true
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "ranking": {
+    "endpoint_weight": 5.0,
+    "prediction_weight": 0.2
+  }
+}

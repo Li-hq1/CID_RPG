@@ -1,0 +1,10 @@
+{
+  "flow_ranking": {
+    "objective": "directional",
+    "path": "metric_rf",
+    "normalized_geometry": true
+  },
+  "ae": {
+    "variance_weight": 10.0
+  }
+}

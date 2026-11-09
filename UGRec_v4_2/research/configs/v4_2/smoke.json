@@ -1,0 +1,15 @@
+{
+  "flow_ranking": {
+    "enabled": true
+  },
+  "recommender": {
+    "num_sampling_steps": 5,
+    "tiger_uncond_prob": 0.0,
+    "tiger_guidance_weight": 0.0
+  },
+  "training": {
+    "evaluate_test": false,
+    "output_dir": "outputs/smoke",
+    "run_id": "v42_unified"
+  }
+}

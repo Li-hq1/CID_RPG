@@ -1,0 +1,9 @@
+{
+  "flow_ranking": {
+    "source": "history",
+    "objective": "pairwise"
+  },
+  "ae": {
+    "variance_weight": 10.0
+  }
+}

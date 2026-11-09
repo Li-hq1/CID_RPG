@@ -1,0 +1,10 @@
+{
+  "flow_ranking": {
+    "source": "history",
+    "objective": "pairwise",
+    "normalized_geometry": true
+  },
+  "ae": {
+    "variance_weight": 10.0
+  }
+}

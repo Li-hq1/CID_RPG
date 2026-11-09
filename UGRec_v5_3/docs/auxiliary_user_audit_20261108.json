@@ -1,0 +1,14 @@
+{
+  "model_metrics_used": false,
+  "test_targets_accessed": false,
+  "training_length_quantiles": [
+    2.0,
+    3.0,
+    5.0,
+    9.0,
+    198.0
+  ],
+  "users": 8300,
+  "users_with_complete_training_future_window": 5123,
+  "users_without_complete_training_future_window": 3177
+}

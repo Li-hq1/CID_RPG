@@ -1,0 +1,20 @@
+[
+  {
+    "name": "s2_hstu_endpoint",
+    "config": "research/configs/v4_2/hstu_endpoint.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:1",
+    "audit": "full"
+  },
+  {
+    "name": "s2_hstu_direct",
+    "config": "research/configs/v4_2/hstu_direct.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:1",
+    "audit": "full"
+  }
+]

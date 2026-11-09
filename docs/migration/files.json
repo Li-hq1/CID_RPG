@@ -1,0 +1,2442 @@
+{
+  "date": "2026-10-28",
+  "files": [
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-204445-715431_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-204445-715431_eval_only.log",
+      "bytes": 5949,
+      "sha256": "db1fb4b873600442131093615504471e76dbf3d3954f86e387d80e28e642d49a"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-204907-728378_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-204907-728378_eval_only.log",
+      "bytes": 5949,
+      "sha256": "39669e0b65418243f4dbc032bf13e7f346f1b3c5fdab460d680ddf2b9f315c8e"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-210838-646420_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-210838-646420_eval_only.log",
+      "bytes": 3063,
+      "sha256": "bfb6e6147b7b86aa50d86e869a619a708b6925cd14fc2695a7488c6dfcd3fc50"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-210029-193970_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-210029-193970_eval_only.log",
+      "bytes": 5967,
+      "sha256": "44024e7801662856d5809e47bd79f030b261dbff45e7f516760a714bd1bd48eb"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-205718-943768_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-205718-943768_eval_only.log",
+      "bytes": 5969,
+      "sha256": "7aa5694547a1a56e82907a78859970c7f2893dc0156d79a5d4b286e548bc4c76"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-204849-446403_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-204849-446403_eval_only.log",
+      "bytes": 5947,
+      "sha256": "aca90331be34fb9c0a3efa6b723ea0c81222c63600f847381d2820f0f8b4eb4d"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-205754-525305_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-205754-525305_eval_only.log",
+      "bytes": 5967,
+      "sha256": "7a10682f99a9313089be097a390bdf86a1064d4479c01842cc85c54324cbb3f7"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-205531-502089_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-205531-502089_eval_only.log",
+      "bytes": 5942,
+      "sha256": "205565b72cbee5b2954d968b7540275d7e58fbbe5a678e4a2d4bb55e0a93213f"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-210058-007493_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-210058-007493_eval_only.log",
+      "bytes": 5970,
+      "sha256": "218da23792039f1b24f051f355b1a7dc24177a8fb4b11a3bf6406cbdc7437530"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-170617-605226_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-170617-605226_eval_only.log",
+      "bytes": 6568,
+      "sha256": "adf8bcc995d1561cbaba432e07aa48fafc26b7f6aab8f96b5ff50c9eaacf45e2"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-205222-831216_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-205222-831216_eval_only.log",
+      "bytes": 5945,
+      "sha256": "74ecaebaf430ceb2fe10e4b2eed41d7a14b52257964029fb0a3a1357943444e1"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-170508-534343_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-170508-534343_eval_only.log",
+      "bytes": 6354,
+      "sha256": "42a56f4910820e2ad0426219e5c3b2322357ef42f52880da549f49c3d92eca52"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-211159-981036_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-211159-981036_eval_only.log",
+      "bytes": 5967,
+      "sha256": "7c432d711ec9cd65023b4a83f38d0d860b4b8cf48a70faf7e86dcd9a62af2152"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/results.json",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/results.json",
+      "bytes": 727,
+      "sha256": "83fd62a50f0ce3d2da6bf7861ffdd3e5f02d8781a26946144fe32b313c983648"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-211842-648355_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-211842-648355_eval_only.log",
+      "bytes": 5969,
+      "sha256": "df210a256e5819ebba4c9766de27ab27b0311768d7bdcb9546f8e5af25c89aaf"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-212259-704105_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-212259-704105_eval_only.log",
+      "bytes": 5973,
+      "sha256": "dadc774763cd2301c374304690313cf617eed5ca43bd2d3da0995709683fc050"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-171326-135325_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-171326-135325_eval_only.log",
+      "bytes": 5810,
+      "sha256": "7ba93063ddf2a3f6e4ac9354ba2ab76304396d7a4a8f0491cf430fc7553395c0"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-204558-020228_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-204558-020228_eval_only.log",
+      "bytes": 5956,
+      "sha256": "d8401345bbce100c218ae52b31767957e6c4486877244c472d8318b0124b86a1"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-210336-926192_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-210336-926192_eval_only.log",
+      "bytes": 5942,
+      "sha256": "1455139b243dee74a257677e8f2df7837db9aa104ac983ef5a9fa171c00b71d1"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-205256-237993_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-205256-237993_eval_only.log",
+      "bytes": 5943,
+      "sha256": "4ee8fffc07b1e291734b9f252d1e82943ebdc380a0aecc9b0020946d5b21776f"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-211105-489357_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-211105-489357_eval_only.log",
+      "bytes": 3004,
+      "sha256": "8404c954e440099177452b15fee05d0d41e7dcbfdee4be9773757bc6e62d2e46"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only/eval_20261007-205509-629720_eval_only.log",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only/eval_20261007-205509-629720_eval_only.log",
+      "bytes": 5942,
+      "sha256": "ce99dd790dd14ff49d7059a8c10412421aba63e8a8a5151b5604c7f445a0f248"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty/latest_tigerdiff_Beauty.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty/latest_tigerdiff_Beauty.pth",
+      "bytes": 174635081,
+      "sha256": "4a5ce419ab247d7d7cb7a36e065b9fb3c53b95df974aa51ad8562fe3d26b292c"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty/logs/train_20261006-161621-536527_tigerdiff_Beauty.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty/logs/train_20261006-161621-536527_tigerdiff_Beauty.log",
+      "bytes": 37458,
+      "sha256": "0ad33342e3095119f2f88266d2b2c0c0b708737bb601c7b61b0fbf26f6acd73e"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions/latest_tigerdiff_Beauty_all_positions.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions/latest_tigerdiff_Beauty_all_positions.pth",
+      "bytes": 174640619,
+      "sha256": "28d5414db67ccf30dc14f3e2ec9d0b9536a26a4543a68ff67298f609ffc237e6"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions/logs/train_20261006-204307-590404_tigerdiff_Beauty_all_positions.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions/logs/train_20261006-204307-590404_tigerdiff_Beauty_all_positions.log",
+      "bytes": 47381,
+      "sha256": "3354c7ae81bba670299a8a5e8f96e4afa088ec392df0d5c9821c494066be50b8"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions_warmup0-1_100epoch/latest_tigerdiff_Beauty_all_positions_warmup0-1_100epoch.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions_warmup0-1_100epoch/latest_tigerdiff_Beauty_all_positions_warmup0-1_100epoch.pth",
+      "bytes": 174648240,
+      "sha256": "ba798b160d2cc7b4917813ec84605f6d01fba65059bdf890d2e4f1c5f1c89353"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions_warmup0-1_100epoch/logs/train_20261006-205423-063659_tigerdiff_Beauty_all_positions_warmup0-1_100epoch.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions_warmup0-1_100epoch/logs/train_20261006-205423-063659_tigerdiff_Beauty_all_positions_warmup0-1_100epoch.log",
+      "bytes": 36143,
+      "sha256": "4905486e017c3d6126b89a167e5d45ec26fa60270b3197adb81bec272e1356e3"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu/train_20261007-151447-805028_tigerdiff_Beauty_qwen3_hstu.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu/train_20261007-151447-805028_tigerdiff_Beauty_qwen3_hstu.log",
+      "bytes": 44558,
+      "sha256": "a170493b76ca8e21597b363a08160993bf072e81cf1ac4b1261ffe3db51ed3e0"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu/best_tigerdiff_Beauty_qwen3_hstu.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu/best_tigerdiff_Beauty_qwen3_hstu.pth",
+      "bytes": 117492564,
+      "sha256": "f01d71a495ddcbd8d3f2a7b18046e55528922d250a6ff50eed3a927d14612000"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu/latest_tigerdiff_Beauty_qwen3_hstu.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu/latest_tigerdiff_Beauty_qwen3_hstu.pth",
+      "bytes": 117493162,
+      "sha256": "1e49e5597aec3cf5931ed3830485c8d5f2d5d9c1847a2a2da9ef20fdba5a1283"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/train_20261008-132339-195157_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval.log",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/train_20261008-132339-195157_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval.log",
+      "bytes": 27965,
+      "sha256": "8349cea0c211427a504a9acf62df706bde155d73c748f0d6daf00dba8f84e4cc"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval.pth",
+      "bytes": 139615912,
+      "sha256": "7b1976f3978e1d7a96a4136d0296c2145b402bf173ba2c3045f342c9e02baf5e"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval.pth",
+      "bytes": 139609826,
+      "sha256": "eaa1aa5ff99a1c2026f7809de9ebb4bc549c8e25e801d5147f3e0ff84882afb8"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/results.json",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval/results.json",
+      "bytes": 876,
+      "sha256": "36c842b43be944f700954c57cdd5ae7b0c9aeb873b750ac3864ec331c630174c"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/train_20261008-132225-142045_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval.log",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/train_20261008-132225-142045_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval.log",
+      "bytes": 25748,
+      "sha256": "a38ed693ecd29e42ef3dd4b5af9643d3ffb6460e5e4f0e87cda73b8c9fbe53b0"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/results.json",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/results.json",
+      "bytes": 867,
+      "sha256": "d869ad4f8ff0a1d06e1b2a07337724226bb4e1e676a75314bd158f111214bddf"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval.pth",
+      "bytes": 117509599,
+      "sha256": "827422c52a7fe8a9f677366c1759fb9cb56f05b6f09764bdd19e76907485cd3b"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval.pth",
+      "bytes": 117509001,
+      "sha256": "1bc5d5944465d92c87f4c61d98e27a7969a6b397bdbccf244af41c289f009b51"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval.pth",
+      "bytes": 117508062,
+      "sha256": "f743d6777a60217e2969d3672b856bc77caad803bcf43ae62be2b7deda970983"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval.pth",
+      "bytes": 117503304,
+      "sha256": "154ca66bec6d2f6c181d15e7c2143fdb0b09d2beca9523b7a7ce8adaad2c90f1"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/results.json",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/results.json",
+      "bytes": 865,
+      "sha256": "1fb956056b185ec647720fbd931c9611c6c19f3f3e8bb36e16137c0b458bc4b1"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/train_20261008-142218-969093_tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval.log",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval/train_20261008-142218-969093_tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval.log",
+      "bytes": 27507,
+      "sha256": "bc2a24238ded1b21534fec8f628344546c8cf5f86e7c552916f360417595f75e"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/latest_tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval.pth",
+      "bytes": 117499674,
+      "sha256": "fee29644e3d1321d11c4ee04ddd15f542f7a7dd12debd18b36b2d9e3dcf59101"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/train_20261007-214928-825954_tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval.log",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/train_20261007-214928-825954_tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval.log",
+      "bytes": 27629,
+      "sha256": "b8a642acbac8f2f64b705e86d59d1865ac220e51d1c3522552c46479a706bc09"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/results.json",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/results.json",
+      "bytes": 844,
+      "sha256": "5c236d967f7940731047c590ed0dd60950e999ec95e89c7bb6f59c8fe2a1987e"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval/best_tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval.pth",
+      "bytes": 117497988,
+      "sha256": "d890ffff5a344c4060e7e5c0d9c5874e998d345a6011df4235b18a5a0382aa4b"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/latest_tigerdiff_Beauty_qwen3_hstu_geometry-ae.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/latest_tigerdiff_Beauty_qwen3_hstu_geometry-ae.pth",
+      "bytes": 117497390,
+      "sha256": "e36e91f92c016aaa4f1870768a222131ae5c7a28d9a60d4f36e56444f1aa2ece"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/results.json",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/results.json",
+      "bytes": 583,
+      "sha256": "bc05991edfd189646b72d6c60be70e8b9eb597729873eb78de23fb93bedf9bce"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/train_20261007-210913-982834_tigerdiff_Beauty_qwen3_hstu_geometry-ae.log",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/train_20261007-210913-982834_tigerdiff_Beauty_qwen3_hstu_geometry-ae.log",
+      "bytes": 46403,
+      "sha256": "a734a5fd096e2fcb704271cb54710c01f643eec24a6b95d4c74b05291cdee5c3"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/best_tigerdiff_Beauty_qwen3_hstu_geometry-ae.pth",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae/best_tigerdiff_Beauty_qwen3_hstu_geometry-ae.pth",
+      "bytes": 117496792,
+      "sha256": "6d00f92d76673f59da6fdf11cf7324c70512a79b6f94fbd21cb5d8ccb34455ae"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/latest_tigerdiff_Beauty_qwen3_hstu_new-eval.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/latest_tigerdiff_Beauty_qwen3_hstu_new-eval.pth",
+      "bytes": 117496301,
+      "sha256": "98ea93d175b99c0cc6909e1031504c24d37e72afee2598974e1a38b381bc5edf"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/results.json",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/results.json",
+      "bytes": 756,
+      "sha256": "8ec69e5b504c24f9770b0e560542dc489b75e39a3c7b5347f1cf767bbcb55d88"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/train_20261007-213751-522628_tigerdiff_Beauty_qwen3_hstu_new-eval.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/train_20261007-213751-522628_tigerdiff_Beauty_qwen3_hstu_new-eval.log",
+      "bytes": 27258,
+      "sha256": "b64befb9d5195c48ca737d3bc1d2f68b01cb91a31a61da3b19fdf18ff71cff9f"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/best_tigerdiff_Beauty_qwen3_hstu_new-eval.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval/best_tigerdiff_Beauty_qwen3_hstu_new-eval.pth",
+      "bytes": 117495703,
+      "sha256": "f0e0b1d28f04c6176671da2d5cdaead1b578db3d9520765dd4d1386ccbbf385b"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test/train_20261007-201519-374404_tigerdiff_Beauty_qwen3_hstu_test.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test/train_20261007-201519-374404_tigerdiff_Beauty_qwen3_hstu_test.log",
+      "bytes": 38217,
+      "sha256": "9583cbea7e05b213327fb064cb673c73dfe3b4714b394368f6c3a7c50f2d88ff"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test/best_tigerdiff_Beauty_qwen3_hstu_test.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test/best_tigerdiff_Beauty_qwen3_hstu_test.pth",
+      "bytes": 117494443,
+      "sha256": "7d81cd7ac39b3d09fdabfaa01595ecf98b90a559dbbbae66e206e622d77b6e2a"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test/latest_tigerdiff_Beauty_qwen3_hstu_test.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test/latest_tigerdiff_Beauty_qwen3_hstu_test.pth",
+      "bytes": 117495041,
+      "sha256": "797100e44174a1ed548a7cd85bd7e23d5242fe86fbac65a0366b6eb52745eefd"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers/train_20261007-154744-812708_tigerdiff_Beauty_qwen3_transformers.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers/train_20261007-154744-812708_tigerdiff_Beauty_qwen3_transformers.log",
+      "bytes": 45509,
+      "sha256": "aa1caaf82f6f23737d438f27dc6aee9e26ac018b02a0d7ea8dd82656a921c568"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers/latest_tigerdiff_Beauty_qwen3_transformers.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers/latest_tigerdiff_Beauty_qwen3_transformers.pth",
+      "bytes": 174643214,
+      "sha256": "999673a828cbd12d78a6422e06ddd1f40d58baa7c08a06ee1070db594267af7c"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers/best_tigerdiff_Beauty_qwen3_transformers.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers/best_tigerdiff_Beauty_qwen3_transformers.pth",
+      "bytes": 174642432,
+      "sha256": "fdb7523ac2a658969f1414083231765baf23579aec0c939953f1ef6c848d61a8"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_beauty_qwen3/train_20261007-135005-922601_tigerdiff_beauty_qwen3.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_beauty_qwen3/train_20261007-135005-922601_tigerdiff_beauty_qwen3.log",
+      "bytes": 38178,
+      "sha256": "413a7e2495f1b3a26af0e8701ecbc7d430abf9234833914a230607e762113fd5"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_beauty_qwen3/latest_tigerdiff_beauty_qwen3.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_beauty_qwen3/latest_tigerdiff_beauty_qwen3.pth",
+      "bytes": 174637747,
+      "sha256": "72045eda7defcf69111f165731e19d24997bc642065fd5f2764227e393f66be7"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Sports_and_Outdoors/tigerdiff_Sports_and_Outdoors/latest_tigerdiff_Sports_and_Outdoors.pth",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Sports_and_Outdoors/tigerdiff_Sports_and_Outdoors/latest_tigerdiff_Sports_and_Outdoors.pth",
+      "bytes": 177843236,
+      "sha256": "00e04f1dca03e19b5ef5ea0d639f3faff8d4cca6075ac1df6a7b2bf61f26a7a4"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Sports_and_Outdoors/tigerdiff_Sports_and_Outdoors/logs/train_20261006-161751-558169_tigerdiff_Sports_and_Outdoors.log",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Sports_and_Outdoors/tigerdiff_Sports_and_Outdoors/logs/train_20261006-161751-558169_tigerdiff_Sports_and_Outdoors.log",
+      "bytes": 46795,
+      "sha256": "cf4b16180fd86e412ef19c14b39d700c4a6e840712e11954ec0e6d549ebfbbe3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/metrics.jsonl",
+      "bytes": 112448,
+      "sha256": "e8b12a2d9702f4061c281cc9473bfaebd4da79bdfe7c6b58eb60ebe7cc4c6e05"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/latest.pt",
+      "bytes": 189539565,
+      "sha256": "7645255219cb1ba8dc456bd1ff61e11e4533a070275980be7923ff7d76b2e29e"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/train.log",
+      "bytes": 103933,
+      "sha256": "a68791466e4cc11c793acbda2eaaf8601a19bf08ce9f360caa459d2ff29e0146"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/results.json",
+      "bytes": 682,
+      "sha256": "7ff7e7eb2a83ab82fa0007e16f9693ba72d4c09d091754ad3fd721bab1b24e29"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/config.json",
+      "bytes": 3500,
+      "sha256": "b5a7244ce90e47b90aae7dbaa9762e2a2692c8c0766500ca40f7431f0701342c"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "a59854ec09ea5c7200d983c6cd4db9ceb5dd3434ce29ce41fa40c476263f15c6"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge/best.pt",
+      "bytes": 189539565,
+      "sha256": "28da0354712b9943a9ce702e8eb16ca3bbb391fb8905ba0778903723c1bc1921"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/metrics.jsonl",
+      "bytes": 100937,
+      "sha256": "c247b882a64e2476f97e8aab9d77f8cb60cc43067d76def2f625cd79647157ed"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/latest.pt",
+      "bytes": 189539565,
+      "sha256": "6fd1381de638df9c55fcd5aca9fd3fd0a2f87d86c1b9075da14bdc11d0b2efdc"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/train.log",
+      "bytes": 38627,
+      "sha256": "6c36c13ac2df75cf53a251e452f6ca388169769001683695939f238c2ffbabb5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/results.json",
+      "bytes": 698,
+      "sha256": "61936ac2765e8c7ecd2fb21adb1017aedbf6954fe430706673ceae0c4c5e0a76"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/config.json",
+      "bytes": 3518,
+      "sha256": "06a1bef1a8933b14e3686faf84f88d93fb7fb0a7a68c8c2b9b32178cd5d39125"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "ba765ba7f4515ca9847328eadbed556dce6045069e4af1081781fbaa33668d22"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/best.pt",
+      "bytes": 189539565,
+      "sha256": "e1ab184b1c125a2c4c0310c9319d9745f7a6ec5d886dbba18be8d97c118ac1a4"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/tensorboard/events.out.tfevents.1791457587.user.235992.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions/tensorboard/events.out.tfevents.1791457587.user.235992.0",
+      "bytes": 147915,
+      "sha256": "f1f991bc81d2e4246e1504143e9776949a20a7e18e160835e6cb1c75307e145c"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/metrics.jsonl",
+      "bytes": 104434,
+      "sha256": "16fd8c070fdc566c832b07355dc530f6b11c21b06a3a2293eecd0852495da88e"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/latest.pt",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/latest.pt",
+      "bytes": 188741511,
+      "sha256": "5a3bd2b43ee38af04c2a73f18083fec9373b6f1266b71aeb7eeefcbbf9863784"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/train.log",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/train.log",
+      "bytes": 147917,
+      "sha256": "6f368ec7b7dfba4b0aa357982d4bb20a86cc2542a9277dd480d43f94fd1c1054"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/results.json",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/results.json",
+      "bytes": 667,
+      "sha256": "86e8bdbe4e0ce7f9bffdd18f5c6077eb99b6c8681fb39a2b3f2c8cd858cd5e79"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/config.json",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/config.json",
+      "bytes": 3336,
+      "sha256": "de51c8245c84830e62bd35646c85f8887327bb6e3500d62245ced2b170b7fa58"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "5ec3de9846ff42de2ec1eccb88bb7518d3635b04f4e2ea151e222920fb6cbd06"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/best.pt",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/best.pt",
+      "bytes": 188741511,
+      "sha256": "5d1c942c0335ad592ed8a4b7cb6955d06d5158bcffee1be5530577f41435178c"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/tensorboard/events.out.tfevents.1792508380.user.629679.0",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01/tensorboard/events.out.tfevents.1792508380.user.629679.0",
+      "bytes": 158060,
+      "sha256": "6f4e907847a0ea3b848dcda58259b9c150e4d9a50ddd8661c9f4d58a1e9b0d12"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/metrics.jsonl",
+      "bytes": 126869,
+      "sha256": "2e5466695d5588cb43f959231574943de9444769b606c9916609f46259b72959"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/latest.pt",
+      "bytes": 188741511,
+      "sha256": "4bf7c4bd4d98e05d52af7158ca5ac976349e127787ae98a37757232ca0c31868"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/train.log",
+      "bytes": 149101,
+      "sha256": "1100a8aed8f3baea27b2711b2f7da22735527fdbb98a9d3e6d2a0a983f7051d3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/results.json",
+      "bytes": 663,
+      "sha256": "78447617fc02817254f528d9b4cef579ed599b8e50a22d88374321a6066e113b"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/config.json",
+      "bytes": 3330,
+      "sha256": "777666ca43da17ab40824a3338fe672d2bdb14b63577d7a9d456f0f8a7ebdf70"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "016cba0b301faa0bb9aec516f737d6fc809f37ac822d510e8dc54d2104c5c740"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/best.pt",
+      "bytes": 188741511,
+      "sha256": "298f03ece51bccee352568aae40b9182b0bad90e85105f9a154a31a4e84cb15c"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/tensorboard/events.out.tfevents.1792508386.user.630285.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01/tensorboard/events.out.tfevents.1792508386.user.630285.0",
+      "bytes": 186960,
+      "sha256": "693d66c76078c378139b3e9a9f4c729b18ad08b58561dcd73d625fceb5318863"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge/metrics.jsonl",
+      "bytes": 76616,
+      "sha256": "c843ba15f660912827cdac07922deb8816582026b686744bc4ffa4c5e3a666aa"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge/latest.pt",
+      "bytes": 188749245,
+      "sha256": "b0b2e40f6cdb67e482252b181821e71dc3d809a39846bf7f77a7e67651238bf5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge/train.log",
+      "bytes": 68068,
+      "sha256": "c69fb07198292b1de96297db302d5a435d7f71243d816e3320ec1642898d2a0b"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge/results.json",
+      "bytes": 678,
+      "sha256": "2da0412fc78ab6b6798069b8cff6f3baca3a5db0e40aa0b22f64f5bbaae1a049"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge/config.json",
+      "bytes": 3493,
+      "sha256": "c59b786ae06cbb268c1d97860ab5c5702442755290b8d8235d2f5d93fbd722ef"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "df821a0916c76fb0aaa45e4f88432a0177efc2e9330568e075bf611fca5eedd6"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge/best.pt",
+      "bytes": 188749245,
+      "sha256": "b0b2e40f6cdb67e482252b181821e71dc3d809a39846bf7f77a7e67651238bf5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge/metrics.jsonl",
+      "bytes": 76604,
+      "sha256": "3f518ffa54a84d159c1cccbe8cbba2438e93aac10cfdaa7ff7223f8545fee3c3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge/latest.pt",
+      "bytes": 188749245,
+      "sha256": "6f84481cd21d403816c6a0fad8589b144fae7a3074ff04dd62eff4cae24f1496"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge/train.log",
+      "bytes": 68057,
+      "sha256": "225548bd7eb38ff6ba02373edeb4def15f20b92be49eb721e1ac7f45f0af1bba"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge/results.json",
+      "bytes": 681,
+      "sha256": "d7cb5c03ab02f3ef7af017e79a73f0b3b5b3df8af06a1f6ec85289e7f5b298d7"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge/config.json",
+      "bytes": 3497,
+      "sha256": "d0d0046c2ba5602c764f0f50ad10477b0456f5bea68fb2ad7becee6cac1dea29"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "8372d4a4f2fd6e72cf6c9c27d2af3871073deeb4e441c7783fc4fa7d4b239b56"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge/best.pt",
+      "bytes": 188749245,
+      "sha256": "b6e687e5f746ac68ebe3b4ec743f308668d0e06c4d41fbb6f3d063dcfde72580"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/metrics.jsonl",
+      "bytes": 112705,
+      "sha256": "3f16da082dd19720ad4447e1f785ab129c7d6d5f2f5ef6a72067c920b20f1ed2"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/latest.pt",
+      "bytes": 189531895,
+      "sha256": "9a6e1e5b422ae9429741aa64471a3efb77e1337ea91a5bfdb588d8bb1db97c48"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/train.log",
+      "bytes": 42641,
+      "sha256": "da4210ca08b5903f3d8876072a329b643a6c133b41a8ab094d4db4e741e1351a"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/results.json",
+      "bytes": 669,
+      "sha256": "0d75fbe264e0c95f2b3d7a2d01ff74a19b1f7d15183b3eefaacca08163a8063c"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/config.json",
+      "bytes": 3407,
+      "sha256": "486094bba6507aee1146396b0116ad7affa4ee9cd57924ab446f9607f40adac5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "b0afac8d2b3606d8014e2454ea59ca69cc15012305a0d404e4b0fc865f22870a"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/best.pt",
+      "bytes": 189531895,
+      "sha256": "eaff1d1e04a4d65c77948030f9176eff98f92a5137952dd84b0326612657cbbd"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/tensorboard/events.out.tfevents.1791462068.user.988281.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001/tensorboard/events.out.tfevents.1791462068.user.988281.0",
+      "bytes": 164375,
+      "sha256": "410d9e177e1b78bbe50769e30b84ab9bf698448cdfc7003087fd4fa6d464902b"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/metrics.jsonl",
+      "bytes": 101137,
+      "sha256": "f38b3601346a790dd83471b66e3061185b935327e21efa13220a284abc0fceab"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/latest.pt",
+      "bytes": 189531895,
+      "sha256": "811bba4394052a1bf351aa6a7168567eacd13e8bd91a63d006a9a089978c09cf"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/train.log",
+      "bytes": 38098,
+      "sha256": "a60e7d7f1ae7a1637736a98f107da9b6f94fc755f9e46d2ab1c0d16697cc83c6"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/results.json",
+      "bytes": 666,
+      "sha256": "1fbf7b245a25862da97fccb30a7285465e57bad9edfd2d30fd26f005c88208ba"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/config.json",
+      "bytes": 3405,
+      "sha256": "863318aa8e1f4a329539f0fa0c418a2aa15564fb9cf2e15b4a8f78fa999e7052"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "44bbbd9004d27b1e8a40523f209828249272a414f5621a495b3c658d3677bfb1"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/best.pt",
+      "bytes": 189531895,
+      "sha256": "a3714cb545904509cc100309a4df298711bc04d044b54ef0736871183ac6645b"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/tensorboard/events.out.tfevents.1791462050.user.985223.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01/tensorboard/events.out.tfevents.1791462050.user.985223.0",
+      "bytes": 147915,
+      "sha256": "363f572a0ed839b31a2c84c3ec9638b36fb39ace874b4cd3c72a953687bf4cb5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/metrics.jsonl",
+      "bytes": 95131,
+      "sha256": "61684be053e3abe43ecab9e830b5eebfe7840402643cfce4f4d0a26c7471222d"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/latest.pt",
+      "bytes": 189531895,
+      "sha256": "31a5493e21fcd0b93c60fcda1584d899c452af9a91958a9f1a6dcbff504fb76b"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/train.log",
+      "bytes": 40387,
+      "sha256": "e4395d108fc3cf30ac55b6850d2c8cf28d86d83c79f40a4faad36ab24f37bbf5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/results.json",
+      "bytes": 666,
+      "sha256": "a816af4b01c2106ee4c66557e01d6c7ac6274246e3c66b5c6e2c8b3fa059d7ef"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/config.json",
+      "bytes": 3401,
+      "sha256": "87aee43c7e3a8fc8a810f42ace6c3bdada4ccf2be27c867c81c935667cd996bc"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "b7f6be111718993cc7fd74e6f7091e08a17339ffe29208d32858d96766612162"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/best.pt",
+      "bytes": 189531895,
+      "sha256": "94f8f6f97d5bd42dbe10bdb3ae57860fe36247f258a57c8c88bf5365b5ed2d1f"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/tensorboard/events.out.tfevents.1791461992.user.974248.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01/tensorboard/events.out.tfevents.1791461992.user.974248.0",
+      "bytes": 145660,
+      "sha256": "78f76fd7b9876180184acdfabf750b215cc403bcb4c0e1401255d83b1e0ccdab"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/metrics.jsonl",
+      "bytes": 76806,
+      "sha256": "504c03a487195f8df25aaa21a3f26d2d7798f335947556cff18a69e6d5c08f8a"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/latest.pt",
+      "bytes": 188741575,
+      "sha256": "403432e829950efebd2119597849b5806dc784b1b0b68db23de376c15b399666"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/train.log",
+      "bytes": 39889,
+      "sha256": "2cf3660be6abfddee2ddf2876017dd56fa4541dce101723deff97dfc0982c3a4"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/results.json",
+      "bytes": 666,
+      "sha256": "29d4347ac181f6a0454521f041952fe716b6657b017b89141b14663fe0310f91"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/config.json",
+      "bytes": 3429,
+      "sha256": "3ac7c30609c23b31ffe16be07c7b23563e4fc01c2267fec7347c045f5b793fdd"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "cf98932344998cc587c7a51e7a4157190388d4e724bb2c603a0952cafb148ef3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/best.pt",
+      "bytes": 188741575,
+      "sha256": "ee0226b103f2e96d4b902ed7462fe480cdd474a4dbd58b3d7fbfd691bd3f776f"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/tensorboard/events.out.tfevents.1791710748.user.2577495.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init/tensorboard/events.out.tfevents.1791710748.user.2577495.0",
+      "bytes": 125660,
+      "sha256": "28f50c78a1b54c1308f4197c6bde55eef5389fdd787620b3b89e79505c76e55c"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/metrics.jsonl",
+      "bytes": 78206,
+      "sha256": "ea3ddc4b13713765f2f91188808a6c8cf3b1d8cbe43355b5c9a43faf1aafe9a3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/latest.pt",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/latest.pt",
+      "bytes": 188741383,
+      "sha256": "1f5417729f9629b43083056b7288b2fa09e721b51b3065da031868b7ea828216"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/train.log",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/train.log",
+      "bytes": 41373,
+      "sha256": "5fab9f24ff4fe7db4bc565f16dc4af8fa2380ef8a1c8848aa91cb6834c02744a"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/results.json",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/results.json",
+      "bytes": 676,
+      "sha256": "c393067a271d731c412dae5dc9ccea8f97c647dc7a86307b880c51ad566dc305"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/config.json",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/config.json",
+      "bytes": 3249,
+      "sha256": "a30cd137c3c5bc17459e3cd9aad484e0da544bcdee61a149aa0e78b0e64955b6"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "cf98932344998cc587c7a51e7a4157190388d4e724bb2c603a0952cafb148ef3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/best.pt",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/best.pt",
+      "bytes": 188741383,
+      "sha256": "dc04b7fdfc63e412a533827ff1352cae3c8c2da0805968b85499660b93efc62d"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/tensorboard/events.out.tfevents.1791717530.user.3726959.0",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test/tensorboard/events.out.tfevents.1791717530.user.3726959.0",
+      "bytes": 127060,
+      "sha256": "f872c2a2d530cbdba64aa5d52bb9ada86f60b6376ce0f2efa7d5098595fc7b32"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/metrics.jsonl",
+      "bytes": 72781,
+      "sha256": "697a60111fddfcd7cd63688102f821cb5427a1b22585e12605dca39b898a91ee"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/latest.pt",
+      "bytes": 188749309,
+      "sha256": "4e4f8dc2678d490c8d291bc6343360d2618213d8b00b44ac89ec832fa646d9f1"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/train.log",
+      "bytes": 37056,
+      "sha256": "8e263767166a90ed926d0e9b56e9b005f7e13217167384605140df74e0198283"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/results.json",
+      "bytes": 687,
+      "sha256": "76c0346c00d19fb5d8716850fa344e32c6699a8c631324b0305e189edfd873cf"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/config.json",
+      "bytes": 3505,
+      "sha256": "f2768f7e5dc5abc3382791564d761b51321321516f6ff33d64eee74d485f94cd"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "766d64762026a5c5831254518cfb2b2ddb814b5318cb558359d52e3290ad2b7e"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge/best.pt",
+      "bytes": 188749309,
+      "sha256": "d880aa65ca1035fe40c09eef9be5f62aa6ef955277aa12b4a479b896117604d5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/metrics.jsonl",
+      "bytes": 76544,
+      "sha256": "5afac1a2cc09fde3cde80f692c6ae4ebd34135355b0689008273f4c88cf259c3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/latest.pt",
+      "bytes": 188749245,
+      "sha256": "2c36b1b374da1d3b9d091fdcc730c6cccfd6e37f7515dbd9b5dabae678101749"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/train.log",
+      "bytes": 37726,
+      "sha256": "8feb70be42443a228086a5ea680419db13d54ce5fd93032e3bf9f51d3bfdb2d6"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/results.json",
+      "bytes": 681,
+      "sha256": "b0a62c4f089e448a787a87af3017c29b9b74ad0228de58c03848b68443b6d5d0"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/config.json",
+      "bytes": 3497,
+      "sha256": "0f1575db17cd06fc1137e556dc8460fc01b9226de1a9e4ca8b5cb5c54f0367ab"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "e40905484c6fa0550197eb2ab7120073db741ecc03c413bd5956278d5837505a"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge/best.pt",
+      "bytes": 188749245,
+      "sha256": "42f9ada68c85cecee479f56741f5f2b1810f48de3ad918134c33a38968a67324"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/metrics.jsonl",
+      "bytes": 78206,
+      "sha256": "ea3ddc4b13713765f2f91188808a6c8cf3b1d8cbe43355b5c9a43faf1aafe9a3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/latest.pt",
+      "bytes": 188741447,
+      "sha256": "78c8140cb75598a2558b3b883a36c698d3e467a007a5563519d71d438e17d6d8"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/train.log",
+      "bytes": 40984,
+      "sha256": "75d019a3906a16cf6ca72c54f70c99ef3f07f9c5d7d41d6fda172e678953c6af"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/results.json",
+      "bytes": 654,
+      "sha256": "1a99dc3b2c4978e7ca9d24c3ff0496224d2e87e907adf5e95fc611bcf3513a83"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/config.json",
+      "bytes": 3265,
+      "sha256": "0f12f8c52635bd4780e47222ae5b454ba8fa6b0714c678f9a9e2e27185799c13"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "cf98932344998cc587c7a51e7a4157190388d4e724bb2c603a0952cafb148ef3"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/best.pt",
+      "bytes": 188741447,
+      "sha256": "3215a9f336cd5278c80b22331bbe70af32f3e92a089620fd66530e1ccf7c63d5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity/tensorboard/events.out.tfevents.1792479140.user.4037747.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity/tensorboard/events.out.tfevents.1792479140.user.4037747.0",
+      "bytes": 127060,
+      "sha256": "8562deec2d8aa6219bf997f787a8e9ebd17a0387ed258ee3901cebea8889cfee"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/metrics.jsonl",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/metrics.jsonl",
+      "bytes": 78311,
+      "sha256": "cbbb632e91db5e9c4ba36704a590e82913d8570a04423a86b3227ca66f6de15e"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/latest.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/latest.pt",
+      "bytes": 188741447,
+      "sha256": "d2328916188dd97283942b490ae4bcdb98fa71dd70a1ac28beae23d9079c2999"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/train.log",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/train.log",
+      "bytes": 40887,
+      "sha256": "df8391d93d63eca8611cdd928006fafe01590663e84a0d278c378fbcffdb3c4f"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/results.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/results.json",
+      "bytes": 647,
+      "sha256": "89e368f8b92584f93a7b42cd029ac84adbca25203f5f3c2c6ff6aaa30ea26902"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/config.json",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/config.json",
+      "bytes": 3255,
+      "sha256": "18a16fd81db2cb1503adcf3d28752de8caed84764eb8395bd281f43182fd1ee5"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/catalog_latents.npy",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/catalog_latents.npy",
+      "bytes": 6195840,
+      "sha256": "e9a900cdd1a3d9a9f7a4ad7ab408a9c9c338472541d4ccf74065a50c052478eb"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/best.pt",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/best.pt",
+      "bytes": 188741447,
+      "sha256": "d2328916188dd97283942b490ae4bcdb98fa71dd70a1ac28beae23d9079c2999"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c/tensorboard/events.out.tfevents.1792479153.user.4040250.0",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c/tensorboard/events.out.tfevents.1792479153.user.4040250.0",
+      "bytes": 127060,
+      "sha256": "05c66d64c6028a5f96130ae0231e3782fe1c47d1a80381c3c545e7c301d2fdbd"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/experiments/fafe784703589aa4578a/ablation.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/experiments/fafe784703589aa4578a/ablation.json",
+      "bytes": 59016,
+      "sha256": "1b4022652149d42059dcb7f83eab28e169f1914bb7a48b726a9c4038744547d5"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/experiments/81ef10fcbf308d7d916b/ablation.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/experiments/81ef10fcbf308d7d916b/ablation.json",
+      "bytes": 57286,
+      "sha256": "72fffb85215f00103ece4bbb645c1a8e579a659cf0ef3d0b735a3f53b53e20e4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/loss.csv",
+      "bytes": 38438,
+      "sha256": "6cf67951423818a3760e1caa3a204ca658f65f8c4d2267f5de3963987601f8af"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/manifest.json",
+      "bytes": 2561,
+      "sha256": "948685e3488b164bfb981e8c53bf412bfad304ffe3f12e5c5016976af6003fc9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/metrics.json",
+      "bytes": 9324,
+      "sha256": "c1c92f719746e81541c52e662dc030e7c0b2dfc9adfb0a31186952a7c230f9ed"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/latents.npy",
+      "bytes": 6195840,
+      "sha256": "8f2d54fd655cf41403ecce122ea80ea5e1a0634b6f0a80e2b3152cef2d3f1515"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/statistics.npz",
+      "bytes": 12274,
+      "sha256": "e52ffc5d1cb759fde60acfb8e87fb9fb8a5bfdd107b1928d64722d20b334a88b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/diagnostics.json",
+      "bytes": 1205902,
+      "sha256": "2e1f92158d61158e6d8cae86920667081f29aedf16badc0e744384c37569723a"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/splits.npz",
+      "bytes": 97290,
+      "sha256": "30bdaa2673d192579ee1b8b22b889b259788352269fe40859328483b1be78a94"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "a7a4093c53dae00ed07a91a23e87715a002ff28079321e91fa287374208c583e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/best.pt",
+      "bytes": 26187312,
+      "sha256": "6966041d5c87e505ef0ae3f07e72d719c2c9874179b74d790288015120a89703"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/train/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/train/state.json",
+      "bytes": 250,
+      "sha256": "2d1a01ef34c1bbbdc76dc34156335722ffc03fa5a5a40bb6fb898190b3a18b1f"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/train/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/train/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/train/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/train/data-00000-of-00001.arrow",
+      "bytes": 17261824,
+      "sha256": "3c0ed1ca57fb64669c12c63aef6375bb2a92f948f330bdfe114c2a7d199fca55"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/val/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/val/state.json",
+      "bytes": 250,
+      "sha256": "1504cfa564f90fd8e95d43d60073397ffb1f4a1d33bd85ca14a5f4b900b58e6f"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/val/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/val/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/val/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/val/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ba06bdf5a26a00719c499633dabfa090745796658cd6f8cb0c1accd675b55dd1"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/test/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/test/state.json",
+      "bytes": 250,
+      "sha256": "f9d3c9b46a8e73dcda0d94f1985895691217f560f3722eca580aeb523f98c33e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/test/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/test/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/test/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/aca737a768df334954ad/samples/tokenized_datasets_TigerDiff_65cd7b3242/test/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ad527941aafbc87faee4d53052630cf1edec6ff47c56a900cad1a401dee3d417"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/loss.csv",
+      "bytes": 55938,
+      "sha256": "92de93080d4a0cc98b01a2513d938e5c1bd52c733159e0a0518227f1df755834"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/manifest.json",
+      "bytes": 2729,
+      "sha256": "aa1a5ca19aa1d5eecf54ce10c0fcebbc5fccb95048d308bc4170b239e2247246"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/metrics.json",
+      "bytes": 9510,
+      "sha256": "cd9aa05131be010edfa188c79f7afc4232a99f73e2d23f72bee5ceb31eac4b4c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/latents.npy",
+      "bytes": 6195840,
+      "sha256": "5b7ea3984ecf723e9d41b384ad6e18498134a1eec35eca425eb2bdb68ffdb882"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/statistics.npz",
+      "bytes": 12274,
+      "sha256": "4a87f634854e80e99ffa14b41df7d72c6f6da8901065d372d6467ae6112d56fd"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/diagnostics.json",
+      "bytes": 1466915,
+      "sha256": "4851509b60a34e00a355cbcbffc255297355162c693773381ed0e15df0abd9a0"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/splits.npz",
+      "bytes": 97290,
+      "sha256": "30bdaa2673d192579ee1b8b22b889b259788352269fe40859328483b1be78a94"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "f086e96482931c3a7bfd385848fba8430f91ca775d61144c86736adc0d3cb6cf"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/best.pt",
+      "bytes": 26287344,
+      "sha256": "badf589528b29885ff7b7a456b39b83624c41ad49a0025f3665763109cac54ad"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/train/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/train/state.json",
+      "bytes": 250,
+      "sha256": "0a2c173aaf1a61d66f7dd85cdec4eb11d2caec2e88b68ad423706c8cd002d2a9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/train/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/train/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/train/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/train/data-00000-of-00001.arrow",
+      "bytes": 17261824,
+      "sha256": "3c0ed1ca57fb64669c12c63aef6375bb2a92f948f330bdfe114c2a7d199fca55"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/val/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/val/state.json",
+      "bytes": 250,
+      "sha256": "b30b7c304be795d8d9d035d1b1b26dfc4f317241f48574a976dcb00d40c45763"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/val/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/val/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/val/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/val/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ba06bdf5a26a00719c499633dabfa090745796658cd6f8cb0c1accd675b55dd1"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/test/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/test/state.json",
+      "bytes": 250,
+      "sha256": "ae5915fedae51d4424bb5a65cf70be17db5b9c4d7636a3efd45de1bc87fab44b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/test/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/test/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/test/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d4e27822e0c5997108a3/samples/tokenized_datasets_TigerDiff_9b626b8add/test/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ad527941aafbc87faee4d53052630cf1edec6ff47c56a900cad1a401dee3d417"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/loss.csv",
+      "bytes": 979,
+      "sha256": "b31e11e4141462224378c6e226ea95290264c7620c42ff8fbdc6bfbd6c646033"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/manifest.json",
+      "bytes": 2553,
+      "sha256": "729c3af20e1e0b0491ece48de45d67a36a1b57640a9155b93bc6a4a99c63c225"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/metrics.json",
+      "bytes": 9456,
+      "sha256": "b84608df3a9644c17049f81f75486097cca62e918f6061b012458d3717b9539c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/latents.npy",
+      "bytes": 6195840,
+      "sha256": "74504baba3b76180c2ad7edc7c097bbd62ec170c494c4f0eac4fbea74b6e6ed8"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/statistics.npz",
+      "bytes": 12274,
+      "sha256": "6b374d318dd992b92f6eabb39aa7e63ce90f6d5c55ecbf238bd183eab82b0b3d"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/diagnostics.json",
+      "bytes": 18130,
+      "sha256": "c0eb31703fb9953c37d8439082e22e0cc357949e9057074b71df1dafd230df1c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "20e132b53ef936eaa329c34f22334b9104c7260c2a37dcf785b91f4391f30820"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/8fba5426cec38af0e113/best.pt",
+      "bytes": 25738096,
+      "sha256": "4ef00bf24dc1a82492dc40e8e4c01bdda8ee673f6838c32ce11a1ec3619280d1"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/loss.csv",
+      "bytes": 978,
+      "sha256": "2c3ae56ab1d6d37c8ab9f21f3c6b5c16631f53910bdd3ab13a2f1a5e39afc7b9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/manifest.json",
+      "bytes": 2527,
+      "sha256": "58a62752d80c843efc3830591173c0061df99920f52477a02515e8275d641438"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/metrics.json",
+      "bytes": 9506,
+      "sha256": "d8d9d59bdb9f88ed575fb0a4efef119867f9e2a0863d514aef185bb55ed1c53e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/latents.npy",
+      "bytes": 6195840,
+      "sha256": "13f2abc065e52ec2b2158780f832cd785a4a0d5b8363dd0a7ed6011f27e77b6c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/statistics.npz",
+      "bytes": 12274,
+      "sha256": "60d01585821865126eba92df6daefdd5f7f448541bbd51db830c668605ecca03"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/diagnostics.json",
+      "bytes": 18002,
+      "sha256": "d751bcf3fde9a4074f074334794085b1f99787603b248363afe279ddce89cbdf"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "44863cefad4bb3c4c8b623d5e15ac63fc4633245358c6f5ca11d832160f9cef4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b3cc294b604d1c6879a/best.pt",
+      "bytes": 25734640,
+      "sha256": "a09efcb88ed959e5148560ec6ee3f5bfa0764a71b67d13784f6c1bf07738634c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/loss.csv",
+      "bytes": 978,
+      "sha256": "2c3ae56ab1d6d37c8ab9f21f3c6b5c16631f53910bdd3ab13a2f1a5e39afc7b9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/manifest.json",
+      "bytes": 2527,
+      "sha256": "dc624ab6e4a95915a097902cc9c4fd9357315a54cf5cbafa1dcd7facc3fcd61b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/metrics.json",
+      "bytes": 9506,
+      "sha256": "d8d9d59bdb9f88ed575fb0a4efef119867f9e2a0863d514aef185bb55ed1c53e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/latents.npy",
+      "bytes": 6195840,
+      "sha256": "13f2abc065e52ec2b2158780f832cd785a4a0d5b8363dd0a7ed6011f27e77b6c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/statistics.npz",
+      "bytes": 12274,
+      "sha256": "60d01585821865126eba92df6daefdd5f7f448541bbd51db830c668605ecca03"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/diagnostics.json",
+      "bytes": 18002,
+      "sha256": "d751bcf3fde9a4074f074334794085b1f99787603b248363afe279ddce89cbdf"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "44863cefad4bb3c4c8b623d5e15ac63fc4633245358c6f5ca11d832160f9cef4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/966d17adaa1b7428eefd/best.pt",
+      "bytes": 25734640,
+      "sha256": "817fb812b883a4dfc29d9f0e6cb7e5ff84c69d56e694bba560d1698192ba5886"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/loss.csv",
+      "bytes": 944,
+      "sha256": "77a4b8bb09e6c3d2b23e6c606fa9edd0bf06fa1163b3316aa903ec2a02c91809"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/manifest.json",
+      "bytes": 2527,
+      "sha256": "ae5ad04cc528252883c0cdd9ec0fb27ee58885ab6b523fa8b1f3526373098bf2"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/metrics.json",
+      "bytes": 9516,
+      "sha256": "948d54909da489cffa4a208e573f6cdab880aaa16cd6a0ad85f7fdfc64f65e7b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/latents.npy",
+      "bytes": 6195840,
+      "sha256": "5e007ea28f7890dd5168eea76b596ed9703b5001d5175a640b2330b3f5827303"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/statistics.npz",
+      "bytes": 12274,
+      "sha256": "10ae9b7d7b4341949967cb4390c2ac3d52f2299b17d11ee6caba405bb34ccac7"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/diagnostics.json",
+      "bytes": 17987,
+      "sha256": "c8e73550793a475b23727330fc9d1ef3fdfc4ee4085cb2d78bb4f6c2f8718596"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "5f60fbf7ecfaff37abc3e5f530358baf4d75aa21e93eb6955c8afb5dd0bfeb6d"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/c60582e2fb1bb6fd3d49/best.pt",
+      "bytes": 25734640,
+      "sha256": "f045805d2298a647db925a26f082ab7455ed210a255808c8656d7057b3d00e9f"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/loss.csv",
+      "bytes": 935,
+      "sha256": "f986c1da2a7791e804baad7d52e840dc7db7bbf1ffac8be4702155de5927b8de"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/manifest.json",
+      "bytes": 2530,
+      "sha256": "e4d0fbdcf74a34e8535157100f8134a7d06e8fd7b8a3bbc4bda89cde9911b7e6"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/metrics.json",
+      "bytes": 9371,
+      "sha256": "c4706474e8dd87633865bdad91504d97e5ea3cbd33d284aec01aa9bd397cde16"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/latents.npy",
+      "bytes": 6195840,
+      "sha256": "91383532586b14ddde4e8e57fed691eb5d9a53856f0a74dedda9d30d5cf53eb6"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/statistics.npz",
+      "bytes": 12274,
+      "sha256": "67e492580afe9eb6995cbf0c78eebf62ff37df558a12c1a5c4967b89b15ed59a"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/diagnostics.json",
+      "bytes": 17929,
+      "sha256": "2c56d447f5f2023cd07927f7d28b885ac1ea518f1f9b1b74496528ea16df453c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "0c29f5bf2e35a08d79444550fcf31ab42b1d71f24867b10d48f931080312d731"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/a87ea6836391f067ccea/best.pt",
+      "bytes": 2654665,
+      "sha256": "31da8761be1f2dbe1e0e223ba3346c466097d9e5344d1e42a1caf114273c0c0e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/loss.csv",
+      "bytes": 1133,
+      "sha256": "23f10022543fe95d951abb17315628e625447864720a0f017a9919f31e2802d7"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/manifest.json",
+      "bytes": 2721,
+      "sha256": "b9396b99dbaf928dad6e948e99ba7aa15d64954541063fab4904fbd442a8e068"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/metrics.json",
+      "bytes": 9668,
+      "sha256": "b6c0d02be0dee9f8bc745aefd083dc4542d6dea4f1844dbac57506bc8805f17b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/latents.npy",
+      "bytes": 6195840,
+      "sha256": "8f0f8e7e57bc04770791b6eb609b2b91d4648bc47324c9acd731d085a9b557e2"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/statistics.npz",
+      "bytes": 12274,
+      "sha256": "faefc535595119ad9f5614b0ba4d433a1ce827358be52282eac233999eb17feb"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/diagnostics.json",
+      "bytes": 18515,
+      "sha256": "b32cd7031a90bead1d25f2c17df438a071bf0b8f9ad835b924dc400a44156453"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "7376250395f4387d2e425aab9837bc9f495e37d850b2b8c187c81003945ba5da"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/3b3f5740b7dc98f50477/best.pt",
+      "bytes": 25735088,
+      "sha256": "ccd24483fd038fcd0ec032401cca6d3604545b062f55c61f3a5fd85e6fd5a274"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/loss.csv",
+      "bytes": 978,
+      "sha256": "2c3ae56ab1d6d37c8ab9f21f3c6b5c16631f53910bdd3ab13a2f1a5e39afc7b9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/manifest.json",
+      "bytes": 2526,
+      "sha256": "71126108746e12cedc6435c5657992bbe1684d9139bbdd231e6e3754dc2495fc"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/metrics.json",
+      "bytes": 9506,
+      "sha256": "d8d9d59bdb9f88ed575fb0a4efef119867f9e2a0863d514aef185bb55ed1c53e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/latents.npy",
+      "bytes": 6195840,
+      "sha256": "13f2abc065e52ec2b2158780f832cd785a4a0d5b8363dd0a7ed6011f27e77b6c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/statistics.npz",
+      "bytes": 12274,
+      "sha256": "60d01585821865126eba92df6daefdd5f7f448541bbd51db830c668605ecca03"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/diagnostics.json",
+      "bytes": 18002,
+      "sha256": "d751bcf3fde9a4074f074334794085b1f99787603b248363afe279ddce89cbdf"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "44863cefad4bb3c4c8b623d5e15ac63fc4633245358c6f5ca11d832160f9cef4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/best.pt",
+      "bytes": 25734640,
+      "sha256": "fcf33c5d535e771fad54edebccd98a5f758c88336b04f5e0d05bcc7d1a2fc67a"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/train/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/train/state.json",
+      "bytes": 250,
+      "sha256": "4252ef30ba1388abd56f2b75ca3cd6ec9caaf038132b38f122287980c27899e8"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/train/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/train/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/train/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/train/data-00000-of-00001.arrow",
+      "bytes": 17261824,
+      "sha256": "3c0ed1ca57fb64669c12c63aef6375bb2a92f948f330bdfe114c2a7d199fca55"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/val/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/val/state.json",
+      "bytes": 250,
+      "sha256": "3bfdeae1e0a914f381f8383816ff854dc8155f9b9241e940794bafa67f20f602"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/val/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/val/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/val/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/val/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ba06bdf5a26a00719c499633dabfa090745796658cd6f8cb0c1accd675b55dd1"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/test/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/test/state.json",
+      "bytes": 250,
+      "sha256": "06406d4d393eec2c09a377f40353a1d4ee12466d209792f85de46023d1d71e38"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/test/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/test/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/test/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/5b51b19fb094aac38ca8/samples/tokenized_datasets_TigerDiff_728c13b809/test/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ad527941aafbc87faee4d53052630cf1edec6ff47c56a900cad1a401dee3d417"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/loss.csv",
+      "bytes": 11338,
+      "sha256": "a7b690f0a7011236caca381722d447591c98a471fcf4b0b4de185aad88787e83"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/manifest.json",
+      "bytes": 2530,
+      "sha256": "6404c0ba59df40e659baf8a3b69b471fc819a13212c5bc77fa3e65b0f0c70335"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/metrics.json",
+      "bytes": 9414,
+      "sha256": "463b6c1f877c381b57240c871f414933ba0c5e0431dff5836ababdc5004aa84d"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/latents.npy",
+      "bytes": 6195840,
+      "sha256": "38c23cc76b07a4187d3626796ca27f2d06367170bcbbb7dbef109e2c02cefd7e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/statistics.npz",
+      "bytes": 12274,
+      "sha256": "be7232d0bb04cdc46f1a2308368e54a080423a8a448973e6c78db64a57a31846"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/diagnostics.json",
+      "bytes": 288333,
+      "sha256": "ab9a1e222610ae0f00b77f07dcd9582073c029c2b23643bdd6e3c34e1f772bdb"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/splits.npz",
+      "bytes": 4842,
+      "sha256": "b80fdc3d18e07946ff66ef2efbeaaa7a9403643f34c1ced730c9b14a6166fbef"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "2183f34354b656dc17a99b9051d68a0f96d402773d387e19212683d67f08e643"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/4420243601133e08e773/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/4420243601133e08e773/best.pt",
+      "bytes": 25844208,
+      "sha256": "eb380bf0995df3f59effcf6d2460a147096d73798930e2901c97c7b3ab5aa8d0"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/loss.csv",
+      "bytes": 4268,
+      "sha256": "8ad124dad625bf17efdb07b7eafb64ec0bbbcb3e8773baab80f22dcefb84666a"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/manifest.json",
+      "bytes": 2727,
+      "sha256": "fd95305224d62740bbdfdefe973c5fbba9c7f67d8ef11e69df2c61b6f692bcaa"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/metrics.json",
+      "bytes": 9551,
+      "sha256": "44491fd72130cc699d4643c415ac1c8fb964b338b440b621f91713ea443a410e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/latents.npy",
+      "bytes": 6195840,
+      "sha256": "b9823fa8304ae29bb67d4e85fb0606250584ab1ade4baee3f7c092fe68d7d055"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/statistics.npz",
+      "bytes": 12274,
+      "sha256": "8c69128198b01bab9f2d3fd2a166ccf03f0afe1e4f750864804bc2ed1c304b4e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/diagnostics.json",
+      "bytes": 109652,
+      "sha256": "3acddbd3af4a1d61722d39ea1ef3f34334c6456bf6677d5a8abd248a7102a67c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/splits.npz",
+      "bytes": 4842,
+      "sha256": "b80fdc3d18e07946ff66ef2efbeaaa7a9403643f34c1ced730c9b14a6166fbef"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "3596c840fb0ee863dcaa94a065fe21478437e747dd53229bdd3be92093f7ddc0"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/845e717a5710021eb3c7/best.pt",
+      "bytes": 25777264,
+      "sha256": "7c2f9dc5f8eae4a1f17720e87785fb755d142b9e650d4587a9f8143981afc1a0"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/loss.csv",
+      "bytes": 978,
+      "sha256": "2c3ae56ab1d6d37c8ab9f21f3c6b5c16631f53910bdd3ab13a2f1a5e39afc7b9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/manifest.json",
+      "bytes": 2527,
+      "sha256": "8c90aacb4beb8eb7de9beffa2f5da08292b89f663a3e3cabcdbf54dc01e9faca"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/metrics.json",
+      "bytes": 9506,
+      "sha256": "d8d9d59bdb9f88ed575fb0a4efef119867f9e2a0863d514aef185bb55ed1c53e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/latents.npy",
+      "bytes": 6195840,
+      "sha256": "13f2abc065e52ec2b2158780f832cd785a4a0d5b8363dd0a7ed6011f27e77b6c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/statistics.npz",
+      "bytes": 12274,
+      "sha256": "60d01585821865126eba92df6daefdd5f7f448541bbd51db830c668605ecca03"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/diagnostics.json",
+      "bytes": 18002,
+      "sha256": "d751bcf3fde9a4074f074334794085b1f99787603b248363afe279ddce89cbdf"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/splits.npz",
+      "bytes": 1258,
+      "sha256": "01fadcbd886754a2a039a726035521438ccac41f43db5c51840b0d9019eeaad9"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "44863cefad4bb3c4c8b623d5e15ac63fc4633245358c6f5ca11d832160f9cef4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/smoke/aab6c33139ba32c21dc9/best.pt",
+      "bytes": 25734640,
+      "sha256": "6dd4ab4d006cf1867fb9d62adc653fd7a85ee57ad5b8fa60482e79829e17925b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/loss.csv",
+      "bytes": 28503,
+      "sha256": "13439fbfabe8451fc2961b58c98fa0950c23f0a46d7b712299602f2c68b1bb7d"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/manifest.json",
+      "bytes": 2536,
+      "sha256": "e21bdb76ed0b52e3c237c0e232a9ea66d155881861777ba64b844aa45676dc52"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/metrics.json",
+      "bytes": 9416,
+      "sha256": "b3c2b95808e37d76bdfca8dff3829304e1b51ee68e108be4cf523a973306b039"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/latents.npy",
+      "bytes": 6195840,
+      "sha256": "c9daf10bb9c924843d92dd3930d586afe282a5b7006c92554de82e115b094446"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/statistics.npz",
+      "bytes": 12274,
+      "sha256": "931ce9f84c0dab80a8143675db4dc3408213a4f3fc759d4febd20911ee8e34d2"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/diagnostics.json",
+      "bytes": 892511,
+      "sha256": "71616c6d87957fe3ac9c8e9b0b4e1803388d6929ab600b8f23a2dbaefc50cf84"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/splits.npz",
+      "bytes": 60538,
+      "sha256": "a42d6e56db094569b56df4678b31672dc29137935a75a284544c666262125c3e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "738b50023e8ea1474307ca9da37b5ce915653fdc56898492cb880566aa88ad71"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/f7b74cee51efdae41ac3/best.pt",
+      "bytes": 3048777,
+      "sha256": "604629f9321a312371258cc64432ab15e2d82e6cebad0a12c394a17ddc612e2b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/loss.csv",
+      "bytes": 31435,
+      "sha256": "a6ffaf7f3f34d1e5f99c139d88ba76702e8b6f99e1060129015c02661614c668"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/manifest.json",
+      "bytes": 2533,
+      "sha256": "0cae2a0b0dffac73840bf67c33ec6f1b32033b33e038c9dad89d9c137c5bd08c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/metrics.json",
+      "bytes": 9372,
+      "sha256": "24b8d0475eb945c6b2403aaeab91a61c8728a42232f888ec257d17c8f046a128"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/latents.npy",
+      "bytes": 6195840,
+      "sha256": "02ed21c71716d9263f520c88439022d7a059356b583bbdc4e5a444ef32135fe3"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/statistics.npz",
+      "bytes": 12274,
+      "sha256": "8c22071a2fb24e69d7fdc7a3e57498a6abea2ced8980c1bf45639dad38d0c226"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/diagnostics.json",
+      "bytes": 893531,
+      "sha256": "d8871941a887ca73258d1fdd7190b54cf5e3eba0eceddc30850df1e10d31284f"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/splits.npz",
+      "bytes": 60538,
+      "sha256": "a42d6e56db094569b56df4678b31672dc29137935a75a284544c666262125c3e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "4d11ea914a6af154cfeb68d2e4b31cd76a0d3c03de6935cf84eb7087b6d6d730"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/854a2a92e3ee353ba7f6/best.pt",
+      "bytes": 26128752,
+      "sha256": "e353fcbef1c7b6e043f84990c3a25b8362fc0ba0d8bb75180f10d054ef1fa0be"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/loss.csv",
+      "bytes": 29871,
+      "sha256": "0508c5fc2e374a3fd7acd047b241966d5162086e526c9ec7100b0ac8de247b44"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/manifest.json",
+      "bytes": 2533,
+      "sha256": "8cee28a3e846ef4cc8c30d1bc88dd2605d67d078c952d49583c777581e7804d4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/metrics.json",
+      "bytes": 9376,
+      "sha256": "c2051b97c166912437eca2d174375d4e6c5c898c875d56244e5d4b38b95567d7"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/latents.npy",
+      "bytes": 6195840,
+      "sha256": "feca1ffc8052a34fcba2495fe0ae51bfcf8d413833ccd132910cdad091466c2c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/statistics.npz",
+      "bytes": 12274,
+      "sha256": "e729c3d58e34ba98fecce5d7e0cdd4408c6009bfccae8e803de5a201fc51cf0e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/diagnostics.json",
+      "bytes": 891140,
+      "sha256": "97727f4f5f0824441e659ad88f273ce21f08061e904a3752e9c7de20efe01ffa"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/splits.npz",
+      "bytes": 60538,
+      "sha256": "a42d6e56db094569b56df4678b31672dc29137935a75a284544c666262125c3e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "03cf9bc83ea8f3b26a339f270a2efa718efc99ef6c0df6b6bd8b3c8a279ff374"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/72333f35d364475f5d46/best.pt",
+      "bytes": 26132208,
+      "sha256": "0669dec8e52586244cb9fadf90d3e9e03c76f390893c5c7da3ccf9348bfc7804"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/loss.csv",
+      "bytes": 33338,
+      "sha256": "9a02a79b34baa63c39b40b0ba5ba144ce14c20c2128ff464563b5db2fb1b6a26"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/manifest.json",
+      "bytes": 2533,
+      "sha256": "626245fc84e6b0f039cc7fb5b318cff6877c9e8c0f9c8025bd3509c14486af0b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/metrics.json",
+      "bytes": 9383,
+      "sha256": "53721336c8b57557aed860c6634cd14f29c439a6097e1e2a796334cc6c5de6f5"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/latents.npy",
+      "bytes": 6195840,
+      "sha256": "2239ee4d49a6028102fe78f1ee0957a2130018b9b70e472581e248dd17fb529e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/statistics.npz",
+      "bytes": 12274,
+      "sha256": "23b7d11ff03ae4c4f05914296dd892e7ab101651c907ae31c3bf448896968298"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/diagnostics.json",
+      "bytes": 896136,
+      "sha256": "14c66eca5a9f720030a43b7a0790d4a63ed3354597702df311b0a0d4ba1c01c6"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/splits.npz",
+      "bytes": 60538,
+      "sha256": "a42d6e56db094569b56df4678b31672dc29137935a75a284544c666262125c3e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "93590afb92b20f2b508f47bf36e5f5bf087ec9233a3ee287142a1bb9566b4690"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/eadc91d5bca88ebabf23/best.pt",
+      "bytes": 26132208,
+      "sha256": "bf3f0071d4cebbabb4f83f80ac977d8d581c531e5687c2577c00d25fd8c8af6f"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/loss.csv",
+      "bytes": 28182,
+      "sha256": "407c1cc1ff0d8938f86df5949da1fb43ca428afc8681cea704d7bc44331e8bb3"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/manifest.json",
+      "bytes": 2533,
+      "sha256": "e37b28aa7cca5228c09ee3bf4db7af9b2819915750543b44ce821fb9f5478968"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/metrics.json",
+      "bytes": 9369,
+      "sha256": "9eaaaecb031980b4e5b830ae0bfdebba65adc74f6c9f35d4caf4ec5792b79c8b"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/latents.npy",
+      "bytes": 6195840,
+      "sha256": "83852f8ad1da40bac70aa24efba5beee8f11f33840efed5e5dac51e8e3f2ddd8"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/statistics.npz",
+      "bytes": 12274,
+      "sha256": "328d8b70e6ef92150ebdd18bea3b632da5b01eac083f6f0121a0bb2f4ee106f2"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/diagnostics.json",
+      "bytes": 889260,
+      "sha256": "565ecb642f762e363e3ce484f17871de6dac91d24392f2e11455fa897bda344a"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/splits.npz",
+      "bytes": 60538,
+      "sha256": "a42d6e56db094569b56df4678b31672dc29137935a75a284544c666262125c3e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "300d41f43b7e492b0434d77d69428f62708d3c0faa38ee2fac079920608f5108"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/ablation/93a17a1a201fd3b1be28/best.pt",
+      "bytes": 26132208,
+      "sha256": "8f29eaa736c263f9713bb779965ca81d80ec83b20849f03e678346b9126cc368"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/loss.csv",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/loss.csv",
+      "bytes": 50229,
+      "sha256": "80208fcd8d5bb9a2fc5843cfbfdda6b0250ce98f1d1a705e1c5fd56607290fd6"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/manifest.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/manifest.json",
+      "bytes": 2532,
+      "sha256": "2b47f69108c9d53085ef5cc087e54fccd9b83c75a1ea4c7705586bb72cef353c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/metrics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/metrics.json",
+      "bytes": 9365,
+      "sha256": "0f453ef6e6be9f7b4f146dbfd87da502e7f09b579f3a043782b505f2d5ddcf5c"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/latents.npy",
+      "bytes": 6195840,
+      "sha256": "1ad657f40c9766dee310235ab8dbe43f1ffed1ff1dde44594aa95b2de4062139"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/statistics.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/statistics.npz",
+      "bytes": 12274,
+      "sha256": "0820074e9331696c601c54390fb44c3df2217287463b2e3c8f80a86784665623"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/diagnostics.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/diagnostics.json",
+      "bytes": 1360904,
+      "sha256": "5341f71c436f47fd89b8cd5881c93848530205097eab5051dfbf5be539a4a438"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/splits.npz",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/splits.npz",
+      "bytes": 97290,
+      "sha256": "30bdaa2673d192579ee1b8b22b889b259788352269fe40859328483b1be78a94"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/raw_latents.npy",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/raw_latents.npy",
+      "bytes": 6195840,
+      "sha256": "6609561b053f6e926525268fc178f8a30fb43913af22f9d085b68a148e08c898"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/best.pt",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/best.pt",
+      "bytes": 26243952,
+      "sha256": "9227b4da6785dd20c060664d83daeb8610db5140e452ef27fcaa24f94c54f5fc"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/train/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/train/state.json",
+      "bytes": 250,
+      "sha256": "ecdb6e5d6c0a2a34e11a7ab0bc172dae6c432f34d112f89ef9bf0db42014d502"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/train/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/train/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/train/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/train/data-00000-of-00001.arrow",
+      "bytes": 17261824,
+      "sha256": "3c0ed1ca57fb64669c12c63aef6375bb2a92f948f330bdfe114c2a7d199fca55"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/val/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/val/state.json",
+      "bytes": 250,
+      "sha256": "a56bc3e97b547ec191d977a74cb62c3d15893a119f040672b8d4e0bca57f2f7e"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/val/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/val/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/val/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/val/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ba06bdf5a26a00719c499633dabfa090745796658cd6f8cb0c1accd675b55dd1"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/test/state.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/test/state.json",
+      "bytes": 250,
+      "sha256": "5fa46243ef476b42d28342c243a841ae023e7e5d372887a8f771de92a8674e10"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/test/dataset_info.json",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/test/dataset_info.json",
+      "bytes": 550,
+      "sha256": "bcc756e0106b4ef3a7cec9000fa1a517f4492abbbdc0eb780063bc0717d3fcf4"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/test/data-00000-of-00001.arrow",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE/d839190f3cb4f1774caf/samples/tokenized_datasets_TigerDiff_021650c08f/test/data-00000-of-00001.arrow",
+      "bytes": 6228216,
+      "sha256": "ad527941aafbc87faee4d53052630cf1edec6ff47c56a900cad1a401dee3d417"
+    }
+  ],
+  "moves": [
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/eval_only",
+      "new_path": "UGRec_v1/outputs/history/mixed_evaluations/Beauty/eval_only",
+      "reason": "mixed_evaluation_logs"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions_warmup0-1_100epoch",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_all_positions_warmup0-1_100epoch",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval",
+      "reason": "geometry_ae"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval",
+      "reason": "geometry_ae"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval",
+      "reason": "geometry_ae"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval",
+      "reason": "geometry_ae"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae",
+      "new_path": "UGRec_v2/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_geometry-ae",
+      "reason": "geometry_ae"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_new-eval",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_hstu_test",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_Beauty_qwen3_transformers",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_beauty_qwen3",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Beauty/tigerdiff_beauty_qwen3",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/AmazonReviews2014/TigerDiff/Sports_and_Outdoors/tigerdiff_Sports_and_Outdoors",
+      "new_path": "UGRec_v1/outputs/ckpt/AmazonReviews2014/TigerDiff/Sports_and_Outdoors/tigerdiff_Sports_and_Outdoors",
+      "reason": "pca"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge",
+      "reason": "Only AE-only contrastive checkpoints are supported."
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_beauty_fixed_bridge_all-positions",
+      "reason": "Only AE-only contrastive checkpoints are supported."
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_contrastive_ae_only_w0.01",
+      "reason": "joint_training"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_contrastive_both_w0.01",
+      "reason": "Only AE-only contrastive checkpoints are supported."
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_ema_no_bridge",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_ema_no_bridge",
+      "reason": "Unknown configuration fields in config: ['normalization']"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_fixed_no_bridge",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_fixed_no_bridge",
+      "reason": "Unknown configuration fields in config: ['normalization']"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.001",
+      "reason": "Only AE-only contrastive checkpoints are supported."
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.001_lambda-rec-0.01",
+      "reason": "Only AE-only contrastive checkpoints are supported."
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_lambda-ae-0.0_lambda-rec-0.01",
+      "reason": "Only AE-only contrastive checkpoints are supported."
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init",
+      "reason": "Unknown configuration fields in config.ae: ['init_artifact', 'init_mode']"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test",
+      "new_path": "UGRec_v3/outputs/joint_training/Beauty/joint_Beauty_layernorm_no-infoNCE_no-init-test",
+      "reason": "joint_training"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_layernorm_no_bridge",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_layernorm_no_bridge",
+      "reason": "Unknown configuration fields in config: ['normalization']"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_nonorm_no_bridge",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_nonorm_no_bridge",
+      "reason": "Unknown configuration fields in config: ['normalization']"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_velocity",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_velocity",
+      "reason": "Unknown configuration fields in config.recommender: ['rf_prediction_type']"
+    },
+    {
+      "old_path": "ckpt/joint_training/Beauty/joint_Beauty_rf_x_c",
+      "new_path": "UGRec_v3/outputs/history/joint_training/Beauty/joint_Beauty_rf_x_c",
+      "reason": "Unknown configuration fields in config.recommender: ['rf_prediction_type']"
+    },
+    {
+      "old_path": "cache/AmazonReviews2014/Beauty/Geometry_AE",
+      "new_path": "UGRec_v2/outputs/compression/Beauty/Geometry_AE",
+      "reason": "Standalone geometry AE artifacts, weights and feature export"
+    }
+  ]
+}

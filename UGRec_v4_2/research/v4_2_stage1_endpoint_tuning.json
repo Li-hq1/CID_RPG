@@ -1,0 +1,56 @@
+[
+  {
+    "name": "s1_endpoint_rank5",
+    "config": "research/configs/v4_2/endpoint_rank5.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_endpoint_temp004",
+    "config": "research/configs/v4_2/endpoint_temp004.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_endpoint_lr05",
+    "config": "research/configs/v4_2/endpoint_lr05.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_endpoint_hstu",
+    "config": "research/configs/v4_2/endpoint_hstu.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_endpoint_k4096",
+    "config": "research/configs/v4_2/endpoint_k4096.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_coupled_p08",
+    "config": "research/configs/v4_2/coupled_p08.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  }
+]

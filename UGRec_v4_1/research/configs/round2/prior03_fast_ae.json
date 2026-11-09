@@ -1,0 +1,10 @@
+{
+  "ranking": {
+    "prior_mode": "history",
+    "prior_noise": 0.3,
+    "prediction_weight": 0.2
+  },
+  "ae": {
+    "lr": 0.0003
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "flow_ranking": {
+    "source": "history",
+    "path": "endpoint",
+    "sampling": "uniform_corrected",
+    "negatives": 1024,
+    "temperature": 0.04
+  }
+}

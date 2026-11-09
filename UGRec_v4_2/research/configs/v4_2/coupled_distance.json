@@ -1,0 +1,7 @@
+{
+  "flow_ranking": {
+    "path": "coupled",
+    "objective": "flow_distance",
+    "temperature": 0.14
+  }
+}

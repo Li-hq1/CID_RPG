@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-06",
+  "tests_passed": 83,
+  "version_source_files_checked": 38,
+  "cross_version_imports": false,
+  "protected_versions": [
+    {
+      "version": "UGRec_v5",
+      "files_verified": 59,
+      "changed": []
+    },
+    {
+      "version": "UGRec_v5_1",
+      "files_verified": 75,
+      "changed": []
+    }
+  ],
+  "full_width_checks": [
+    {
+      "category": "Beauty",
+      "directory": "outputs/Beauty/fm_readiness_updates4_s2024_20261106",
+      "actual_updates": 4,
+      "selection_users": 4,
+      "engineering_check": true,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "exact_ce": true,
+      "nonzero_velocity_observed": true,
+      "training_windows": 25745,
+      "items": 12101,
+      "config_sha256": "6faf747dd67e8f1e19eae6320b9566c77f9cb24bc2abf22b4504cbefcbca1c0b",
+      "parameters": 4387736,
+      "source_sha256": "d163a6726cdbe2cf679c179b5b8fe00b2bb9204d90e53ae7cb23d18bb9276bc0"
+    },
+    {
+      "category": "Sports_and_Outdoors",
+      "directory": "outputs/Sports_and_Outdoors/fm_readiness_updates4_s2024_20261106",
+      "actual_updates": 4,
+      "selection_users": 4,
+      "engineering_check": true,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "exact_ce": true,
+      "nonzero_velocity_observed": true,
+      "training_windows": 37197,
+      "items": 18357,
+      "config_sha256": "5779c4c8e0de45c99212c68a521ab2e673616b4af589d9f8802e87c802526f79",
+      "parameters": 4387736,
+      "source_sha256": "d163a6726cdbe2cf679c179b5b8fe00b2bb9204d90e53ae7cb23d18bb9276bc0"
+    },
+    {
+      "category": "Toys_and_Games",
+      "directory": "outputs/Toys_and_Games/fm_readiness_updates4_s2024_20261106",
+      "actual_updates": 4,
+      "selection_users": 4,
+      "engineering_check": true,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "exact_ce": true,
+      "nonzero_velocity_observed": true,
+      "training_windows": 22181,
+      "items": 11924,
+      "config_sha256": "092c4360b4c72a4b062bce426f0df289c76eb006caafd34f84cf81c5cbfbb535",
+      "parameters": 4387736,
+      "source_sha256": "d163a6726cdbe2cf679c179b5b8fe00b2bb9204d90e53ae7cb23d18bb9276bc0"
+    },
+    {
+      "category": "CDs_and_Vinyl",
+      "directory": "outputs/CDs_and_Vinyl/fm_readiness_updates4_s2024_20261106",
+      "actual_updates": 4,
+      "selection_users": 4,
+      "engineering_check": true,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "exact_ce": false,
+      "nonzero_velocity_observed": true,
+      "training_windows": 286464,
+      "items": 64443,
+      "config_sha256": "2a554cbc50c325b7cc00e2b6e3c663ad0071472cfe85e16601c9a0f1e3739d31",
+      "parameters": 4387736,
+      "source_sha256": "d163a6726cdbe2cf679c179b5b8fe00b2bb9204d90e53ae7cb23d18bb9276bc0"
+    }
+  ],
+  "smoke": {
+    "directory": "outputs/Beauty/fm_smoke_s2024_20261106",
+    "checkpoint_reload_verified": true
+  },
+  "formal_benchmarks_run": false,
+  "multi_seed_run": false,
+  "gpu_jobs_started": false
+}

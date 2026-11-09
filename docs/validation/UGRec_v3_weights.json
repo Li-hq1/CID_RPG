@@ -1,0 +1,22 @@
+[
+  {
+    "run": "joint_Beauty_contrastive_ae_only_w0.01",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "joint_Beauty_layernorm_no-infoNCE_no-init-test",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  }
+]

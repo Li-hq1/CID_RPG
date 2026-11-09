@@ -1,0 +1,26 @@
+[
+  {
+    "run": "joint_Beauty_contrastive_ae_only_w0.01",
+    "source_matches": true,
+    "items": 12101,
+    "catalog_finite": true,
+    "loss_finite": true,
+    "generated_shape": [
+      2,
+      10,
+      1
+    ]
+  },
+  {
+    "run": "joint_Beauty_layernorm_no-infoNCE_no-init-test",
+    "source_matches": true,
+    "items": 12101,
+    "catalog_finite": true,
+    "loss_finite": true,
+    "generated_shape": [
+      2,
+      10,
+      1
+    ]
+  }
+]

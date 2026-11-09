@@ -1,0 +1,59 @@
+{
+  "left": "outputs/experiments/Beauty/beauty_A_ce_h3_s2024_20261108",
+  "left_arm": "ce",
+  "left_nfe_per_user": 0,
+  "matched_protocol_and_budget": true,
+  "metrics": {
+    "ndcg@10": {
+      "left": 0.057948029601451054,
+      "relative_change": 0.06313005628698187,
+      "right": 0.06160629197191035
+    },
+    "recall@10": {
+      "left": 0.07919678714859436,
+      "relative_change": 0.07758620689655182,
+      "right": 0.08534136546184738
+    },
+    "step1/ndcg@10": {
+      "left": 0.06141061134702941,
+      "relative_change": -0.03159331989681691,
+      "right": 0.059470446257683614
+    },
+    "step2/ndcg@10": {
+      "left": 0.036812917246187855,
+      "relative_change": 0.1402642361830162,
+      "right": 0.04197645296539298
+    },
+    "step3/ndcg@10": {
+      "left": 0.02525965184535437,
+      "relative_change": 0.18100524622092728,
+      "right": 0.02983178134707764
+    }
+  },
+  "right": "outputs/experiments/Beauty/beauty_C_future_ce_h3_s2024_20261108",
+  "right_arm": "future_ce",
+  "right_diagnostics": {
+    "ranking": {
+      "ndcg@10": 0.05870949996241669,
+      "ndcg@5": 0.04469873128025825,
+      "nll": 8.338637351989746,
+      "recall@10": 0.08032128514056225,
+      "recall@5": 0.049317269076305216,
+      "step1/ndcg@10": 0.06162959505577188,
+      "step1/ndcg@5": 0.05027509690693743,
+      "step1/recall@10": 0.11060240963855422,
+      "step1/recall@5": 0.07530120481927711,
+      "step2/ndcg@10": 0.037660850153747205,
+      "step2/ndcg@5": 0.027630060636918967,
+      "step2/recall@10": 0.07578313253012048,
+      "step2/recall@5": 0.044457831325301206,
+      "step3/ndcg@10": 0.025815375077697038,
+      "step3/ndcg@5": 0.017344698888141125,
+      "step3/recall@10": 0.054578313253012045,
+      "step3/recall@5": 0.028192771084337348
+    }
+  },
+  "right_nfe_per_user": 0,
+  "single_seed_trend_only": true,
+  "test_accessed": false
+}

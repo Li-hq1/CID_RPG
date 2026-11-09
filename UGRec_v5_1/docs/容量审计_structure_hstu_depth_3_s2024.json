@@ -1,0 +1,125 @@
+{
+  "audited_utc": "2026-11-09T05:50:13.488158+00:00",
+  "campaign": "structure_hstu_depth_3_s2024",
+  "comparison": {
+    "eligible_for_promotion": false,
+    "interpretation": "single-seed trend unless both sides have the same explicit multiple seeds",
+    "matched_confirmation_seeds": false,
+    "mean_relative_ndcg10": -0.001970862960042378,
+    "regression_guard_passed": false,
+    "relative_ndcg10": {
+      "beauty": 0.009651398605887929,
+      "sports": -0.04382766018767137,
+      "toys": 0.028263672701656306
+    },
+    "worst_relative_ndcg10": -0.04382766018767137
+  },
+  "comparison_datasets": [
+    "beauty",
+    "sports",
+    "toys"
+  ],
+  "cds_trained": false,
+  "parameter_delta": 115464,
+  "candidate_parameters": 4370968,
+  "reference_parameters": 4255504,
+  "source_sha256": "b03654cf7f50f41bf317a35309968733f39f07a204926d35cbba0076584568b2",
+  "runtime_source_matches": true,
+  "summary_sha256": "0e3dd3a74e0c00d49352431e2404d49210f86a7119cda5c79a0412e5489b58f2",
+  "runs": {
+    "beauty": {
+      "full_match": true,
+      "sel_match": true,
+      "full": {
+        "users": 22363,
+        "unique_topk": true,
+        "min_id": 1,
+        "max_id": 12101,
+        "metrics": {
+          "recall@5": 0.0729329696373474,
+          "ndcg@5": 0.04795366799675551,
+          "recall@10": 0.11049501408576667,
+          "ndcg@10": 0.060043560503663114
+        }
+      },
+      "selection_users": 4096,
+      "candidate_curve": {
+        "best_epoch": 15,
+        "best_selection_ndcg10": 0.06197210248528085,
+        "last_selection_ndcg10": 0.05514396791129549,
+        "postbest_relative_ndcg10_change": -0.11018077974048279,
+        "last_draw_cosine": 0.9226775865743656
+      },
+      "reference_curve": {
+        "best_epoch": 15,
+        "best_selection_ndcg10": 0.0620159018494826,
+        "last_selection_ndcg10": 0.0544370233069916,
+        "postbest_relative_ndcg10_change": -0.12220863224541223,
+        "last_draw_cosine": 0.9207084633336209
+      }
+    },
+    "sports": {
+      "full_match": true,
+      "sel_match": true,
+      "full": {
+        "users": 35598,
+        "unique_topk": true,
+        "min_id": 2,
+        "max_id": 18357,
+        "metrics": {
+          "recall@5": 0.040507893701893366,
+          "ndcg@5": 0.026214524956990885,
+          "recall@10": 0.06275633462554076,
+          "ndcg@10": 0.033333217144821035
+        }
+      },
+      "selection_users": 4096,
+      "candidate_curve": {
+        "best_epoch": 15,
+        "best_selection_ndcg10": 0.03430370012386685,
+        "last_selection_ndcg10": 0.029592654620905948,
+        "postbest_relative_ndcg10_change": -0.13733345050096168,
+        "last_draw_cosine": 0.8903765841706158
+      },
+      "reference_curve": {
+        "best_epoch": 15,
+        "best_selection_ndcg10": 0.03697463955068381,
+        "last_selection_ndcg10": 0.03292751510610335,
+        "postbest_relative_ndcg10_change": -0.10945676533324333,
+        "last_draw_cosine": 0.8852429659399268
+      }
+    },
+    "toys": {
+      "full_match": true,
+      "sel_match": true,
+      "full": {
+        "users": 19412,
+        "unique_topk": true,
+        "min_id": 1,
+        "max_id": 11924,
+        "metrics": {
+          "recall@5": 0.07103853286626828,
+          "ndcg@5": 0.04595018420937142,
+          "recall@10": 0.10483206264166495,
+          "ndcg@10": 0.056814143507135234
+        }
+      },
+      "selection_users": 4096,
+      "candidate_curve": {
+        "best_epoch": 20,
+        "best_selection_ndcg10": 0.05496618974262507,
+        "last_selection_ndcg10": 0.048790605450922675,
+        "postbest_relative_ndcg10_change": -0.11235241737910329,
+        "last_draw_cosine": 0.9285354196340189
+      },
+      "reference_curve": {
+        "best_epoch": 15,
+        "best_selection_ndcg10": 0.05266757089857884,
+        "last_selection_ndcg10": 0.04858873604046759,
+        "postbest_relative_ndcg10_change": -0.07744490183467556,
+        "last_draw_cosine": 0.9252604883292626
+      }
+    }
+  },
+  "test_accessed": false
+}

@@ -1,0 +1,6 @@
+{
+  "flow_ranking": {
+    "objective": "directional",
+    "path": "metric_rf"
+  }
+}

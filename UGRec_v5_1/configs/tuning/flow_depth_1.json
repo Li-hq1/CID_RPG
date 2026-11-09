@@ -1,0 +1,11 @@
+{
+  "id": "structure_flow_depth_1_s2024",
+  "stage": "shared",
+  "seed": 2024,
+  "parent": "starting_point_sports_rec_lr_half_s2024",
+  "reference": "starting_point_sports_rec_lr_half_s2024",
+  "hypothesis": "校准曲线在最佳轮后下降，且噪声余弦升高、mixture gain 下降，说明速度网络输出趋同；把 Flow residual depth 从 2 降到 1，检验过大的共用容量是否来自速度网络。",
+  "change_reason": "阶段3a的 norm 与 linear 都未过护栏，保留 norm_linear。没有映射容量不足的证据，不加深 MLP。本项只减小 diffloss_d。",
+  "shared": {"recommender.diffloss_d": 1},
+  "datasets": {}
+}

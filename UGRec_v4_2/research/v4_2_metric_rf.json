@@ -1,0 +1,20 @@
+[
+  {
+    "name": "s1_metric_rf",
+    "config": "research/configs/v4_2/metric_rf.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_metric_rf_geometry",
+    "config": "research/configs/v4_2/metric_rf_geometry.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  }
+]

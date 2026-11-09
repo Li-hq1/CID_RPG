@@ -1,0 +1,71 @@
+{
+  "data": {
+    "category": "Beauty",
+    "cache_dir": "cache",
+    "max_item_seq_len": 50
+  },
+  "ae": {
+    "architecture": "mlp",
+    "hidden_norm": "none",
+    "hidden_dims": [
+      512,
+      256
+    ],
+    "latent_dim": 128,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "max_grad_norm": 1.0,
+    "batch_size": 512,
+    "update_every": 1,
+    "frozen": false,
+    "scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "cosine_weight": 0.1,
+    "variance_weight": 0.1,
+    "correlation_weight": 1.0,
+    "relation_mode": "none",
+    "relation_weight": 0.1,
+    "relation_temperature": 0.1
+  },
+  "fmrec": {
+    "method": "fmrec",
+    "num_blocks": 4,
+    "heads": 4,
+    "dropout": 0.1,
+    "emb_dropout": 0.3,
+    "lambda_uncertainty": 0.001,
+    "eps": 0.001,
+    "eps_reverse": 0.001,
+    "sample_N": 30,
+    "sampling_method": "mode",
+    "s_modsamp": 1.0,
+    "m_logNorm": 1.0,
+    "s_logNorm": 0.6,
+    "last": 2,
+    "fm_weight": 1.0,
+    "ce_weight": 0.2,
+    "mse_weight": 0.0,
+    "mask_ratio": 1.0,
+    "latent_normalization": "layer"
+  },
+  "training": {
+    "epochs": 500,
+    "batch_size": 512,
+    "seed": 2024,
+    "device": "cuda:0",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "decay_step": 100,
+    "gamma": 0.1,
+    "local_weight": 0.1,
+    "eval_interval": 20,
+    "eval_batch_size": 128,
+    "selection_users": 4096,
+    "patience": 5,
+    "cpu_threads": 2,
+    "run_id": "fmrec_joint_s2024",
+    "output_dir": "outputs/fmrec/runs",
+    "max_steps": null,
+    "smoke_test": false
+  }
+}

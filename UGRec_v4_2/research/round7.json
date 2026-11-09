@@ -1,0 +1,26 @@
+[
+  {
+    "name": "r7_marginal4",
+    "config": "research/configs/round7/marginal4.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:0"
+  },
+  {
+    "name": "r7_sample4",
+    "config": "research/configs/round7/sample4.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:1"
+  },
+  {
+    "name": "r7_marginal4_no_rf",
+    "config": "research/configs/round7/marginal4_no_rf.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:2"
+  }
+]

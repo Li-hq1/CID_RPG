@@ -1,0 +1,53 @@
+{
+  "training_source_verified_current_and_snapshots": true,
+  "parent_data_selection_seed_matched": true,
+  "parent_checkpoint_verified": true,
+  "research_script_hashes_verified": true,
+  "three_runs_4040_updates": true,
+  "full_validation_users": 22363,
+  "test_accessed": false,
+  "all_checkpoints_reloaded": true,
+  "final_test_suite": "docs/tests_final_followup_20261106.txt",
+  "report": "UGRec_v5_2/docs/初步实验分析_20261106.md",
+  "identities": [
+    {
+      "source_sha256": "25d1d3c9fdda404b1094524625e16a99bfc6896607cf73a141622018d63c8079",
+      "source": {
+        "category": "Beauty",
+        "input": "raw",
+        "item_order_sha256": "cdbce06cc43dd5e086f3b491595a686e24066ce1fceacb49852cfdd60cfdeb69",
+        "raw_sha256": "e353718d4e922f10fb829b10611624a609b7fde5e0eba2e79a4e5895b41a36fd",
+        "teacher_kind": null,
+        "train_sha256": "04412b17ff3993742c30b70a847a0b617a008bc359ee550866e470a9d1b8b108"
+      },
+      "selection_indices_sha256": "d2f334a3ccd62bb1dbbb37440b57e8351e4fd4b59aece7b66c2cf843808d121d",
+      "seed": 2024
+    },
+    {
+      "source_sha256": "25d1d3c9fdda404b1094524625e16a99bfc6896607cf73a141622018d63c8079",
+      "source": {
+        "category": "Beauty",
+        "input": "raw",
+        "item_order_sha256": "cdbce06cc43dd5e086f3b491595a686e24066ce1fceacb49852cfdd60cfdeb69",
+        "raw_sha256": "e353718d4e922f10fb829b10611624a609b7fde5e0eba2e79a4e5895b41a36fd",
+        "teacher_kind": null,
+        "train_sha256": "04412b17ff3993742c30b70a847a0b617a008bc359ee550866e470a9d1b8b108"
+      },
+      "selection_indices_sha256": "d2f334a3ccd62bb1dbbb37440b57e8351e4fd4b59aece7b66c2cf843808d121d",
+      "seed": 2024
+    },
+    {
+      "source_sha256": "25d1d3c9fdda404b1094524625e16a99bfc6896607cf73a141622018d63c8079",
+      "source": {
+        "category": "Beauty",
+        "input": "raw",
+        "item_order_sha256": "cdbce06cc43dd5e086f3b491595a686e24066ce1fceacb49852cfdd60cfdeb69",
+        "raw_sha256": "e353718d4e922f10fb829b10611624a609b7fde5e0eba2e79a4e5895b41a36fd",
+        "teacher_kind": null,
+        "train_sha256": "04412b17ff3993742c30b70a847a0b617a008bc359ee550866e470a9d1b8b108"
+      },
+      "selection_indices_sha256": "d2f334a3ccd62bb1dbbb37440b57e8351e4fd4b59aece7b66c2cf843808d121d",
+      "seed": 2024
+    }
+  ]
+}

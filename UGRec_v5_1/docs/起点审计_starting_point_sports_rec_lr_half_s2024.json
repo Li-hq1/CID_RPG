@@ -1,0 +1,280 @@
+{
+  "campaign": "starting_point_sports_rec_lr_half_s2024",
+  "audited_at": "2026-11-06T15:01:59.635470+08:00",
+  "manifest_sha256": "f33ecfa3922ad74f647d58474a6ea6bdd53203acce90ee34b954a2960db1e089",
+  "summary_sha256": "d662dc1172f1b6210a9069e2665383e71f5c1b0cbd091654c955bef46212c2fb",
+  "source_sha256": "68e5474866bfbb1a833593b2aa2327bbbf6c4b616068a7ba6207a9d488533895",
+  "parent": "/home/haoquan/CID_RPG/UGRec_v5_1/outputs/tuning/control_baseline_s2024",
+  "reference": "/home/haoquan/CID_RPG/UGRec_v5_1/outputs/tuning/control_baseline_s2024",
+  "mode": "benchmark",
+  "test_accessed": false,
+  "changed": {
+    "dataset": "sports",
+    "recommender.lr": 0.0005,
+    "parent_recommender.lr": 0.001
+  },
+  "unchanged_confirmed": {
+    "ae.lr": 0.0001,
+    "recommender.weight_decay": 0.01,
+    "ae.weight_decay": 0.0001,
+    "temperature": 0.07,
+    "local_weight": 0.1,
+    "draws": 8,
+    "eval_draws": 32,
+    "epochs": 40,
+    "seed": 2024,
+    "input_projection": "linear_norm",
+    "condition_projection": "norm_linear",
+    "anchor_projection": "linear",
+    "flow_condition_projection": "linear",
+    "parameters": 4255504
+  },
+  "sports": {
+    "validation": {
+      "ndcg@10": 0.03486109747889535,
+      "ndcg@5": 0.027104626145286026,
+      "nll": 8.450132369995117,
+      "recall@10": 0.06657677397606607,
+      "recall@5": 0.0424462048429687
+    },
+    "validation_selection": {
+      "ndcg@10": 0.03697463955068381,
+      "ndcg@5": 0.02904031474972845,
+      "nll": 8.392640113830566,
+      "recall@10": 0.071044921875,
+      "recall@5": 0.04638671875
+    },
+    "best": {
+      "epoch": 15,
+      "score": 0.03697463955068381
+    },
+    "steps": 5840,
+    "completed_epochs": 40,
+    "seconds": 429.77645611763,
+    "process_seconds": 436.1361837387085,
+    "peak_memory_allocated_mib": 3463.3828125,
+    "peak_memory_reserved_mib": 4066.0,
+    "checkpoint_reload_verified": true,
+    "benchmark_eligible": true,
+    "selection_users": 4096,
+    "checkpoint_sha256": "b411fa028ad84047de89f1d0d80cbbb016d0040869482fe7809704334b55080d",
+    "prediction_audits": {
+      "selection_flow.npz": {
+        "users": 4096,
+        "metrics_recomputed": {
+          "recall@5": 0.04638671875,
+          "ndcg@5": 0.02904031474972845,
+          "recall@10": 0.071044921875,
+          "ndcg@10": 0.03697463955068381
+        },
+        "sha256": "5ada8ef9ad35cda401b29cbdcbf0df8ca6c1b8b9c4827c5b5fed0b00c96464b2",
+        "unique_topk": true,
+        "min_id": 2,
+        "max_id": 18357
+      },
+      "full_flow.npz": {
+        "users": 35598,
+        "metrics_recomputed": {
+          "recall@5": 0.0424462048429687,
+          "ndcg@5": 0.027104626145286026,
+          "recall@10": 0.06657677397606607,
+          "ndcg@10": 0.03486109747889535
+        },
+        "sha256": "ec864994481d42cce8649e00356643c2ea54167522913bff71b22993fd071dc2",
+        "unique_topk": true,
+        "min_id": 2,
+        "max_id": 18357
+      }
+    },
+    "selection_curve": [
+      {
+        "epoch": 5,
+        "ndcg@10": 0.028997363097517135,
+        "rank_loss": 8.266045890442312,
+        "ae_loss": 0.9676836039105506,
+        "rec_lr": 0.000499679545590922,
+        "mixture_gain": 0.09000681657088946,
+        "draw_cosine": 0.8061092953159384,
+        "candidates": 18357.0
+      },
+      {
+        "epoch": 10,
+        "ndcg@10": 0.03287170085557558,
+        "rank_loss": 7.941363158291334,
+        "ae_loss": 0.8864751543900738,
+        "rec_lr": 0.0004716478557404475,
+        "mixture_gain": 0.08907687255780991,
+        "draw_cosine": 0.8302121133836982,
+        "candidates": 18357.0
+      },
+      {
+        "epoch": 15,
+        "ndcg@10": 0.03697463955068381,
+        "rank_loss": 7.646524648143821,
+        "ae_loss": 0.8580870277261081,
+        "rec_lr": 0.00040208280968416526,
+        "mixture_gain": 0.08714828874966869,
+        "draw_cosine": 0.8501550004090348,
+        "candidates": 18357.0
+      },
+      {
+        "epoch": 20,
+        "ndcg@10": 0.03628035765403506,
+        "rank_loss": 7.310229076098089,
+        "ae_loss": 0.8425403751739083,
+        "rec_lr": 0.0003040198136418962,
+        "mixture_gain": 0.09192505927935038,
+        "draw_cosine": 0.8646799252457815,
+        "candidates": 18357.0
+      },
+      {
+        "epoch": 25,
+        "ndcg@10": 0.0338273187456644,
+        "rank_loss": 6.97731656897558,
+        "ae_loss": 0.8377113236139898,
+        "rec_lr": 0.00019583434583167307,
+        "mixture_gain": 0.09652803185051434,
+        "draw_cosine": 0.8755297934355801,
+        "candidates": 18357.0
+      },
+      {
+        "epoch": 30,
+        "ndcg@10": 0.0328878187664167,
+        "rank_loss": 6.727860966773882,
+        "ae_loss": 0.8353686945079124,
+        "rec_lr": 9.779867803272602e-05,
+        "mixture_gain": 0.099286774249926,
+        "draw_cosine": 0.881973630353196,
+        "candidates": 18357.0
+      },
+      {
+        "epoch": 35,
+        "ndcg@10": 0.03279792541977937,
+        "rank_loss": 6.5833058879800035,
+        "ae_loss": 0.8344387040562826,
+        "rec_lr": 2.8283167575901486e-05,
+        "mixture_gain": 0.10047023707669075,
+        "draw_cosine": 0.8846046908261025,
+        "candidates": 18357.0
+      },
+      {
+        "epoch": 40,
+        "ndcg@10": 0.03292751510610335,
+        "rank_loss": 6.538708477804105,
+        "ae_loss": 0.8351126341787103,
+        "rec_lr": 3.1393848115299846e-07,
+        "mixture_gain": 0.1003708151513583,
+        "draw_cosine": 0.8852429659399268,
+        "candidates": 18357.0
+      }
+    ],
+    "training_diagnostics": {
+      "first": {
+        "epoch": 1,
+        "rank_loss": 9.41238040793432,
+        "ae_loss": 1.1615252445821893,
+        "ae_lr": 2.5171232876712333e-05,
+        "rec_lr": 6.292808219178082e-05,
+        "mixture_gain": 0.1660278589554029,
+        "draw_cosine": 0.5291296980560642
+      },
+      "best": {
+        "epoch": 15,
+        "rank_loss": 7.646524648143821,
+        "ae_loss": 0.8580870277261081,
+        "ae_lr": 7.5574805798571e-05,
+        "rec_lr": 0.00040208280968416526,
+        "mixture_gain": 0.08714828874966869,
+        "draw_cosine": 0.8501550004090348
+      },
+      "last": {
+        "epoch": 40,
+        "rank_loss": 6.538708477804105,
+        "ae_loss": 0.8351126341787103,
+        "ae_lr": 5.6354576401749713e-08,
+        "rec_lr": 3.1393848115299846e-07,
+        "mixture_gain": 0.1003708151513583,
+        "draw_cosine": 0.8852429659399268
+      }
+    },
+    "last_vs_best_selection_relative": -0.10945676533324333,
+    "parent_full_ndcg10": 0.03321653678994415,
+    "absolute_ndcg10_change": 0.001644560688951198,
+    "relative_ndcg10_change": 0.049510299624284215,
+    "parent_selection_curve": {
+      "5": 0.029190455037716043,
+      "10": 0.03232835482550758,
+      "15": 0.0358636377005587,
+      "20": 0.03342660727280166,
+      "25": 0.031097269856643853,
+      "30": 0.02971137738977875,
+      "35": 0.028251838060328317,
+      "40": 0.027731127512118356
+    },
+    "parent_last_vs_best_selection_relative": -0.22676199933599184
+  },
+  "comparison": {
+    "eligible_for_promotion": true,
+    "interpretation": "single-seed trend unless both sides have the same explicit multiple seeds",
+    "matched_confirmation_seeds": false,
+    "mean_relative_ndcg10": 0.012377574906071054,
+    "regression_guard_passed": true,
+    "relative_ndcg10": {
+      "beauty": 0.0,
+      "cds": 0.0,
+      "sports": 0.049510299624284215,
+      "toys": 0.0
+    },
+    "worst_relative_ndcg10": 0.0
+  },
+  "dataset_comparison_to_parent": {
+    "absolute_ndcg10_changes": {
+      "sports": 0.001644560688951198
+    },
+    "passed": true
+  },
+  "reused": [
+    {
+      "category": "Beauty",
+      "config": "configs/beauty_s2024.json",
+      "config_sha256": "543cc7ffec860c98d8a3fea1f1f5b797e6bf9f0e6bfe7144d4b60bdd6a7b85ac",
+      "dataset": "beauty",
+      "output": "runs/Beauty/control_baseline_s2024_s2024",
+      "reused": {
+        "campaign": "/home/haoquan/CID_RPG/UGRec_v5_1/outputs/tuning/control_baseline_s2024",
+        "dataset": "beauty",
+        "manifest_sha256": "b5d0f0cfcdb43054220c5597bb1f9920d003e9bc98311b674abbd10c29a5d76e",
+        "seed": 2024
+      },
+      "seed": 2024
+    },
+    {
+      "category": "Toys_and_Games",
+      "config": "configs/toys_s2024.json",
+      "config_sha256": "da1bbdfe247d0fe88668d6a506f2fd65e3f0d9c8366ef9c42d91c971b32d5622",
+      "dataset": "toys",
+      "output": "runs/Toys_and_Games/control_baseline_s2024_s2024",
+      "reused": {
+        "campaign": "/home/haoquan/CID_RPG/UGRec_v5_1/outputs/tuning/control_baseline_s2024",
+        "dataset": "toys",
+        "manifest_sha256": "b5d0f0cfcdb43054220c5597bb1f9920d003e9bc98311b674abbd10c29a5d76e",
+        "seed": 2024
+      },
+      "seed": 2024
+    },
+    {
+      "category": "CDs_and_Vinyl",
+      "config": "configs/cds_s2024.json",
+      "config_sha256": "aa5dfe044b24c270c017fcfab84a06f3d825aa63cfa27fc3e7977d5fac7d32f2",
+      "dataset": "cds",
+      "output": "runs/CDs_and_Vinyl/control_baseline_s2024_s2024",
+      "reused": {
+        "campaign": "/home/haoquan/CID_RPG/UGRec_v5_1/outputs/tuning/control_baseline_s2024",
+        "dataset": "cds",
+        "manifest_sha256": "b5d0f0cfcdb43054220c5597bb1f9920d003e9bc98311b674abbd10c29a5d76e",
+        "seed": 2024
+      },
+      "seed": 2024
+    }
+  ]
+}

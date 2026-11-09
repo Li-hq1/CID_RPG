@@ -1,0 +1,20 @@
+[
+  {
+    "name": "s1_depth_endpoint",
+    "config": "research/configs/v4_2/depth_endpoint.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_depth_rollout",
+    "config": "research/configs/v4_2/depth_rollout.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  }
+]

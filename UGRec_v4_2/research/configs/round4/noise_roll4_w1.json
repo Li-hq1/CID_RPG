@@ -1,0 +1,9 @@
+{
+  "ranking": {
+    "rollout_weight": 1.0,
+    "prediction_weight": 0.2
+  },
+  "recommender": {
+    "num_sampling_steps": 5
+  }
+}

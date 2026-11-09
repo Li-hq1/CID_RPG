@@ -1,0 +1,9 @@
+{
+  "id": "control_baseline_s2024",
+  "stage": "baseline",
+  "seed": 2024,
+  "hypothesis": "固定 v5 control 在四个数据集上可复现地训练，为后续相对比较提供起点。",
+  "change_reason": "Beauty 之外尚无本版本同协议起点；先建立四数据集对照，不改变结构或目标。",
+  "shared": {},
+  "datasets": {}
+}

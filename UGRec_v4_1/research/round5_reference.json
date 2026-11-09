@@ -1,0 +1,47 @@
+[
+  {
+    "name": "r1_ce_only",
+    "config": "research/configs/round1/ce_only.json",
+    "category": "Beauty",
+    "seed": 2025,
+    "epochs": 40,
+    "device": "cuda:0",
+    "wait_for": "outputs/iterative_20261028/Beauty/r4_noise_roll4_w1_s2024_e40/results.json"
+  },
+  {
+    "name": "r1_ce_only",
+    "config": "research/configs/round1/ce_only.json",
+    "category": "Beauty",
+    "seed": 2026,
+    "epochs": 40,
+    "device": "cuda:1",
+    "wait_for": "outputs/iterative_20261028/Beauty/r4_noise_roll4_w5_s2024_e40/results.json"
+  },
+  {
+    "name": "r1_ce_only",
+    "config": "research/configs/round1/ce_only.json",
+    "category": "Sports",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:2",
+    "wait_for": "outputs/iterative_20261028/Beauty/r4_prior_roll4_w1_s2024_e40/results.json"
+  },
+  {
+    "name": "r1_ce_only",
+    "config": "research/configs/round1/ce_only.json",
+    "category": "Sports",
+    "seed": 2025,
+    "epochs": 40,
+    "device": "cuda:3",
+    "wait_for": "outputs/iterative_20261028/Beauty/r4_prior_roll4_w5_s2024_e40/results.json"
+  },
+  {
+    "name": "r1_ce_only",
+    "config": "research/configs/round1/ce_only.json",
+    "category": "Sports",
+    "seed": 2026,
+    "epochs": 40,
+    "device": "cuda:4",
+    "wait_for": "outputs/iterative_20261028/Beauty/r4_prior_roll4_rf01_s2024_e40/results.json"
+  }
+]

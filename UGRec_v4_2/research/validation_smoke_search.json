@@ -1,0 +1,14 @@
+{
+  "study_name": "ugrec_v4_validation_protocol_smoke_20261028",
+  "n_trials": 1,
+  "timeout": null,
+  "direction": "maximize",
+  "sampler": "tpe",
+  "pruner": "median",
+  "pruner_startup_trials": 1,
+  "pruner_warmup_steps": 30,
+  "enqueue_baseline": true,
+  "parameters": [
+    {"path": "recommender.lr", "type": "float", "low": 0.0004, "high": 0.0006, "log": true}
+  ]
+}

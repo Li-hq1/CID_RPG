@@ -1,0 +1,11 @@
+{
+  "id": "readiness_dataset_reuse_20261106",
+  "stage": "dataset",
+  "seed": 2024,
+  "parent": "control_readiness_20261106_final",
+  "reference": "control_readiness_20261106_final",
+  "hypothesis": "只改 Sports LR 时，只产生一项新的工程运行，其他三项保留可核对的父实验来源。",
+  "change_reason": "检验专用参数隔离、父配置继承、结果复用与幂等续跑；短程分数不参与性能比较。",
+  "shared": {},
+  "datasets": {"sports": {"recommender.lr": 0.0005}}
+}

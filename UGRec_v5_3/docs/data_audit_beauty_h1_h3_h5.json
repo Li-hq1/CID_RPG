@@ -1,0 +1,82 @@
+{
+  "category": "Beauty",
+  "model_metrics_used": false,
+  "test_targets_accessed": false,
+  "windows": [
+    {
+      "auxiliary_queries": 131413,
+      "eligible_users": 22363,
+      "horizon": 1,
+      "min_train_items": 2,
+      "next_queries": 131413,
+      "original_length_quantiles": [
+        5.0,
+        5.0,
+        6.0,
+        9.0,
+        204.0
+      ],
+      "original_users": 22363,
+      "protocol": "future_window",
+      "retention": 1.0,
+      "split_type": "per_user_contiguous_not_global_time",
+      "test_suffix_reserved": 1,
+      "test_targets_accessed": false,
+      "training_interactions": 153776,
+      "training_items": 12068,
+      "training_windows": 25745,
+      "validation_unique_targets_mean": 1.0,
+      "validation_width": 1
+    },
+    {
+      "auxiliary_queries": 45717,
+      "eligible_users": 8300,
+      "horizon": 3,
+      "min_train_items": 2,
+      "next_queries": 60506,
+      "original_length_quantiles": [
+        5.0,
+        5.0,
+        6.0,
+        9.0,
+        204.0
+      ],
+      "original_users": 22363,
+      "protocol": "future_window",
+      "retention": 0.3711487725260475,
+      "split_type": "per_user_contiguous_not_global_time",
+      "test_suffix_reserved": 3,
+      "test_targets_accessed": false,
+      "training_interactions": 68806,
+      "training_items": 10950,
+      "training_windows": 11210,
+      "validation_unique_targets_mean": 3.0,
+      "validation_width": 3
+    },
+    {
+      "auxiliary_queries": 25077,
+      "eligible_users": 3547,
+      "horizon": 5,
+      "min_train_items": 2,
+      "next_queries": 36352,
+      "original_length_quantiles": [
+        5.0,
+        5.0,
+        6.0,
+        9.0,
+        204.0
+      ],
+      "original_users": 22363,
+      "protocol": "future_window",
+      "retention": 0.15861020435540849,
+      "split_type": "per_user_contiguous_not_global_time",
+      "test_suffix_reserved": 5,
+      "test_targets_accessed": false,
+      "training_interactions": 39899,
+      "training_items": 8933,
+      "training_windows": 6066,
+      "validation_unique_targets_mean": 5.0,
+      "validation_width": 5
+    }
+  ]
+}

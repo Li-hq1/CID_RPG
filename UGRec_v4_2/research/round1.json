@@ -1,0 +1,74 @@
+[
+  {
+    "name": "r1_rf_only",
+    "config": "research/configs/round1/rf_only.json",
+    "category": "Beauty",
+    "device": "cuda:0",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content"
+  },
+  {
+    "name": "r1_ce_only",
+    "config": "research/configs/round1/ce_only.json",
+    "category": "Beauty",
+    "device": "cuda:1",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content"
+  },
+  {
+    "name": "r1_joint",
+    "config": "research/configs/round1/joint.json",
+    "category": "Beauty",
+    "device": "cuda:2",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content"
+  },
+  {
+    "name": "r1_joint_pred02",
+    "config": "research/configs/round1/joint_pred02.json",
+    "category": "Beauty",
+    "device": "cuda:3",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content"
+  },
+  {
+    "name": "r1_joint_pred1",
+    "config": "research/configs/round1/joint_pred1.json",
+    "category": "Beauty",
+    "device": "cuda:4",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content"
+  },
+  {
+    "name": "r1_joint_pred02_text01",
+    "config": "research/configs/round1/joint_pred02_text01.json",
+    "category": "Beauty",
+    "device": "cuda:5",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content"
+  },
+  {
+    "name": "r1_joint_pred02_graph01",
+    "config": "research/configs/round1/joint_pred02_graph01.json",
+    "category": "Beauty",
+    "device": "cuda:6",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "behavior"
+  },
+  {
+    "name": "r1_joint_fast_ae",
+    "config": "research/configs/round1/joint_fast_ae.json",
+    "category": "Beauty",
+    "device": "cuda:7",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content"
+  }
+]

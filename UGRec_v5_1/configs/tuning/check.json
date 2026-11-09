@@ -1,0 +1,9 @@
+{
+  "id": "control_readiness_20261106_final",
+  "stage": "baseline",
+  "seed": 2024,
+  "hypothesis": "四个真实目录上的完整 control 维度均能完成更新、验证和 checkpoint 重载。",
+  "change_reason": "工程验收只验证可执行性；短运行分数不参与调参或 benchmark。",
+  "shared": {},
+  "datasets": {}
+}

@@ -1,7 +1,39 @@
+# local env and editor
 cache/
-__pycache__/
-.vscode/
 .venv/
-tensorboard/
+.vscode/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# training artifacts in every version
+outputs/
 ckpt/
-vis_analysis/vis_results/
+tensorboard/
+wandb/
+runs/
+logs/
+*.log
+nohup.out
+
+# weights and data dumps
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.npy
+*.npz
+*.pkl
+*.h5
+*.sqlite
+*.db
+
+# non-mainline: exploratory runs, and the upstream FMRec checkout
+# (FMRec has its own .git plus dataset pickles)
+experiments/
+FMRec/
+
+# archived visualization dumps
+archive/pre_ugrec/vis_analysis/vis_results/

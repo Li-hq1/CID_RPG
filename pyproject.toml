@@ -1,5 +1,5 @@
 [project]
-name = "ADRec"
+name = "UGRec"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
@@ -11,4 +11,5 @@ dependencies = [
     "sentence-transformers>=5.5.1",
     "tiktoken>=0.13.0",
     "optuna>=5.0.0",
+    "tensorboard>=2.20.0",
 ]

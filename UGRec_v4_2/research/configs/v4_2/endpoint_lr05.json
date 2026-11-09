@@ -1,0 +1,11 @@
+{
+  "flow_ranking": {
+    "source": "history",
+    "path": "endpoint",
+    "sampling": "uniform_corrected",
+    "negatives": 1024
+  },
+  "recommender": {
+    "lr": 0.0005
+  }
+}

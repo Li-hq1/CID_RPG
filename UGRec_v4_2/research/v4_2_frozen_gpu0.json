@@ -1,0 +1,56 @@
+[
+  {
+    "name": "frozen_flow",
+    "config": "configs/v4_2_frozen.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "frozen_direct",
+    "config": "configs/v4_2_direct_reference.json",
+    "category": "Beauty",
+    "seed": 2025,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "frozen_flow",
+    "config": "configs/v4_2_frozen.json",
+    "category": "Beauty",
+    "seed": 2026,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "frozen_direct",
+    "config": "configs/v4_2_direct_reference.json",
+    "category": "Sports_and_Outdoors",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "frozen_flow",
+    "config": "configs/v4_2_frozen.json",
+    "category": "Sports_and_Outdoors",
+    "seed": 2025,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "frozen_direct",
+    "config": "configs/v4_2_direct_reference.json",
+    "category": "Sports_and_Outdoors",
+    "seed": 2026,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  }
+]

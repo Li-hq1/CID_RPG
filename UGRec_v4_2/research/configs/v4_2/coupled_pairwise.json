@@ -1,0 +1,6 @@
+{
+  "flow_ranking": {
+    "path": "coupled",
+    "objective": "pairwise"
+  }
+}

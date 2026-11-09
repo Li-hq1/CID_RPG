@@ -1,0 +1,52 @@
+[
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_6l-new-eval",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu_geo-ae-local-relation_new-eval",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu_geo-ae-no-relation-new-eval",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu_geo-ae_new-eval",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu_geometry-ae",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  }
+]

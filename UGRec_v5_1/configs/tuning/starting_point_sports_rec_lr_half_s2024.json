@@ -1,0 +1,11 @@
+{
+  "id": "starting_point_sports_rec_lr_half_s2024",
+  "stage": "starting_point",
+  "parent": "control_baseline_s2024",
+  "reference": "control_baseline_s2024",
+  "seed": 2024,
+  "hypothesis": "只将Sports推荐LR减半，检验更小步长能否缓解中期后验证退化并提高所选checkpoint的全量validation NDCG@10。",
+  "change_reason": "Sports训练损失下降时选模指标从epoch15到40退化22.68%，AE动态平稳；按计划先单独验证推荐LR的一个方向，不与温度、正则或AE步长混淆。",
+  "shared": {},
+  "datasets": {"sports": {"recommender.lr": 0.0005}}
+}

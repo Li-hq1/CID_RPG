@@ -1,0 +1,11 @@
+{
+  "id": "structure_condition_norm_only_s2024",
+  "stage": "structure",
+  "seed": 2024,
+  "parent": "starting_point_sports_rec_lr_half_s2024",
+  "reference": "starting_point_sports_rec_lr_half_s2024",
+  "hypothesis": "HSTU 后的同宽线性层可能重复 Flow cond_embed 的映射；保留 LN、去掉该线性层可以区分其必要性。",
+  "change_reason": "第一项结构消融只删除一个过渡线性层，固定其他结构及每个数据集的优化参数。",
+  "shared": {"recommender.condition_projection": "norm"},
+  "datasets": {}
+}

@@ -1,0 +1,11 @@
+{
+  "id": "readiness_structure_norm_20261106",
+  "stage": "structure",
+  "seed": 2024,
+  "parent": "control_readiness_20261106_final",
+  "reference": "control_readiness_20261106_final",
+  "hypothesis": "去掉条件过渡的 Linear、保留 LN 后，四个真实数据集仍可完成更新和 checkpoint 预测验真。",
+  "change_reason": "验收用户要求的过渡层结构接口，验证所有数据集统一应用该配置，不作性能结论。",
+  "shared": {"recommender.condition_projection": "norm"},
+  "datasets": {}
+}

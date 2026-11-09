@@ -1,0 +1,8 @@
+{
+  "flow_ranking": {
+    "source": "history",
+    "path": "rollout",
+    "sampling": "uniform_corrected",
+    "negatives": 1024
+  }
+}

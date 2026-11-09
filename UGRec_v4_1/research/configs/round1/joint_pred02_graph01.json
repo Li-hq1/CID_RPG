@@ -1,0 +1,6 @@
+{
+  "ranking": {
+    "prediction_weight": 0.2,
+    "teacher_weight": 0.1
+  }
+}

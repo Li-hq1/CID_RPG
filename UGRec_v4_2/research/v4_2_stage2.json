@@ -1,0 +1,38 @@
+[
+  {
+    "name": "s2_history_endpoint_uniform_corrected",
+    "config": "research/configs/v4_2/history_endpoint_uniform_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "s2_sampled_direct_corrected",
+    "config": "research/configs/v4_2/sampled_direct_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "s2_history_rollout_uniform_corrected",
+    "config": "research/configs/v4_2/history_rollout_uniform_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  },
+  {
+    "name": "s2_noise_rollout_uniform_corrected",
+    "config": "research/configs/v4_2/noise_rollout_uniform_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:0",
+    "audit": "full"
+  }
+]

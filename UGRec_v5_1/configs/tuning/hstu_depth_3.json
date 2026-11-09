@@ -1,0 +1,13 @@
+{
+  "id": "structure_hstu_depth_3_s2024",
+  "stage": "shared",
+  "seed": 2024,
+  "parent": "starting_point_sports_rec_lr_half_s2024",
+  "reference": "starting_point_sports_rec_lr_half_s2024",
+  "hypothesis": "在 Beauty/Sports/Toys 上，把 HSTU 从 2 层加到 3 层能提高全量 NDCG@10。三数据集重审显示 2→1 也上升，因此本轮不是沿减深结果继续，而是直接检验用户提出的加深方向。",
+  "change_reason": "只改 recommender.n_layer 2→3。不跑 CDs，不改宽度、Flow、过渡结构或专用参数，也不把已测的 depth 1 叠进本候选。比较仍对固定 reference，三项等权且单项不低于 -2%。",
+  "shared": {
+    "recommender.n_layer": 3
+  },
+  "datasets": {}
+}

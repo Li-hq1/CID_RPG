@@ -1,0 +1,7 @@
+{
+  "flow_ranking": {
+    "source": "history",
+    "path": "direct",
+    "objective": "contrastive"
+  }
+}

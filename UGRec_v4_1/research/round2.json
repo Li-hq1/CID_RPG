@@ -1,0 +1,82 @@
+[
+  {
+    "name": "r2_prior03",
+    "config": "research/configs/round2/prior03.json",
+    "category": "Beauty",
+    "device": "cuda:0",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_rf_only_s2024_e40/results.json"
+  },
+  {
+    "name": "r2_prior01",
+    "config": "research/configs/round2/prior01.json",
+    "category": "Beauty",
+    "device": "cuda:1",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_ce_only_s2024_e40/results.json"
+  },
+  {
+    "name": "r2_prior06",
+    "config": "research/configs/round2/prior06.json",
+    "category": "Beauty",
+    "device": "cuda:2",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_joint_s2024_e40/results.json"
+  },
+  {
+    "name": "r2_prior03_no_pred",
+    "config": "research/configs/round2/prior03_no_pred.json",
+    "category": "Beauty",
+    "device": "cuda:3",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_joint_pred02_s2024_e40/results.json"
+  },
+  {
+    "name": "r2_prior03_text01",
+    "config": "research/configs/round2/prior03_text01.json",
+    "category": "Beauty",
+    "device": "cuda:4",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_joint_pred1_s2024_e40/results.json"
+  },
+  {
+    "name": "r2_prior03_graph01",
+    "config": "research/configs/round2/prior03_graph01.json",
+    "category": "Beauty",
+    "device": "cuda:5",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "behavior",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_joint_pred02_text01_s2024_e40/results.json"
+  },
+  {
+    "name": "r2_prior03_fast_ae",
+    "config": "research/configs/round2/prior03_fast_ae.json",
+    "category": "Beauty",
+    "device": "cuda:6",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_joint_pred02_graph01_s2024_e40/results.json"
+  },
+  {
+    "name": "r2_prior03_hstu",
+    "config": "research/configs/round2/prior03_hstu.json",
+    "category": "Beauty",
+    "device": "cuda:7",
+    "seed": 2024,
+    "epochs": 40,
+    "teacher": "content",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_joint_fast_ae_s2024_e40/results.json"
+  }
+]

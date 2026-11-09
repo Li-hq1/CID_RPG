@@ -1,0 +1,56 @@
+[
+  {
+    "name": "s1_noise_rollout_uniform_corrected",
+    "config": "research/configs/v4_2/noise_rollout_uniform_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_endpoint_uniform_corrected",
+    "config": "research/configs/v4_2/noise_endpoint_uniform_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_rollout_uniform",
+    "config": "research/configs/v4_2/noise_rollout_uniform.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_rollout_uniform_corrected",
+    "config": "research/configs/v4_2/history_rollout_uniform_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_endpoint_uniform_corrected",
+    "config": "research/configs/v4_2/history_endpoint_uniform_corrected.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_rollout_uniform",
+    "config": "research/configs/v4_2/history_rollout_uniform.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:0",
+    "audit": "subset"
+  }
+]

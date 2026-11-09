@@ -1,0 +1,13 @@
+{
+  "url": "https://arxiv.org/html/2508.17618v2",
+  "date": "2026-11-06",
+  "html_sha256": "5d602e08baacbcdc5431c72b1bf71c907f40151d64a145829a8d9bfcebe73b48",
+  "checked_equations": {
+    "7": "history prior cross-entropy",
+    "8": "linear bridge",
+    "11": "conditional velocity MSE",
+    "12,13": "output alignment classification",
+    "14": "prior + alpha*CFM + beta*Align"
+  },
+  "official_code_executed": false
+}

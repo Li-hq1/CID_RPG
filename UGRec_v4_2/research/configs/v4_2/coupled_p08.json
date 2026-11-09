@@ -1,0 +1,10 @@
+{
+  "flow_ranking": {
+    "path": "coupled",
+    "source": "noise",
+    "sampling": "uniform_corrected",
+    "negatives": 1024,
+    "endpoint_probability": 0.8,
+    "max_queries": 2048
+  }
+}

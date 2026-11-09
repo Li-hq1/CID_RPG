@@ -1,0 +1,87 @@
+[
+  {
+    "name": "r4_prior_roll4_text01",
+    "config": "research/configs/round5/frozen_candidate.json",
+    "category": "Beauty",
+    "seed": 2025,
+    "epochs": 40,
+    "device": "cuda:0",
+    "wait_for": "outputs/iterative_20261028/Beauty/r1_ce_only_s2025_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_text01",
+    "config": "research/configs/round5/frozen_candidate.json",
+    "category": "Beauty",
+    "seed": 2026,
+    "epochs": 40,
+    "device": "cuda:1",
+    "wait_for": "outputs/iterative_20261028/Beauty/r3_prior_endpoint1_s2024_e40/generation_probe_one_step.json"
+  },
+  {
+    "name": "r4_prior_roll4_text01",
+    "config": "research/configs/round5/frozen_candidate.json",
+    "category": "Sports_and_Outdoors",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:2",
+    "wait_for": "outputs/iterative_20261028/Sports_and_Outdoors/r1_ce_only_s2024_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_text01",
+    "config": "research/configs/round5/frozen_candidate.json",
+    "category": "Sports_and_Outdoors",
+    "seed": 2025,
+    "epochs": 40,
+    "device": "cuda:3",
+    "wait_for": "outputs/iterative_20261028/Sports_and_Outdoors/r1_ce_only_s2025_e40/results.json"
+  },
+  {
+    "name": "r4_prior_roll4_text01",
+    "config": "research/configs/round5/frozen_candidate.json",
+    "category": "Sports_and_Outdoors",
+    "seed": 2026,
+    "epochs": 40,
+    "device": "cuda:4",
+    "wait_for": "outputs/iterative_20261028/Sports_and_Outdoors/r1_ce_only_s2026_e40/results.json"
+  },
+  {
+    "name": "r5_candidate_no_rf",
+    "config": "research/configs/round5/no_rf.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:5"
+  },
+  {
+    "name": "r5_candidate_ce_ae_detached",
+    "config": "research/configs/round5/ce_ae_detached.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:6"
+  },
+  {
+    "name": "r6_candidate_hstu",
+    "config": "research/configs/round5/profile_hstu.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:7"
+  },
+  {
+    "name": "r6_candidate_lr05",
+    "config": "research/configs/round5/profile_lr05.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:5"
+  },
+  {
+    "name": "r6_candidate_256",
+    "config": "research/configs/round5/profile_256.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 40,
+    "device": "cuda:6"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "id": "beauty_hstu3_rec_lr_half_ep80_s2024",
+  "stage": "dataset",
+  "seed": 2024,
+  "parent": "structure_hstu_depth_3_s2024",
+  "reference": "structure_hstu_depth_1_s2024",
+  "target_datasets": ["beauty"],
+  "selection_rule": "target_ndcg10",
+  "epochs": 80,
+  "hypothesis": "Beauty 上，一层 HSTU 与三层 HSTU 在 recommender lr=0.001、40 epoch 时都在第 15 轮达到选模峰值，之后下降。把推荐器学习率减半并把预算加倍，使总步数上的名义路程与原来接近，检验更慢的日程能否让三层模型的峰值后移、下降变缓，并使完整 validation NDCG@10 超过已采用的一层结果。",
+  "change_reason": "只改 Beauty 的 recommender.lr 0.001→0.0005，并把本次训练 epoch 40→80。HSTU 三层沿用 parent，不重训原来的 40 epoch。ae.lr、warmup_ratio、结构、噪声、目录和选模协议不变。warmup 与余弦退火仍按总步数的比例计算，步数加倍会同时拉长 warmup 和退火，不能把结果单独归因于峰值学习率。",
+  "datasets": {
+    "beauty": {
+      "recommender.lr": 0.0005
+    }
+  }
+}

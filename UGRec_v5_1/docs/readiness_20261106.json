@@ -1,0 +1,117 @@
+{
+  "kind": "engineering_readiness_only",
+  "date": "2026-11-06",
+  "benchmark_eligible": false,
+  "tests": {
+    "passed": 84,
+    "log": "docs/tests_20261106.txt"
+  },
+  "source_sha256": "68e5474866bfbb1a833593b2aa2327bbbf6c4b616068a7ba6207a9d488533895",
+  "source_matches_v5_default": "exact model state hashes, loss and input-projection gradient match in isolated processes",
+  "campaign": "outputs/tuning/control_readiness_20261106_final",
+  "datasets": [
+    {
+      "dataset": "beauty",
+      "items": 12101,
+      "users": 22363,
+      "steps": 2,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "parameters": 4255504,
+      "peak_memory_allocated_mib": 547.54736328125,
+      "config_sha256": "f73d631fccf4597aef85c8bf66db1aa87f5314bc86c8f5904c74b0c76e13127d",
+      "catalog_policy": "exact",
+      "native_dimensions": {
+        "ae_latent": 128,
+        "hstu_layers": 2,
+        "hstu_width": 128,
+        "flow_width": 256,
+        "flow_depth": 2,
+        "train_draws": 8,
+        "eval_draws": 32
+      }
+    },
+    {
+      "dataset": "sports",
+      "items": 18357,
+      "users": 35598,
+      "steps": 2,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "parameters": 4255504,
+      "peak_memory_allocated_mib": 794.900390625,
+      "config_sha256": "4406c4b021040146b2092ffdd7ee38b122f4be9f9fafada75175e3c93277d927",
+      "catalog_policy": "exact",
+      "native_dimensions": {
+        "ae_latent": 128,
+        "hstu_layers": 2,
+        "hstu_width": 128,
+        "flow_width": 256,
+        "flow_depth": 2,
+        "train_draws": 8,
+        "eval_draws": 32
+      }
+    },
+    {
+      "dataset": "toys",
+      "items": 11924,
+      "users": 19412,
+      "steps": 2,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "parameters": 4255504,
+      "peak_memory_allocated_mib": 539.84814453125,
+      "config_sha256": "13ff7a9da51699124a4cf15c6ee080faddbd9ce2fc5607f5f6c67b90fb881ea8",
+      "catalog_policy": "exact",
+      "native_dimensions": {
+        "ae_latent": 128,
+        "hstu_layers": 2,
+        "hstu_width": 128,
+        "flow_width": 256,
+        "flow_depth": 2,
+        "train_draws": 8,
+        "eval_draws": 32
+      }
+    },
+    {
+      "dataset": "cds",
+      "items": 64443,
+      "users": 75258,
+      "steps": 2,
+      "checkpoint_reload_verified": true,
+      "test_accessed": false,
+      "parameters": 4255504,
+      "peak_memory_allocated_mib": 902.63525390625,
+      "config_sha256": "fc1edb16c075aab26b28f7b9620dc4cbd69f93f8381628945508168ed8be35e0",
+      "catalog_policy": "sampled_uniform_corrected_4096",
+      "native_dimensions": {
+        "ae_latent": 128,
+        "hstu_layers": 2,
+        "hstu_width": 128,
+        "flow_width": 256,
+        "flow_depth": 2,
+        "train_draws": 8,
+        "eval_draws": 32
+      }
+    }
+  ],
+  "additional_checks": {
+    "readiness_dataset_reuse_20261106": {
+      "complete": true,
+      "new_runs": 1,
+      "reused_runs": 3,
+      "source_sha256": "68e5474866bfbb1a833593b2aa2327bbbf6c4b616068a7ba6207a9d488533895"
+    },
+    "readiness_structure_norm_20261106": {
+      "complete": true,
+      "new_runs": 4,
+      "reused_runs": 0,
+      "source_sha256": "68e5474866bfbb1a833593b2aa2327bbbf6c4b616068a7ba6207a9d488533895"
+    },
+    "idempotent_resume": {
+      "verified": true,
+      "new_runs": 0,
+      "all_four_completed_runs_skipped": true
+    }
+  }
+}

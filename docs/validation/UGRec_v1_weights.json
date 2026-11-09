@@ -1,0 +1,92 @@
+[
+  {
+    "run": "tigerdiff_Beauty",
+    "loaded_weights": 1,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_all_positions",
+    "loaded_weights": 1,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_all_positions_warmup0-1_100epoch",
+    "loaded_weights": 1,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu_new-eval",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_hstu_test",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Beauty_qwen3_transformers",
+    "loaded_weights": 2,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_beauty_qwen3",
+    "loaded_weights": 1,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "run": "tigerdiff_Sports_and_Outdoors",
+    "loaded_weights": 1,
+    "loss_finite": true,
+    "generated_shape": [
+      1,
+      2,
+      1
+    ]
+  }
+]

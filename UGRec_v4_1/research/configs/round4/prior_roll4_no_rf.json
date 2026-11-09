@@ -1,0 +1,12 @@
+{
+  "ranking": {
+    "prior_mode": "history",
+    "prior_noise": 0.3,
+    "rollout_weight": 1.0,
+    "prediction_weight": 0.2,
+    "rf_weight": 0.0
+  },
+  "recommender": {
+    "num_sampling_steps": 5
+  }
+}

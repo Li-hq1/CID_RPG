@@ -1,0 +1,56 @@
+[
+  {
+    "name": "s1_history_roll_rank2",
+    "config": "research/configs/v4_2/history_roll_rank2.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_roll_rank5",
+    "config": "research/configs/v4_2/history_roll_rank5.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_roll_rank2",
+    "config": "research/configs/v4_2/noise_roll_rank2.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_noise_roll_rank5",
+    "config": "research/configs/v4_2/noise_roll_rank5.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_pairwise_normalized",
+    "config": "research/configs/v4_2/history_pairwise_normalized.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  },
+  {
+    "name": "s1_history_corrected_normalized",
+    "config": "research/configs/v4_2/history_corrected_normalized.json",
+    "category": "Beauty",
+    "seed": 2024,
+    "epochs": 20,
+    "device": "cuda:1",
+    "audit": "subset"
+  }
+]

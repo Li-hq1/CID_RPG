@@ -1,0 +1,8 @@
+{
+  "ranking": {
+    "prior_mode": "history",
+    "prior_noise": 0.3,
+    "endpoint_weight": 5.0,
+    "prediction_weight": 0.2
+  }
+}
